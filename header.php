@@ -21,7 +21,7 @@
 
 	
        
-		<title>CheckthisClip.nl</title>
+		<title>Shot of Joy</title>
 	
   	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01193" type="text/css" /> 
 	
@@ -30,7 +30,7 @@
 	
 	
 
-	
+	<?php wp_head(); ?>
 	
 	
 </head>
@@ -40,6 +40,13 @@
 
 <div id="wrapper" class="portrait_mode">
 
-<div class="header">1</div>
-<div class="left-bar">1</div>
+<header>
+	
+	
+	
+</header>
+
+<nav></nav>
+
+<img src="<?php echo $template_directory; ?>/img/SOJ-logo.png" id="soj-logo-big"/>
 

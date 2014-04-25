@@ -6,7 +6,7 @@
 </footer>
 
 
-<?php global $template_directory; ?>
+<?php wp_footer(); global $template_directory; ?>
 
 
 <script>
@@ -49,7 +49,7 @@
   	
   	var content_height = $(this).height();
   	var horizontal_center = ((window_width - content_width)/2)-60;
-  	var vertical_center = ((window_height - content_height)/2)-60;
+  	var vertical_center = ((window_height - content_height)/2);
   	
   	if($(this).hasClass('vert-top')){
 	  	$(this).css({ "top": "60px", "bottom": "auto" });
@@ -115,6 +115,11 @@
 			
 			top_pos[counter] = $(".page-"+counter).offset().top - $(window).scrollTop();
 			if(top_pos[counter] > 0){
+				
+				
+				
+				
+				
 				$(".page-bg-"+counter).css('top', top_pos[counter] );
 				$(".page-bg-"+counter).show();
 			}else{
@@ -126,47 +131,100 @@
 		});
 		
 	
-		/*var top_pos = $(".page-2").offset().top - $(window).scrollTop();
-		if(top_pos > 0){
-			$(".page-bg-2").css('top', top_pos );
-			$(".page-bg-2").show();
-		}else{
-			$(".page-bg-2").css('top', 0 );
-		}
 		
-		var top_pos3 = $(".page-3").offset().top - $(window).scrollTop();
-		if(top_pos3 > 0){
-			$(".page-bg-3").css('top', top_pos3 );
-			$(".page-bg-3").show();
+	}
+	
+	function active_nav(){
+		
+		var counter = 1;
+		$('.page-element').each(function(index, item) {
+			
+			
+			
+			 if($(".page-"+counter).position().top  < ($(window).scrollTop())+100 ){
+				 $(".go_to_page").removeClass('nav-act');
+				 $(".go_to_page:nth-child("+counter+")").addClass('nav-act');
+			 }
+			
+			
+			
+			//console.log(counter +' - '+ $(".page-"+counter).position().top + ' - ' +  $(window).scrollTop() );
+			
+			
+			counter++;
+		});
+		
+				
+	}
+	
+	
+	var img_big = true;
+	function logo_position(){
+		
+		
+		
+		var new_pos = ($(window).scrollTop() * 0.25)-30;
+		var new_alpha = 1-(($(window).scrollTop() * 0.25)/100);
+		
+		console.log(new_alpha);
+		
+		//$('#soj-logo-big').css('top',-new_pos+'px');
+		$("#soj-logo-big").css({ opacity: new_alpha });
+		
+		/*if($(window).scrollTop() > ($('.page-1').height()/3)){
+			if(img_big){
+				//$('#soj-logo-big').animate({width: "80px" , right: "10px"}, 500);
+				
+				$('#soj-logo-big').fadeOut('slow');
+				$('#soj-logo-smll').fadeIn('slow');
+				img_big = false;
+				console.log('to nav');
+			}
+			
 		}else{
-			$(".page-bg-3").css('top', 0 );
-		}
-
-		var top_pos4 = $(".page-4").offset().top - $(window).scrollTop();
-		if(top_pos4 > 0){
-			$(".page-bg-4").css('top', top_pos4 );
-			$(".page-bg-4").show();
-		}else{
-			$(".page-bg-4").css('top', 0 );
+			if(img_big == false){
+				//$('#soj-logo-big').animate({width: "275px" , right: "120px"}, 500);
+				$('#soj-logo-big').fadeIn('slow');
+				$('#soj-logo-smll').fadeOut('slow');
+				img_big = true;
+				console.log('back');
+			}
 		}*/
+		
 		
 	}
 	
 	
-	
-	
 	$(window).scroll(function() {
 		scroll_page();
+		
+		active_nav();
+		logo_position();
+		
 	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	$(".go_to_page").click(function() {
 		
+		//$(".go_to_page").removeClass('nav-act');
+		
 		page = $(this).html();
-		
-		
 		$('html, body').animate({
 			 scrollTop: $(".page-"+page).offset().top
 		}, 1000, "swing");
+		
+		//$(".go_to_page:nth-child("+page+")").addClass('nav-act');
+		
 		
 		return false;
 		
@@ -174,10 +232,14 @@
   
 	 var counter = 1;
 	  setTimeout(function(){
-	  		$('.page-content').each(function(index, item) {
+	  		$('.page-content-box').each(function(index, item) {
 	  			var window_height = $(window).height();
 				var window_width = $(window).width();
 				var page_height = $(this).height() + 220;
+				var screen_height = $(window).height();
+				
+				
+				
 				if(page_height < screen_height){
 					page_height = screen_height;
 				}
@@ -245,7 +307,34 @@
 		});
 	}
 	toggle_video();
+	
+	
+	
+	$(window).load(function() {    
 
+	var theWindow        = $(window),
+	    $bg              = $(".bg"),
+	    aspectRatio      = $bg.width() / $bg.height();
+	    			    		
+	function resizeBg() {
+		
+		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+		    $bg
+		    	.removeClass('bgheight')
+		    	.removeClass('bgwidth')
+		    	.addClass('bgheight');
+		} else {
+		    $bg
+		    	.removeClass('bgheight')
+		    	.removeClass('bgwidth')
+		    	.addClass('bgwidth');
+		}
+					
+	}
+	                   			
+	theWindow.resize(resizeBg).trigger("resize");
+
+});
     
 </script>
 
