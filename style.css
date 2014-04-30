@@ -198,13 +198,32 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 /**************************************************************
 *** GOOGLE MAPS
 ***************************************************************/
-.mapp-ib					{ background: #0c0c0c; border: none; box-shadow: none; -webkit-box-shadow: none; color: #fff;}
+/*
+.mapp-ib					{ background-color: #0c0c0c !important; border: none !important; box-shadow: none !important; -webkit-box-shadow: none !important; color: #fff !important;}
 .mapp-title					{ font-family: 'Pathway Gothic One', 'sans-serif' !important; font-size: 20px; letter-spacing: 1px; text-transform: uppercase;}
 .mapp-body					{ font-family: 'ProxySemiBold', sans-serif !important; font-size: 13px;}
 .mapp-iw a:link, 
 .mapp-iw a:visited			{ color: #fff !important;}
 .mapp-iw img 				{ float: left; display: inline; margin:3px 10px 3px 0px !important; }
 .mapp-links					{ display: none !important;}
+
+.mapp-iw *					{ color: #fff !important;}
+.mapp-ib-tipp				{ display: none;}
+*/
+
+.mapp-iw *					{ color:#fff !important; line-height:normal !important; margin:0 !important; padding:0 !important;}
+.mapp-iw,.mapp-iw *			{ font-weight:400!important;font-size:13px!important;text-align:left!important;}
+.mapp-iw .mapp-title		{ font-family: 'Pathway Gothic One', 'sans-serif' !important; }
+.mapp-iw .mapp-thumb		{ padding-right:10px!important;vertical-align:top;float:left;}
+.mapp-iw img				{ float: left; display: inline; margin:5px 10px 10px 10px !important;}
+
+.mapp-iw a:link				{ color: #fff;}	
+
+
+.mapp-ib					{ background-color:#0c0c0c;border-collapse:separate;max-width:550px;min-width:200px;overflow:auto;position:absolute;z-index:100;padding:15px;}
+.mapp-ib-close				{ display:block;position:absolute;cursor:pointer;right:5px;top:5px;}
+.mapp-ib-tip				{ display:none;}
+
 
 
 /**************************************************************
