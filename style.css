@@ -130,21 +130,22 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 /******************************
 ***** PAGE CONTENT
 *******************************/
-.page-content		{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; margin:0; }
-.hor-left			{ float:left;  position: relative; top:0px; }
-.hor-center			{ margin:0 auto; position: relative; top:0px;}
-.hor-right			{ margin:0; float:right; position: relative; top:0px; }
-
-.col-25				{ width:25%; }
+.col-25				{ width:50%; }
 .col-50				{ width:50%; }
-.col-75				{ width:75%; }
+.col-75				{ width:50%; }
+
+.page-content		{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; margin:0; }
+.hor-left			{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px;}
+.hor-center			{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px);}
+.hor-right			{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; }
+
 
 .start-page					{ position: absolute; background:none; padding:0; z-index:500; width:calc(100% - 220px);  padding:0; }
 .vert-top-title				{ top:100px; }
 .vert-bottom-title			{ bottom:90px; }
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
-.hor-right-title			{ text-align:right; }
+.hor-right-title			{ text-align:right;   }
 .start-page	h1				{ font-family: bigcaslon; font-size:100px; text-align: center; line-height: 100px; text-shadow:1px 1px 5px #000000; margin:0 15%; font-weight: normal; padding:0 100px; }
 
 .content,

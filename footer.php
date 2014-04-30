@@ -189,7 +189,7 @@ var window_width = $(window).width();
 	  		$('.page-content-box').each(function(index, item) {
 	  			var window_height = $(window).height();
 				var window_width = $(window).width();
-				var page_height = $(this).height()+500;
+				var page_height = $(this).height()+100;
 				var screen_height = $(window).height();
 				
 				
@@ -200,6 +200,7 @@ var window_width = $(window).width();
 				
 				console.log('page height2: ' +page_height);
 				$('.page-'+counter).height(page_height);
+				$(this).height(page_height);
 				$(this).show();
 				counter++;
 				

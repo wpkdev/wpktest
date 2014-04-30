@@ -9,7 +9,7 @@
 	$src_480 = aq_resize( $image['url'], 375, 281, true, false ); //resize & crop img
 	echo '<div class="page-element page-'.$counter.'" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
 	
-	echo '<div class="page-wrapper">';
+	
 	
 	echo '<div class="page-content page-content-box vert-'.$position_vertical.' hor-'.$position_horizontal.' col-'.$col_width.' ">';
 	
@@ -26,5 +26,5 @@
 	echo get_sub_field('content');
 	echo '</div>';
 	echo '</div>';
-	echo '</div>';
+
 ?>
