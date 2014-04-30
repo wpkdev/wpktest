@@ -193,9 +193,20 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .content-page				{ color:#FFF; padding:40px; }
 .content-page a				{ color:#FFF; }
 
+
+
 /**************************************************************
-*** FOOTER
+*** GOOGLE MAPS
 ***************************************************************/
+.mapp-ib					{ background: #0c0c0c; border: none; box-shadow: none; -webkit-box-shadow: none; color: #fff;}
+.mapp-title					{ font-family: 'Pathway Gothic One', 'sans-serif' !important; font-size: 20px; letter-spacing: 1px; text-transform: uppercase;}
+.mapp-body					{ font-family: 'ProxySemiBold', sans-serif !important; font-size: 13px;}
+.mapp-iw a:link, 
+.mapp-iw a:visited			{ color: #fff !important;}
+.mapp-iw img 				{ float: left; display: inline; margin:3px 10px 3px 0px !important; }
+.mapp-links					{ display: none !important;}
+
+
 /**************************************************************
 *** FOOTER
 ***************************************************************/
