@@ -93,17 +93,31 @@ MAIN SETTINGS
 body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: ProxySemiBold; }
 #wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
 
-.page-element		{ width:calc(100% - 70px); height:100%;  position: relative; padding:0; margin:0; z-index:1;  }
+
+
+.page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1;  }
 .bg-box				{ position: fixed; top:0; right:0; width:100%; height:100%; z-index:0; }
 
+
+
+
+
+
+.bg { position: fixed; top: 0; left: 0; }
+/*.bg { position: absolute; top: 0; left: 0; z-index: 0; }*/
+
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
 .bg-shop 		{ width:100%; height:100%;  }
-.start-page			{ padding:0px !important; } 
 
 /******************************
 ***** HEADER
 *******************************/
 header						{ background: #000; width:70px; height:100%; position: fixed; top:0; right:0; z-index:100; }
 #soj-logo-big				{ position: fixed; top:30px; right:120px; z-index: 10; }
+
+
 
 /******************************
 ***** NAVIGATION
@@ -121,25 +135,31 @@ a.nav-next					{ top:20px; left:20px; }
 *******************************/
 div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100% - 60px); top:60px; left: 0;  z-index:3; border-right:1px solid #4d4d4d; }
 
+
 /******************************
 ***** PAGE CONTENT
 *******************************/
-.page-content		{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; margin:0; }
-.hor-left			{ float:left;  position: relative; top:0px; }
-.hor-center			{ margin:0 auto; position: relative; top:0px;}
-.hor-right			{ margin:0; float:right; position: relative; top:0px; }
+.page-content				{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; }
+
+
+.hor-left			{ float:left; margin:0 0 0 110px; position: relative; top:100px; }
+.hor-center			{ margin:0 auto; position: relative; top:80px;}
+.hor-right			{ margin:0 100px 0 0; float:right; position: relative; top:100px; }
 
 .col-25				{ width:25%; }
 .col-50				{ width:50%; }
 .col-75				{ width:75%; }
 
-.start-page					{ position: absolute; background:none; padding:0; z-index:500; width:calc(100% - 220px);  padding:0; }
+
+.start-page					{ position: absolute; background:none; padding:0; z-index:500; width:calc(100% - 220px);  padding:0 110px 0 110px; }
 .vert-top-title				{ top:100px; }
 .vert-bottom-title			{ bottom:90px; }
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
 .hor-right-title			{ text-align:right; }
-.start-page	h1				{ font-family: bigcaslon; font-size:100px; text-align: center; line-height: 100px; text-shadow:1px 1px 5px #000000; margin:0 15%; font-weight: normal; padding:0 100px; }
+.start-page	h1				{ font-family: bigcaslon; font-size:100px; text-align: center; line-height: 100px; text-shadow:1px 1px 5px #000000; margin:0 15%; font-weight: normal; }
+
+
 
 .content,
 .content label					{ color:#FFF !important; }
@@ -151,8 +171,6 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 blockquote					{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:40px; line-height: 35px;  }
 
-.page-wrapper				{ padding:100px; } 
-
 
 /******************************
 ***** SHOP GALLERY
@@ -161,6 +179,7 @@ ul.wpk-gallery 				{ list-style: none; margin:80px 140px 80px 80px; padding:0; }
 ul.wpk-gallery li			{ float:left; width:calc(25% - 40px);  margin:0 20px 20px 20px;  }
 ul.wpk-gallery li img		{ width:100%; height: auto; }
 .page-gallery				{ padding:40px 20px; }
+
 
 .extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#000; color:#FFF; margin-left:90px; padding:50px; line-height: 26px; }
 .gallery_col						{ width:55%; float: right; }
@@ -171,6 +190,8 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .text-pos-right .gallery_col			{ float: left; width: calc( 62% - 40px ); }
 
 .extra_content_col h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 40px 0; font-family: bigcaslon; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
+
+
 
 /**************************************************************
 *** VIDEO
@@ -187,6 +208,8 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .video-background				{ background: url(img/transparant-bg.png); }
 .responsive-container iframe	{ max-width: 1200px; width:calc( 100% - 120px )  }
 
+
+
 /**************************************************************
 *** PAGE
 ***************************************************************/
@@ -196,10 +219,7 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 /**************************************************************
 *** FOOTER
 ***************************************************************/
-/**************************************************************
-*** FOOTER
-***************************************************************/
-.page-element-footer		{ height:800px; background:#000; margin:0 0 0 0; }
+.page-element-footer		{ height:800px; background:#000; margin:0 0 -50px 0; }
 
 
 .scroll-indicator-box		{ position: fixed; bottom:0; left:0; height: 50px;  z-index:50; text-align: center; width: 100%; }
@@ -213,6 +233,10 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .social-media-button.social-media-pinterest a{ background-image: none !important;}
 .social-media-button.social-media-pinterest a:before{ font-family:icomoon; speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 24px; padding-top: 9px; content: "\e607"; display: inline-block; float: left; margin: -18px 0 0 -1px;  width: 100%; height: 100%; }
 	
+
+
+	
+
 
 @media all and (max-width: 1024px){
 	#soj-logo-big		{ width:175px; }
@@ -238,14 +262,4 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 	a.nav-prev				{ right:8px; }
 	.social-media-box		{ left:5px; }
 }
-
-
-
-
-
-
-
-
-
-
 
