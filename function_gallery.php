@@ -35,7 +35,7 @@
 	    		
 	    		
 				
-				if(strlen($shop_title) && strlen($shop_name) && strlen($shop_price) && strlen($shop_url) ){
+				if(strlen($shop_title) && strlen($shop_price) ){
 					
 					$caption = $shop_title.'||'.$shop_name.'||&euro;'.$shop_price.'||'.$shop_url;
 					
@@ -52,7 +52,7 @@
 		        	$class = '';
 		        }
 	    		
-	    		$output .= '<li '.$class.'><a href="'.$galleryimagelrg[0].'" class="js-gallery"><img src="'.$src[0].'" width="'.$src[1].'" height="'.$src[2].'" class="js-no-lazy-loading" /><div class="gallery-description">'.$caption.'</div></a></li>';
+	    		$output .= '<li '.$class.'><a href="'.$galleryimagelrg[0].'" class="js-gallery"><img src="'.$src[0].'" width="'.$src[1].'" height="'.$src[2].'" class="js-no-lazy-loading" /><div class="gallery-description"><h3 class="product-title">'.$shop_title.'</h3><span class="product-price">&euro; '.$shop_price.'</span></div></a></li>';
 	    		$counter++;
 			}
 			

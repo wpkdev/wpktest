@@ -171,7 +171,8 @@ blockquote					{  font-family: bigcaslon; text-align: center; font-weight: norma
 ***** SHOP GALLERY
 *******************************/
 ul.wpk-gallery 				{ list-style: none; margin:80px 140px 80px 80px; padding:0; }
-ul.wpk-gallery li			{ float:left; width:calc(25% - 40px);  margin:0 20px 20px 20px;  }
+ul.wpk-gallery li			{ color: #000; float:left; width:calc(25% - 40px);  margin:0 20px 20px 20px; text-align: center; }
+ul.wpk-gallery li a			{ color: #000; text-decoration: none;}
 ul.wpk-gallery li img		{ width:100%; height: auto; }
 .page-gallery				{ padding:40px 20px; }
 
@@ -184,6 +185,10 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .text-pos-right .gallery_col			{ float: left; width: calc( 62% - 40px ); }
 
 .extra_content_col h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 40px 0; font-family: bigcaslon; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
+
+
+.product-title				{ font-family: bigcaslon; font-size: 18px; margin-bottom: 0.5em;}
+.product-price				{ font-size: 15px;}
 
 /**************************************************************
 *** VIDEO
