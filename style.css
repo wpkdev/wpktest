@@ -213,9 +213,9 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .mapp-iw .mapp-thumb		{ padding-right: 20px!important; vertical-align:top; float:left;}
 .mapp-iw img				{ float: left; display: inline; margin:0 15px 0 0 !important;}
 .mapp-iw a					{ color: #fff; font-size: 13px;}	
-
+.mapp-iw p					{ margin-top: 5px !important;}
 .mapp-ib					{ background-color:#0c0c0c;border-collapse:separate;max-width:550px;min-width:200px;overflow:visible;position:absolute;z-index:100;margin-top:-15px;padding:15px;}
-.mapp-ib-close				{ background: url(img/map/SOJ-kruisje.png) no-repeat center center; background-size: 37px; text-indent: -300px; display:block;position:absolute;cursor:pointer;right:-17px;top:-17px; width: 37px; height: 37px;}
+.mapp-ib-close				{ background: url(img/map/SOJ-KRUISJE.png) no-repeat center center; background-size: 37px; text-indent: -300px; display:block;position:absolute;cursor:pointer;right:-17px;top:-17px; width: 37px; height: 37px;overflow: hidden;}
 .mapp-ib-tip				{ height:20px;}
 .mapp-ib-tip				{ position:absolute;top:-10px;left:20px;margin:0;border-top:10px solid transparent;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:none;padding:0;width:0;height:0;font-size:0;line-height:0;z-index:101}
 
