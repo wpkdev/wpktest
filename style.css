@@ -130,14 +130,20 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 /******************************
 ***** PAGE CONTENT
 *******************************/
-.col-25				{ width:50%; }
-.col-50				{ width:50%; }
-.col-75				{ width:50%; }
 
-.page-content		{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; margin:0; }
-.hor-left			{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px;}
-.hor-center			{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px);}
-.hor-right			{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; }
+
+.page-content			{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; margin:0; }
+.page-content-light		{ background:#FFF; color:#000; }  
+
+
+
+.hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px;}
+.hor-center							{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px);}
+.hor-right							{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; }
+.hor-fullscreen						{ width:100%; top:0px; position: relative;  } 
+.hor-fullscreen .text-wrapper		{  margin:0 auto; position: relative; top:0px; width: 50%;  }
+
+
 
 
 .start-page					{ position: absolute; background:none; padding:0; z-index:500; width:calc(100% - 220px);  padding:0; }
