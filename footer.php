@@ -21,7 +21,22 @@
 
 
 <footer>
-	&nbsp;
+	<div class="text-wrapper">
+		<div class="subtitle">Share the Joy</div>
+		
+		<div class="social-links">
+			<a href="#facebook" class="btn btn-facebook" target="_blank"><span class="icon-facebook"></span>Facebook</a>
+			<a href="#twitter" class="btn btn-twitter" target="_blank"><span class="icon-twitter"></span>Twitter</a>
+			<a href="#pinterest" class="btn btn-pinterest" target="_blank"><span class="icon-pinterest"></span>Pinterest</a>
+			<a href="#facebook" class="btn btn-email" target="_blank"><span class="icon-mail"></span>Email</a>
+		</div>
+		
+		<div class="subscribe-now">
+			<p>Wordt nu abonnee en ontvang de eerste maand gratis</p>
+			<a href="#" class="btn btn-large btn-subscribe"></a>
+			<p>Dagelijks voor maar &euro; 2,99 per maand</p>
+		</div>
+	</div>
 </footer>
 
 
