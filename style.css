@@ -90,7 +90,7 @@ FONTS
 /**********
 MAIN SETTINGS
 ***********/
-body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: ProxySemiBold; }
+body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: ProxySemiBold; -webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
 #wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
 
 .page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1;  }
@@ -126,6 +126,7 @@ a.nav-next					{ top:66px; right:15px; }
 ***** LEFT BAR
 *******************************/
 div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100% - 60px); top:60px; left: 0;  z-index:3; border-right:1px solid #4d4d4d; }
+
 
 /******************************
 ***** PAGE CONTENT
@@ -171,11 +172,16 @@ blockquote					{  font-family: bigcaslon; text-align: center; font-weight: norma
 ***** SHOP GALLERY
 *******************************/
 ul.wpk-gallery 				{ list-style: none; margin:80px 140px 80px 80px; padding:0; }
-ul.wpk-gallery li			{ border: 1px solid #f2f2f2; color: #000; float:left; width:calc(25% - 40px);  margin:0 20px 20px 20px; text-align: center; }
+ul.wpk-gallery li			{  color: #000; float:left; width:calc(25% - 40px); height: 336px; margin:0 20px 20px 20px; text-align: center; }
 ul.wpk-gallery li a			{ color: #000; text-decoration: none;}
 ul.wpk-gallery li img		{ width:100%; height: auto; }
 
+/*
+.gallery-3 li				{margin: 0; }
+.gallery-3 li:nth-child(3n+3) {border-right: none;}
 
+
+*/
 .page-gallery				{ padding:40px 20px; }
 
 .extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#000; color:#FFF; margin-left:90px; padding:50px; line-height: 26px; }
@@ -191,6 +197,28 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 
 .product-title				{ font-family: bigcaslon; font-size: 18px; margin-bottom: 0.5em;}
 .product-price				{ font-size: 15px;}
+
+
+/******************************
+***** PAGE REDIRECT
+*******************************/
+
+.page-redirect					{ text-align: center; height: 100%;}
+.page-redirect #soj-logo-big	{ position: relative; margin: 0 auto; top: 0; right: auto;}
+.page-redirect h1				{ font-family: 'Times New Roman', serif; font-size: 2.5em; font-weight: 100;}
+
+.page-redirect p				{ font-family: 'Pathway Gothic One', sans-serif; font-size: 1.5em; text-transform: uppercase;}
+.page-redirect a				{ color: #F97396; text-decoration: none;}
+.page-redirect a:hover			{ text-decoration: underline;}
+
+.center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 
 /**************************************************************
 *** VIDEO
