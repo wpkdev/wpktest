@@ -251,18 +251,37 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .social-media-button.social-media-pinterest a{ background-image: none !important;}
 .social-media-button.social-media-pinterest a:before{ font-family:icomoon; speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 18px; padding-top: 16px; content: "\e607"; display: inline-block; float: left; margin: -18px 0 0 -1px;  width: 100%; height: 100%; }
 
+footer{height: 610px;}
+.footer-content{color: #fff; text-align: center; padding: 30px; height: 820px; width: 100%;}
+.footer-content  h1{color: #fff; font-family: 'Times New Roman', serif; font-weight: 100; margin-bottom: 45px;}
+.footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 40px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 18px;line-height: 18px;text-transform: uppercase;}
+.footer-content p{font-family: 'Pathway Gothic One', 'sans-serif'; font-size: 20px; text-transform: uppercase;}
 
 
-
-.social-links{text-align:center;}	
-
-.btn{padding: 10px 20px; border-radius: 20px; color: #fff; display: inline-block;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; position: relative}
+.social-links, .subscribe-now{text-align:center;}	
+.social-links{margin-bottom: 155px;}
+.btn{color: #fff; display: inline-block;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; position: relative}
+.btn-small{border-radius: 20px; margin-right: 18px; padding: 10px 20px;}
+.btn-large{border-radius: 30px; font-size: 33px; padding: 14px 64px;}
 .btn-facebook{ background: #3f569a;}
 .btn-twitter{background: #44abf0;}
-.btn-pinterest{background: #44abf0;}
+.btn-pinterest{background: #ca2128;}
 .btn-email{background: #f97396;}
 .btn span{position:relative; left: -15px; top:3px; display: inline-block; }
+.btn span:hover{color: #fff !important;}
+.btn .icon-facebook:hover:before,
+.icon-twitter:hover:before,
+.icon-pinterest:hover:before,
+.icon-mail:hover:before {color: #fff;}
 
+
+.btn-subscribe{background: #f97396; color: #000; }
+
+
+
+/**************************************************************
+*** RESPONSIVE
+***************************************************************/
 
 
 @media all and (max-width: 1024px){

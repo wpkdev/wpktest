@@ -82,7 +82,8 @@ break;
 endwhile;
 
 	$src = $template_directory.'/img/pixel.gif';
-	 echo '<div class="page-element page-element-footer page-'.$counter.'"  data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'"><div class="page-content-box"></div></div>';
+	
+	echo '<div class="page-element page-element-footer page-'.$counter.'"  data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'"><div class="page-content-box"></div></div>';
 	include('add_nav.php');
 	global $post_url;global $post_title;
 	$post_url = get_permalink(); 
