@@ -14,7 +14,7 @@ $home_directory = get_site_url();
 
 
 
-echo '<h1>HIER KOTM DE HEADER</h1>';
+
 
 
 while ( have_posts() ) : the_post();
@@ -24,6 +24,11 @@ while ( have_posts() ) : the_post();
 $prev_post = get_previous_post();
 		if (!empty( $prev_post )): 
 			echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="nav-posts nav-prev icon-arrow-right">&nbsp;</a>';
+		endif; 
+		
+		$next_post = get_next_post();
+		if (!empty( $next_post )): 
+			echo '<a href=" '.get_permalink( $next_post->ID ).' " class="nav-posts nav-next icon-arrow-left">&nbsp;</a>';
 		endif; 
 
 if( have_rows('new_page') ):
