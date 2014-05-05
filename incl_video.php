@@ -11,7 +11,7 @@
 		$position_horizontal = get_sub_field('title_image_horizontal');
 		$position_vertical = get_sub_field('title_image_vertical');
 		$image_title = get_sub_field('title_image');
-		echo '<div class="page-content page-content-box start-page  vert-'.$position_vertical.'-title hor-'.$position_horizontal.'-title  "><h1 class="main-title">';
+		echo '<div class="  start-page  vert-'.$position_vertical.'-title hor-'.$position_horizontal.'-title  "><h1 class="main-title">';
 			echo $image_title;
 		echo '</h1></div>';
 		

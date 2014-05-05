@@ -29,7 +29,7 @@
 <?php
 	if(is_home()){
 		if ( !is_user_logged_in() ) {
-			include('incl_homepopup.php');
+			//include('incl_homepopup.php');
 		}
 	}
 ?>

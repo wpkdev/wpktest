@@ -157,13 +157,13 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 
 
-.start-page					{ position: absolute; background:none; padding:0; z-index:500; width:calc(100% - 220px);  padding:0; }
+.start-page					{ position: absolute; background:none; padding:0; z-index:500; width:100%;  padding:0; }
 .vert-top-title				{ top:100px; }
 .vert-bottom-title			{ bottom:90px; }
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
 .hor-right-title			{ text-align:right;   }
-.start-page	h1				{ font-family: bigcaslon; font-size:100px; text-align: center; line-height: 100px; text-shadow:1px 1px 5px #000000; margin:0 15%; font-weight: normal; padding:0 100px; }
+.start-page	h1				{ font-family: bigcaslon; font-size:100px; text-align: center; line-height: 100px; color:#FFF; text-shadow:1px 1px 5px #000000; margin:0 15%; font-weight: normal; padding:0 100px; }
 
 .content,
 .content label					{ color:#FFF !important; }
@@ -316,14 +316,9 @@ footer{height: 610px;}
 
 @media all and (max-width: 1024px){
 	#soj-logo-big		{ width:175px; }
-	.col-25				{ width:40%; }
-	.start-page	h1 		{ font-size:50px; line-height: 50px; }
-	.gallery_col ul.wpk-gallery li		{ width:calc(50% - 40px);  }
+
 }
 	
-	
-	
-}
 
 @media all and (max-width: 768px){
 	#soj-logo-big		{ width:150px; }
@@ -334,9 +329,7 @@ footer{height: 610px;}
 
 @media all and (max-width: 604px){
 	#soj-logo-big			{ width:100px; }
-	.page-content-box		{ width:calc(100% - 140px)!important; left:auto !important; padding-top:50px!important; background: rgba(0, 0, 0, 0.85)!important; padding-right:80px!important; padding-left:60px!important; margin:0 auto 0 auto!important; position: relative!important; top:100px; }
-	a.nav-prev				{ right:8px; }
-	.social-media-box		{ left:5px; }
+	
 }
 
 
