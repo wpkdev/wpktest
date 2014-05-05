@@ -29,7 +29,7 @@
 <?php
 	if(is_home()){
 		if ( !is_user_logged_in() ) {
-			include('incl_homepopup.php');
+			//include('incl_homepopup.php');
 		}
 	}
 ?>
@@ -209,7 +209,7 @@ var window_width = $(window).width();
 				
 				console.log('page height2: ' +page_height);
 				$('.page-'+counter).height(page_height);
-				$('page-content-box-'+counter).height(page_height);
+				//$(this).height(page_height);
 				$(this).show();
 				counter++;
 				
@@ -253,9 +253,7 @@ var window_width = $(window).width();
 	toggle_video();
 	
 </script>
-<?php
-if (is_user_logged_in()){ ?> 
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-<?php } ?>
+
 </body>
 </html>
