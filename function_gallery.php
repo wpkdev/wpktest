@@ -54,7 +54,7 @@
 	    		
 	    		
 	    		
-	    		$output .= '<li '.$class.'><a href="'.get_site_url().'/out?redirect='.$shop_url.' " class="js-gallery"><div class="btn btn">Shop it</div><img src="'.$src[0].'" width="'.$src[1].'" height="'.$src[2].'" class="js-no-lazy-loading" /><div class="gallery-description"><h3 class="product-title">'.$shop_title.'</h3><span class="product-price">&euro; '.$shop_price.'</span></div></a></li>';
+	    		$output .= '<li '.$class.'><a href="'.get_site_url().'/out?redirect='.$shop_url.' " class="js-gallery"><div class="btn btn">Shop it</div><img src="'.$src[0].'" width="'.$src[1].'" height="'.$src[2].'" class="js-no-lazy-loading" /><div class="gallery-description"><span class="product-title">'.$shop_title.'</span><span class="product-price">&euro; '.$shop_price.'</span></div></a></li>';
 	    		$counter++;
 			}
 			
