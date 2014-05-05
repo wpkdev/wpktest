@@ -19,7 +19,7 @@
 	
 	$sub_title = get_sub_field('subtitle');
 	if(strlen($sub_title)> 1){
-		echo '<div class="subtitle"><h3>'.$sub_title.'</h3></div>';
+		echo '<div class="subtitle" ><h3>'.$sub_title.'</h3></div>';
 	}
 	$page_title = get_sub_field('title');
 	if(strlen($page_title)> 1){
