@@ -254,6 +254,14 @@ var window_width = $(window).width();
 	}
 	toggle_video();
 	
+	
+	$(function(){
+		// Hide welcome popup
+		$('.btn-close-welcome-popup').on('click', function(){
+			$('.welcomepopup-box').hide();
+		});
+	});
+	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
