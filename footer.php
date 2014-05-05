@@ -209,7 +209,7 @@ var window_width = $(window).width();
 				
 				console.log('page height2: ' +page_height);
 				$('.page-'+counter).height(page_height);
-				$('page-content-'+counter).height(page_height);
+				$('page-content-box-'+counter).height(page_height);
 				$(this).show();
 				counter++;
 				
