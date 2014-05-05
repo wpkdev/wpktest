@@ -17,7 +17,6 @@ $title = $post->post_title;
 $next_post = get_next_post();
 
 
-
 if(!$next_post){
 	wp_redirect('http://www.shotofjoy.nl/');
 	exit;
