@@ -85,9 +85,9 @@ endwhile;
 	
 	echo '<div class="page-element page-element-footer page-'.$counter.'"  data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'"><div class="page-content-box">
 	
-		<div class="footer-content text-wrapper">
+	<div class="footer-content text-wrapper">
 		<div class="subtitle">Share the Joy</div>
-		
+			
 		<div class="social-links">
 			<a href="#facebook" class="btn btn-small btn-facebook" target="_blank"><span class="icon-facebook"></span>Facebook</a>
 			<a href="#twitter" class="btn btn-small btn-twitter" target="_blank"><span class="icon-twitter"></span>Twitter</a>
