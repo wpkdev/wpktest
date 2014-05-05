@@ -47,5 +47,5 @@
 
 <nav></nav>
 
-<img src="<?php echo $template_directory; ?>/img/SOJ-logo.png" id="soj-logo-big"/>
+<a href="http://www.shotofjoy.nl"><img src="<?php echo $template_directory; ?>/img/SOJ-logo.png" id="soj-logo-big"/></a>
 
