@@ -180,8 +180,8 @@ blockquote					{  font-family: bigcaslon; text-align: center; font-weight: norma
 /******************************
 ***** PAGE QUOTE
 *******************************/
-.page-quote					{ position: relative !important;}
-
+.page-quote					{ }
+.page-quote .start-page		{ position: relative !important}
 
 /******************************
 ***** SHOP GALLERY
