@@ -167,8 +167,10 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 .content,
 .content label					{ color:#FFF !important; }
-.page-content h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 40px 0; font-family: bigcaslon; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
+.page-content h2,
+.page-content2 h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 40px 0; font-family: bigcaslon; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
 .subtitle						{ text-align: center; clear: both; } 
+.page-content2 h3,
 .page-content h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:18px; line-height: 18px; text-transform: uppercase }
 .page-element 					{-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
 
