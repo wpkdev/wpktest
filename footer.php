@@ -26,6 +26,17 @@
 <?php wp_footer(); global $template_directory; ?>
 
 
+<?php
+	if(is_home()){
+		if ( !is_user_logged_in() ) {
+			include('incl_homepopup.php');
+		}
+	}
+?>
+
+
+
+
 <script>
   
   /*************************************************************

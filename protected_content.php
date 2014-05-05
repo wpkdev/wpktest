@@ -7,15 +7,26 @@
 
 
 
-get_header(); 
+
 
 
 $post_id =  url_to_postid($_GET["redirect_to"]); 
+global $post;
+$post = get_post($post_id); 
+$title = $post->post_title;
+$next_post = get_next_post();
 
-$post_7 = get_post($post_id); 
-$title = $post_7->post_title;
 
-echo $title;
+
+if(!$next_post){
+	wp_redirect('http://www.shotofjoy.nl/');
+	exit;
+}
+
+get_header(); 
+
+
+
 
 while ( have_posts() ) : the_post();
 	
