@@ -207,9 +207,9 @@ var window_width = $(window).width();
 					page_height = screen_height;
 				}
 				
-				console.log('page height2: ' +page_height + ' - ' + counter);
+				console.log('page height2: ' +page_height);
 				$('.page-'+counter).height(page_height);
-				//$(this).height(page_height);
+				$('page-content-'+counter).height(page_height);
 				$(this).show();
 				counter++;
 				

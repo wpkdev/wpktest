@@ -13,7 +13,7 @@
 	$color_scheme = 'page-content-'.get_sub_field('colorscheme');
 	
 	
-	echo '<div class="page-content page-content-box vert-'.$position_vertical.' hor-'.$position_horizontal.'  '.$color_scheme.' "><div class="text-wrapper">';
+	echo '<div class="page-content page-content-box page-content-'.$counter.'" vert-'.$position_vertical.' hor-'.$position_horizontal.'  '.$color_scheme.' "><div class="text-wrapper">';
 	
 	
 	
