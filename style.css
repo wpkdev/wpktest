@@ -321,7 +321,7 @@ footer{height: 610px;}
 .btn-facebook{ background: #3f569a;}
 .btn-twitter{background: #44abf0;}
 .btn-pinterest{background: #ca2128;}
-.btn-email,
+.btn-email					{ background: #f97396; color: #fff;}
 .btn-soj					{ background: #f97396; color: #000 !important;}
 .btn span{position:relative; left: -15px; top:3px; display: inline-block; }
 .btn span:hover{color: #fff !important;}
