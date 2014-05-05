@@ -8,7 +8,7 @@
 	
 	$quote = get_sub_field('quote');
 	
-	echo '<div class="page-element page-'.$counter.'" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
+	echo '<div class="page-element page-quote page-'.$counter.'" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
 	
 		$position_horizontal = get_sub_field('title_image_horizontal');
 		$position_vertical = get_sub_field('title_image_vertical');

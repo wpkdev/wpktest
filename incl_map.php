@@ -14,11 +14,19 @@
 	
 	echo '<div class="page-content2">';
 	
+	// Get the (Sub)title
+	$sub_title = get_sub_field('subtitle');
+	if(strlen($sub_title)> 1){
+		echo '<div class="subtitle"><h3>'.$sub_title.'</h3></div>';
+	}
+	$page_title = get_sub_field('title');
+	if(strlen($page_title)> 1){
+		echo '<h2>'.$page_title.'</h2>';
+	}
 	
-	//echo get_sub_field('map');
-	
-	print_r(get_sub_field('content'));
-	
+	// Get page content / Map shortcode
+	$page_content = get_sub_field('content');
+	echo do_shortcode($page_content);
 	
 	
 	echo '</div>';
