@@ -149,7 +149,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 ***** PAGE CONTENT
 *******************************/
 
-
+.page-content-box		{  display: none; }
 .page-content			{ background:#000; color:#FFF; padding:50px;    line-height: 26px; font-weight: 100; display: none; margin:0; }
 .page-content-light		{ background:#FFF; color:#000; }  
 

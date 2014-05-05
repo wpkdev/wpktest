@@ -12,7 +12,7 @@
 	
 	echo '<div class="page-wrapper">';
 	
-	echo '<div class="page-content2 page-content-light">';
+	echo '<div class="page-content2 page-content-box page-content-light">';
 	
 	// Get the (Sub)title
 	$sub_title = get_sub_field('subtitle');
