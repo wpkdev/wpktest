@@ -162,15 +162,17 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-fullscreen .text-wrapper		{  margin:0 auto; position: relative; top:0px; width: 50%;  max-width:600px; }
 
 
-
+.extra-img					{ position: absolute;  height: auto; width: calc( 100% - 200px); padding:0 100px; }
+.extra-img img				{ width:40%; }
 
 .start-page					{ position: absolute; background:none; padding:0; z-index:500; width:100%;  padding:0; }
 .vert-top-title				{ top:100px; }
+.vert-center-title			{ top:30%; }
 .vert-bottom-title			{ bottom:90px; }
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
 .hor-right-title			{ text-align:right;   }
-.start-page	h1				{ font-family: bigcaslon; font-size:100px; text-align: center; line-height: 100px; color:#FFF; text-shadow:1px 1px 5px #000000; margin:0 15%; font-weight: normal; padding:0 100px; }
+.start-page	h1				{ font-family: bigcaslon; font-size:75px; text-align: center; line-height: 75px; color:#FFF; text-shadow:1px 1px 5px #000000; margin:0 100px; font-weight: normal; padding:0; }
 
 .content,
 .content label					{ color:#FFF !important; }
@@ -180,10 +182,13 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content2 h3,
 .page-content h3,
 .page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:18px; line-height: 18px; text-transform: uppercase }
-.page-element 					{-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
+.page-element 					{  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
 
 .page-content-light	h2			{ border-bottom:1px solid #000; }
 .page-content-light	h3			{ border-bottom:1px solid #000; }
+
+.page-content .subtitle_quote h3				{ border:none; display: inline-block;  padding:0 0 10px 0; margin:30px 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:28px; line-height: 32px; text-transform: uppercase; }
+
 
 
 blockquote					{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:40px; line-height: 35px;  }
@@ -300,7 +305,7 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 /**************************************************************
 *** FOOTER
 ***************************************************************/
-.page-element-footer		{ height:800px; background:#000; margin:0 0 0 0; }
+.page-element-footer		{ height:800px; background:#000; margin:0 0 0 0; clear: both; }
 
 
 .scroll-indicator-box		{ position: fixed; bottom:0; left:0; height: 50px;  z-index:50; text-align: center; width: 100%; }
@@ -341,6 +346,33 @@ footer{height: 610px;}
 
 .btn-subscribe{background: #f97396; color: #000; }
 
+
+
+/**************************************************************
+*** USER PAGES
+***************************************************************/
+.content-page-users				{ max-width:500px; width:100%; margin:120px auto; }
+.content-page-users	h2			{ font-family: bigcaslon; font-size:50px; text-align:center; font-weight: normal; margin-bottom: 60px; }
+.content-page-users	p			{ text-align: center; padding-bottom: 20px; }
+.content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
+.content-page-users	input		{ width:calc( 100% - 30px ); padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none;  }
+
+.content-page-users p.forgetmenot 		{ text-align: left; }
+.content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
+.content-page-users p.forgetmenot input	{ width:20px; }
+#wp-submit,
+.form-membership .button				{ border-radius: 40px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 33px; width: 277px; height: 76px; line-height: 76px; background: #f97396; color: #000 !important; padding:0; }
+.form-membership legend					{ display:none; }
+fieldset								{ border:none; padding:0; margin:0; }
+.form-element							{ padding-bottom:15px; }
+.form-element p.help-block				{ margin:20px 0 0 0; padding:20px 0 0 0; border-top:1px solid #FFF; }
+
+a#login_right							{ text-align: center; display: block; width:100%; color:#FFF; }
+
+
+ul.tml-action-links 					{ list-style: none; margin:0; padding:0; }
+ul.tml-action-links li					{ width:100%; text-align: center; }
+ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 
 
 /**************************************************************

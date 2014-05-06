@@ -1,7 +1,7 @@
 </div>
 
 
-
+<?php if(!is_page()){ ?>
 <div class="scroll-indicator-box">
 	<div class="scroll-indicator">
 		scroll
@@ -9,7 +9,6 @@
 	</div>
 </div>
 <?php global $post_url;global $post_title; ?>
-
 <div class="social-media-box">
 	<ul>
 		<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($post_url); ?>" class="icon-facebook js-social-popup">&nbsp;</a></li>
@@ -18,7 +17,7 @@
 		<li><a href="" class="icon-mail">&nbsp;</a></li>
 	</ul>
 </div>
-
+<?php } ?>
 
 <footer></footer>
 

@@ -15,10 +15,13 @@
 		$image_title = get_sub_field('title_image');
 		echo '<div class="page-content page-content-box start-page  vert-'.$position_vertical.'-title hor-'.$position_horizontal.'-title  "><h1 class="main-title">';
 			echo $quote;
-		echo '</h1></div>';
+		echo '</h1>';
 		
-		
-		
+		$sub_title = get_sub_field('subtitle');
+		if(strlen($sub_title)> 1){
+			echo '<div class="subtitle_quote" ><h3>'.$sub_title.'</h3></div>';
+		}
+		echo '</div>';
 		
 		echo '<div class="content-large-image">';
 

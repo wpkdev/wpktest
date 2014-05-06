@@ -2,6 +2,11 @@
 	$position_horizontal = get_sub_field('position_text_horizontal');
 	$position_vertical = 'top';
 	$image = get_sub_field('background_image');
+	
+	$extra_image = get_sub_field('extra_image');
+	$position_horizontal_extra = get_sub_field('title_image_horizontal');
+	$position_vertical_extra = get_sub_field('title_image_vertical');
+	
 	$src = aq_resize( $image['url'], 1200, 100000000, true, false ); //resize & crop img
 	$src_1024 = aq_resize( $image['url'], 850, 638, true, false ); //resize & crop img
 	$src_768 = aq_resize( $image['url'], 600, 450, true, false ); //resize & crop img
@@ -25,9 +30,21 @@
 	if(strlen($page_title)> 1){
 		echo '<h2>'.$page_title.'</h2>';
 	}
+	
+	
+	
+	
 	echo get_sub_field('content');
 	echo '</div>';
 	echo '</div>';
+	
+	
+	if(strlen($extra_image['url'])> 1){
+		echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'" class=" "></div>';
+	}
+	
+	
+	
 	echo '</div>';
 
 ?>
