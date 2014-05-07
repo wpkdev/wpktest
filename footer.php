@@ -139,12 +139,25 @@ var window_width = $(window).width();
 ********************************************/   
  	function active_nav(){
 		var counter = 1;
+		var activeelement = 1;
+		var activeelementold = 1;
 		$('.page-element').each(function(index, item) {
 			if($(".page-"+counter).position().top  < ($(window).scrollTop())+100 ){
 				 $(".go_to_page").removeClass('nav-act');
 				 $(".go_to_page:nth-child("+counter+")").addClass('nav-act');
+				 
+				 
+				 activeelementold = activeelement;
+				 activeelement = counter;
+				 				 
+				 
+				 
 			 }
 			counter++;
+			
+			
+			
+			
 		});
 	}
 	
@@ -263,6 +276,7 @@ var window_width = $(window).width();
 	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
 
 </body>
 </html>

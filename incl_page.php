@@ -7,12 +7,16 @@
 	$position_horizontal_extra = get_sub_field('title_image_horizontal');
 	$position_vertical_extra = get_sub_field('title_image_vertical');
 	
+	
+	
+	
 	$src = aq_resize( $image['url'], 1200, 100000000, true, false ); //resize & crop img
 	$src_1024 = aq_resize( $image['url'], 850, 638, true, false ); //resize & crop img
 	$src_768 = aq_resize( $image['url'], 600, 450, true, false ); //resize & crop img
 	$src_480 = aq_resize( $image['url'], 375, 281, true, false ); //resize & crop img
-	echo '<div class="page-element page-'.$counter.'" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
 	
+	echo '<div class="page-element page-'.$counter.' " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
+	//echo '<img src="'.$src[0].'" class=" page-bg-'.$counter.' bg stickem"   />';
 	
 	
 	$color_scheme = 'page-content-'.get_sub_field('colorscheme');
