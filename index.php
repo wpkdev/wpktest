@@ -26,6 +26,8 @@ while ( have_posts() ) : the_post();
 
 //include('incl_page.php');	
 
+
+
 $prev_post = get_previous_post();
 		if (!empty( $prev_post )): 
 			echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="nav-posts nav-prev icon-arrow-right">&nbsp;</a>';
