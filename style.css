@@ -18,6 +18,18 @@ FONTS
 @font-face {font-family: 'bigcaslon';src: url('fonts/bigcaslon.eot?') format('eot'),url('fonts/bigcaslon.woff') format('woff'), url('fonts/bigcaslon.ttf') format('truetype'),url('fonts/bigcaslon.svg#webfont42ha8COO') format('svg');font-weight: normal;font-style: normal;}
 
 @font-face {
+    font-family: 'novecento_widebook';
+    src: url('fonts/novecentowide-book-webfont.eot');
+    src: url('fonts/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/novecentowide-book-webfont.woff') format('woff'),
+         url('fonts/novecentowide-book-webfont.ttf') format('truetype'),
+         url('fonts/novecentowide-book-webfont.svg#novecento_widebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?-af1wmt');
 	src:url('fonts/icomoon.eot?#iefix-af1wmt') format('embedded-opentype'),
@@ -87,7 +99,7 @@ FONTS
 /**********
 MAIN SETTINGS
 ***********/
-body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: ProxySemiBold; -webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
+body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
 #wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
 
 .page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1;  }
@@ -175,16 +187,19 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
 .hor-right-title			{ text-align:right;   }
-.start-page	h1				{ font-family: bigcaslon; font-size:75px; text-align: center; line-height: 75px; color:#FFF; text-shadow:1px 1px 5px #000000; margin:0 100px; font-weight: normal; padding:0; }
+
+
+.start-page	h1				{ font-family: bigcaslon; font-size:90px; text-align: center; line-height: 72px; color:#FFF; text-shadow:1px 1px 5px #000000; margin:0 100px; font-weight: normal; padding:0; }
 
 .content,
 .content label					{ color:#FFF !important; }
 .page-content h2,
-.page-content2 h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 40px 0; font-family: bigcaslon; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
+.page-content2 h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 30px 0; font-family: novecento_widebook, sans-serif; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
 .subtitle						{ text-align: center; clear: both; } 
 .page-content2 h3,
 .page-content h3,
-.page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:18px; line-height: 18px; text-transform: uppercase }
+.page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:24px; line-height: 1; text-transform: uppercase }
+.page-content p					{ font-size: 19px; line-height: 32px;}
 .page-element 					{  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
 
 .page-content-light	h2			{ border-bottom:1px solid #000; }
@@ -194,7 +209,8 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 
 
-blockquote					{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:40px; line-height: 35px;  }
+.page-content blockquote, 
+.page-content blockquote p		{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:54px; line-height: 45px;  }
 
 .page-wrapper				{ padding:100px; } 
 
@@ -324,8 +340,8 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 
 footer{height: 610px;}
 .footer-content{color: #fff; text-align: center; padding: 30px; width: 100%;}
-.footer-content  h1{color: #fff; font-family: 'Times New Roman', serif; font-size: 2.2em; font-weight: 100; margin-bottom: 45px;}
-.footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 40px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 18px;line-height: 18px;text-transform: uppercase;}
+.footer-content  h1{color: #fff; font-family: bigcaslon, serif; font-size: 36px; font-weight: 100; margin-bottom: 45px;}
+.footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 40px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 24px;line-height: 24px;text-transform: uppercase;}
 .footer-content p{font-family: 'Pathway Gothic One', 'sans-serif'; font-size: 22px; text-transform: uppercase;}
 
 
