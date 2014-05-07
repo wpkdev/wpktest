@@ -7,7 +7,7 @@
 	echo '<img src="" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'" class=" page-bg-'.$counter.' bg "   />';
 	
 	$quote = get_sub_field('quote');
-	//echo '<img src="'.$src[0].'" class=" page-bg-'.$counter.' bg"   />';
+	echo '<img src="'.$src[0].'" class=" page-bg-'.$counter.' bg"   />';
 	
 	
 	

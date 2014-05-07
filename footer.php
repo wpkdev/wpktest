@@ -117,7 +117,7 @@ var window_width = $(window).width();
 /*******************************************
 *** LOAD BACKGROUND FOR DIFFERENT VIEWPORTS
 ********************************************/    
-	var counter = 1;
+	/*var counter = 1;
 	$('.page-element').each(function(index, item) {
 	  	if(window_width > 1024){
 			res_img = $(this).attr('data-src');
@@ -132,7 +132,7 @@ var window_width = $(window).width();
 		$(this).css('background-image', 'url('+res_img+')');
 		
 	  	counter++;
-	});
+	});*/
   
 /*******************************************
 *** SHOW THE RIGHT NAVIGATION INDICATOR
@@ -276,7 +276,12 @@ var window_width = $(window).width();
 	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-
+<script async  src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
+<script>
+  $(document).ready(function(){
+     $(".page-content").fitVids();
+  });
+</script>
 
 </body>
 </html>
