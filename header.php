@@ -18,8 +18,6 @@
 		global $template_directory; $template_directory  = get_bloginfo('template_directory');
 		$home_directory = get_site_url();
 	 ?>
-
-	
        
 	<title>Shot of Joy</title>
 	
@@ -52,14 +50,14 @@ $logo_color = get_field('logo_color', $post_id);
 if (!empty($logo_color) ){
 
 	if ($logo_color == 'Black'){
-		$logo_img = 'SOJ-logo-zw';
+		$logo_img = 'SOJ-logo-zwart';
 	} else {
-		$logo_img = 'SOJ-logo';
+		$logo_img = 'SOJ-logo-wit';
 	}
 	
 } else {
-	$logo_img = 'SOJ-logo';
+	$logo_img = 'SOJ-logo-wit';
 }
 ?>
-<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.png" id="soj-logo-big"/></a>
+<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg" id="soj-logo-big"/></a>
 <?php } ?>
