@@ -149,8 +149,6 @@ nav a.nav-act				{ background: rgba(0, 0, 0, 0.4); width: 12px; height:12px; pad
 nav a.nav-act span			{ width:12px; height:12px; background:#FFF;  -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; display: block;  }
 	
 
-
-
 a.nav-posts					{ display: block;  text-decoration: none; z-index:300; color:#fff; background: rgba(0, 0, 0, 0.3); text-align: center; position: fixed; line-height: 36px; width: 36px; height:36px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; }
 a.nav-prev					{ top:15px; right:15px; }
 a.nav-next					{ top:66px; right:15px; }
@@ -160,7 +158,6 @@ a.nav-next					{ top:66px; right:15px; }
 *******************************/
 div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100% - 60px); top:60px; left: 0;  z-index:3; border-right:1px solid #4d4d4d; }
 
-
 /******************************
 ***** PAGE CONTENT
 *******************************/
@@ -168,10 +165,10 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content-box		{  display: none; }
 .page-content			{ background:#000; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; }
 .page-content-light		{ background:#FFF; color:#000; }  
-
+.page-content-light .main-title	{ color: #000;	}
 .page-content-dark		{ color: #ff}
 
-
+.page-quote h1			{ font-size: 123px !important; line-height: 127px !important;}
 .hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:600px;  }
 .hor-center							{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px); max-width:600px;}
 .hor-right							{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; max-width:600px; }
