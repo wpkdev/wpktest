@@ -242,7 +242,7 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 */
 .page-gallery						{ height: 100%; padding:0; }
 
-.extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#fff; color:#000; margin-left:0; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
+.extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
 .gallery_col						{ width:55%; float: right; }
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:calc(33.3333% - 40px);  margin:0 0 20px 20px;  }
