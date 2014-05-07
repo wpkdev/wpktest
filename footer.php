@@ -274,12 +274,43 @@ var window_width = $(window).width();
 		});
 	});
 	
+	
+	
+	$(window).load(function() {    
+ 
+ 	var theWindow        = $(window),
+ 	    $bg              = $(".bg"),
+ 	    aspectRatio      = $bg.width() / $bg.height();
+ 	    			    		
+ 	function resizeBg() {
+ 		
+ 		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+ 		    $bg
+ 		    	.removeClass('bgheight')
+ 		    	.removeClass('bgwidth')
+ 		    	.addClass('bgheight');
+ 		} else {
+ 		    $bg
+ 		    	.removeClass('bgheight')
+ 		    	.removeClass('bgwidth')
+ 		    	.addClass('bgwidth');
+ 		}
+ 					
+ 	}
+ 	                   			
+ 	theWindow.resize(resizeBg).trigger("resize");
+ 
+ });
+	
+	
+	
+	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-<script async  src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
+<script async  src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.js"></script>
 <script>
   $(document).ready(function(){
-     $(".page-content").fitVids();
+     $(".text-wrapper").fitVids();
   });
 </script>
 
