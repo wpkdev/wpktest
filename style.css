@@ -206,7 +206,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content-light	h2			{ border-bottom:1px solid #000; }
 .page-content-light	h3			{ border-bottom:1px solid #000; }
 
-.page-content .subtitle_quote h3				{ border:none; display: inline-block;  padding:0 0 10px 0; margin:30px 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:28px; line-height: 32px; text-transform: uppercase; }
+.page-content .subtitle_quote h3				{ border:none; display: inline-block;  padding:0 0 10px 0; margin:30px 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:30px; line-height: 32px; text-transform: uppercase; }
 
 
 
@@ -242,18 +242,18 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 
 
 */
-.page-gallery				{ padding:40px 20px; }
+.page-gallery						{ height: 100%; padding:0; }
 
-.extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#000; color:#FFF; margin-left:90px; padding:50px; line-height: 26px; }
+.extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#fff; color:#000; margin-left:0; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
 .gallery_col						{ width:55%; float: right; }
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:calc(33.3333% - 40px);  margin:0 0 20px 20px;  }
 
-.text-pos-right .extra_content_col		{ float: right;  margin-left:20px;  margin-right:90px; }
+.text-pos-right .extra_content_col		{ float: right;  margin-left:20px;  margin-right:0; }
 .text-pos-right .gallery_col			{ float: left; width: calc( 62% - 40px ); }
 
-.extra_content_col h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 40px 0; font-family: bigcaslon; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
-
+.extra_content_col h2				{ border-bottom:1px solid #000; padding:0 0 36px 0; margin:0 0 40px 0; font-family: novecento_widebook, sans-serif; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
+.extra_content_col h3				{ border-bottom: 1px solid #000; }
 
 .product-title				{ font-family: bigcaslon; font-size: 18px; margin-bottom: 0.5em; display: block;}
 .product-price				{ font-size: 15px;}
@@ -307,7 +307,7 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 *** GOOGLE MAPS
 ***************************************************************/
 
-.mapp-iw *					{ color:#fff !important; font-size:13px; margin:0 !important; padding:0 !important;}
+.mapp-iw *					{ color:#fff !important; font-size:14px; margin:0 !important; padding:0 !important;}
 .mapp-iw					{ min-width: 250px;}
 .mapp-iw,.mapp-iw *			{ text-align:left !important;}
 .mapp-iw h3					{ font-family: 'Pathway Gothic One', 'sans-serif' !important; font-size: 20px !important; font-weight:normal;margin-bottom: 15px; text-transform: uppercase; }
