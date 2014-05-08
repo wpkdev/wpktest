@@ -164,9 +164,15 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 .page-content-box		{  display: none; }
 .page-content			{ background:#000; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; }
-.page-content-light		{ background:#FFF; color:#000; }  
-.page-content-light .main-title	{ color: #000;	}
-.page-content-dark		{ color: #ff}
+
+/* Page Content Light = Witte tekstkleur tegen een zwarte achtergrond */
+.page-content-light		{ background:#000; color:#fff; }  
+.page-content-light .main-title	{ color: #fff;	}
+
+
+/* Page Content Dark - Zwarte tekstkleur tegen een witte achtergrond */
+.page-content-dark		{ background: #fff; color: #000}
+.page-content-dark h1	{ color: #000 !important;}
 
 .page-quote h1			{ font-size: 123px !important; line-height: 127px !important;}
 .hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:600px;  }
@@ -181,14 +187,15 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 .start-page					{ position: absolute; background:none; padding:0; z-index:500; width:100%;  padding:0; }
 .vert-top-title				{ top:100px; }
-.vert-center-title			{ top:30%; }
+
+.vert-center-title {position: relative;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
 .vert-bottom-title			{ bottom:90px; }
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
 .hor-right-title			{ text-align:right;   }
 
 
-.start-page	h1				{ font-family: bigcaslon; font-size:90px; text-align: center; line-height: 72px; color:#FFF; text-shadow:1px 1px 5px #000000; margin:0 100px; font-weight: normal; padding:0; }
+.start-page	h1				{ font-family: bigcaslon; font-size:90px; text-align: center; line-height: 72px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; }
 
 .content,
 .content label					{ color:#FFF !important; }
@@ -199,10 +206,11 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content h3,
 .page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:24px; line-height: 1; text-transform: uppercase }
 .page-content p					{ font-size: 19px; line-height: 32px;}
+.page-content a					{ color: #F97396;}
 .page-element 					{  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
 
-.page-content-light	h2			{ border-bottom:1px solid #000; }
-.page-content-light	h3			{ border-bottom:1px solid #000; }
+.page-content-light	h2			{ border-bottom:1px solid #fff; }
+.page-content-light	h3			{ border-bottom:1px solid #fff; }
 
 .page-content .subtitle_quote h3				{ border:none; display: inline-block;  padding:0 0 10px 0; margin:30px 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:30px; line-height: 32px; text-transform: uppercase; }
 
@@ -210,8 +218,9 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 .page-content blockquote, 
 .page-content blockquote p		{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:54px; line-height: 45px;  }
-
-.page-wrapper				{ padding:100px; } 
+.page-content ol,
+.page-content ul				{ font-size: 19px;}
+.page-wrapper					{ padding:100px; } 
 
 
 /* Image alignment */

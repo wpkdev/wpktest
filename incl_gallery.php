@@ -12,7 +12,7 @@
 	
 	
 	
-	echo '<div class="page-gallery page-content-box ">';
+	echo '<div class="page-gallery page-content-box">';
 	
 	$page_title = get_sub_field('title');
 	$sub_title = get_sub_field('subtitle');
@@ -63,13 +63,6 @@
 		
 		echo get_sub_field('shop_gallery');
 	}
-	
-	
-	
-	
-	
-
-	
 	
 
 	
