@@ -256,7 +256,7 @@ ul.wpk-gallery li img		{ margin-top: 27px; max-width: 80%; height: auto; }
 .extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
 .gallery_col						{ width:64%; float: right; }
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
-.gallery_col ul.wpk-gallery li		{ float:left; width:calc(33.3333% - 40px);  margin:0 0 10px 10px;  }
+.gallery_col ul.wpk-gallery li		{ float:left; width:calc(33.3333% - 40px);  margin:0 0 10px 10px; position: relative; }
 
 .text-pos-right .extra_content_col		{ float: right;  margin-left:20px;  margin-right:0; }
 
@@ -268,8 +268,10 @@ ul.wpk-gallery li img		{ margin-top: 27px; max-width: 80%; height: auto; }
 .extra_content_col h3				{ border-bottom: 1px solid #000; }
 
 .product-title				{ font-family: bigcaslon; font-size: 18px; margin-bottom: 0.5em; display: block;}
-.product-price				{ font-size: 15px;}
+.product-price				{ font-family: arial, sans-serif;font-size: 15px;}
 .gallery-description		{ padding-top: 10px;}
+
+.btn-shop-it				{ position: absolute; z-index: 1000; display: none;}
 
 /******************************
 ***** PAGE REDIRECT
@@ -277,19 +279,12 @@ ul.wpk-gallery li img		{ margin-top: 27px; max-width: 80%; height: auto; }
 
 .page-redirect					{ text-align: center; height: 100%;}
 .page-redirect #soj-logo-big	{ position: relative; margin: 0 auto; top: 0; right: auto;}
-.page-redirect h1				{ font-family: 'Times New Roman', serif; font-size: 2.5em; font-weight: 100;}
-
+.page-redirect h1				{ font-family: 'Bigcaslon', serif; font-size: 2.5em; font-weight: 100;}
 .page-redirect p				{ font-family: 'Pathway Gothic One', sans-serif; font-size: 1.5em; text-transform: uppercase;}
 .page-redirect a				{ color: #F97396; text-decoration: none;}
 .page-redirect a:hover			{ text-decoration: underline;}
 
-.center {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+.center {position: relative;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
 
 
 /**************************************************************
@@ -306,6 +301,9 @@ ul.wpk-gallery li img		{ margin-top: 27px; max-width: 80%; height: auto; }
 .responsive-container			{ width:100%; height:100%; text-align: center; }
 .video-background				{ background: url(img/transparant-bg.png); }
 .responsive-container iframe	{ max-width: 1200px; width:calc( 100% - 120px )  }
+
+.close-video				{ width: 150px; height: 40px; line-height: 40px; position: absolute; right: 20px; top: 20px; z-index: 1000; display: none;}
+.btn-close-video			{ color: #fff; text-decoration: none;}
 
 /**************************************************************
 *** PAGE
@@ -337,7 +335,7 @@ ul.wpk-gallery li img		{ margin-top: 27px; max-width: 80%; height: auto; }
 /**************************************************************
 *** FOOTER
 ***************************************************************/
-.page-element-footer		{ height:800px; background:#000; margin:0 0 0 0; clear: both; }
+.page-element-footer		{ height:800px; background:#000; margin:0 0 0 0; clear: both; overflow: hidden;}
 
 
 .scroll-indicator-box		{ position: fixed; bottom:0; left:0; height: 50px;  z-index:50; text-align: center; width: 100%; }
