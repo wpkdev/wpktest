@@ -161,7 +161,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 /******************************
 ***** PAGE CONTENT
 *******************************/
-
+.main-title				{ border: none;}
 .page-content-box		{  display: none; }
 .page-content			{ background:#000; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; }
 
@@ -172,8 +172,9 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 /* Page Content Dark - Zwarte tekstkleur tegen een witte achtergrond */
 .page-content-dark		{ background: #fff; color: #000}
-.page-content-dark h1	{ color: #000 !important;}
-
+.page-content-dark .main-title{border: 0 !important;}
+.page-content-dark h1	{ border-bottom: 1px solid #000; color: #000 !important;}
+.page-content-dark h3	{ border-bottom: 1px solid #000 !important;}
 .page-quote h1			{ font-size: 123px !important; line-height: 127px !important;}
 .hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:600px;  }
 .hor-center							{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px); max-width:600px;}
@@ -252,7 +253,7 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 .page-gallery						{ height: 100%; padding:0; }
 
 .extra_content_col					{ width:calc( 45% - 190px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
-.gallery_col						{ width:55%; float: right; }
+.gallery_col						{ width:67%; float: right; }
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:calc(33.3333% - 40px);  margin:0 0 20px 20px;  }
 
@@ -260,7 +261,7 @@ ul.wpk-gallery li img		{ width:100%; height: auto; }
 
 .text-pos-right .extra_content_col .subtitle,			
 .text-pos-right .extra_content_col h2	{ text-align: left;}
-.text-pos-right .gallery_col		{ float: left; width: calc( 62% - 40px ); }
+.text-pos-right .gallery_col		{ float: left; width: calc( 70% - 40px ); }
 
 .extra_content_col h2				{ border-bottom:1px solid #000; padding:0 0 36px 0; margin:0 0 40px 0; font-family: novecento_widebook, sans-serif; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
 .extra_content_col h3				{ border-bottom: 1px solid #000; }
