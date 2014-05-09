@@ -11,7 +11,7 @@
 	
 	echo '<div class="page-element page-'.$counter.' " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
 	//echo '<img src="'.$src[0].'" class=" page-bg-'.$counter.' bg stickem"   />';
-	echo '<img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg bg-page" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  />';
+	echo '<img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  />';
 	
 	
 		$position_horizontal = get_sub_field('title_image_horizontal');

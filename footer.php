@@ -118,7 +118,7 @@ var window_width = $(window).width();
 *** LOAD BACKGROUND FOR DIFFERENT VIEWPORTS
 ********************************************/    
 	var counter = 1;
-	$('.bg-page').each(function(index, item) {
+	$('.bg').each(function(index, item) {
 	  	if(window_width > 1024){
 			res_img = $(this).attr('data-src');
 		}else if(window_width < 481){
@@ -219,11 +219,13 @@ var window_width = $(window).width();
 				
 				if(page_height < screen_height){
 					page_height = screen_height;
+					$('.page-'+counter).height(page_height);
+					$('.page-box-'+counter).height(page_height);
 				}
 				
 				console.log('page height2: ' +page_height);
-				$('.page-'+counter).height(page_height);
-				$('.page-box-'+counter).height(page_height);
+				//$('.page-'+counter).height(page_height);
+				//$('.page-box-'+counter).height(page_height);
 				
 				//$(this).height(page_height);
 				$(this).show();
@@ -309,10 +311,10 @@ var window_width = $(window).width();
 	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-<script async  src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
 <script>
   $(document).ready(function(){
-     $(".text-wrapper").fitVids();
+     //$(".text-wrapper").fitVids();
   });
 </script>
 

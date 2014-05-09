@@ -5,12 +5,13 @@
 	$src_768 = aq_resize( $image['url'], 786, 450, true, false ); //resize & crop img
 	$src_480 = aq_resize( $image['url'], 480, 281, true, false ); //resize & crop img
 	
-	echo '<img src="" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'" class=" page-bg-'.$counter.' bg "   />';
+	
+		
 	
 	$quote = get_sub_field('quote');
 	$color_scheme = get_sub_field('colorscheme');
 	
-	echo '<div class="page-element page-'.$counter.'" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
+	echo '<div class="page-element page-'.$counter.'">';
 	//echo '<img src="'.get_bloginfo('template_directory').'/img/black.gif" class=" page-bg-'.$counter.' bg stickem"   />';
 		$position_horizontal = get_sub_field('title_image_horizontal');
 		$position_vertical = get_sub_field('title_image_vertical');
@@ -25,6 +26,7 @@
 		}
 		echo '</div>';
 		
-		echo '<div class="content-large-image"><img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  /></div>';
-		
+		if($src[0]){
+			echo '<div class="content-large-image"><img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  /></div>';
+		}
 		echo '</div>';
