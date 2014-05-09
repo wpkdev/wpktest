@@ -47,7 +47,9 @@
 		echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'" class=" "></div>';
 	}
 	
-	echo '<img src="'.$src[0].'" class=" page-bg-'.$counter.' bg bg-page"   />';
+
+	
+	echo '<img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg bg-page" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  />';
 	
 	echo '</div>';
 

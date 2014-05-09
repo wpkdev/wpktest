@@ -25,6 +25,6 @@
 		}
 		echo '</div>';
 		
-		echo '<div class="content-large-image"><img src="'.$src[0].'" class=" page-bg-'.$counter.' bg" /></div>';
+		echo '<div class="content-large-image"><img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  /></div>';
 		
 		echo '</div>';

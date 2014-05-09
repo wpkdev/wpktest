@@ -7,7 +7,7 @@
 	
 	
 	
-	echo '<div class="page-element page-'.$counter.'" data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'" style="background:#FFF;">';
+	echo '<div class="page-element page-'.$counter.'" style="background:#FFF;">';
 	
 	
 	

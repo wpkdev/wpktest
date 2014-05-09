@@ -117,8 +117,8 @@ var window_width = $(window).width();
 /*******************************************
 *** LOAD BACKGROUND FOR DIFFERENT VIEWPORTS
 ********************************************/    
-	/*var counter = 1;
-	$('.page-element').each(function(index, item) {
+	var counter = 1;
+	$('.bg-page').each(function(index, item) {
 	  	if(window_width > 1024){
 			res_img = $(this).attr('data-src');
 		}else if(window_width < 481){
@@ -129,10 +129,12 @@ var window_width = $(window).width();
 			res_img = $(this).attr('data-src-1024');
 		}
 		
-		$(this).css('background-image', 'url('+res_img+')');
+		$(this).attr('src', res_img);
+		
+		
 		
 	  	counter++;
-	});*/
+	});
   
 /*******************************************
 *** SHOW THE RIGHT NAVIGATION INDICATOR
