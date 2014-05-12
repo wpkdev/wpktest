@@ -84,30 +84,35 @@ break;
 endwhile;
 
 	$src = $template_directory.'/img/pixel.gif';
-	
+	global $post_url;global $post_title;
+	$post_url = get_permalink(); 
+	$post_title = get_the_title();
 	echo '<div class="page-element page-element-footer page-'.$counter.'"  data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'"><div class="page-content-box">
 	
 	<div class="footer-content text-wrapper">
 		<div class="subtitle">Share the Joy</div>
 			
 		<div class="social-links">
-			<a href="#facebook" class="btn btn-small btn-facebook" target="_blank"><span class="icon-facebook"></span>Facebook</a>
-			<a href="#twitter" class="btn btn-small btn-twitter" target="_blank"><span class="icon-twitter"></span>Twitter</a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($post_url).'" class="btn btn-small btn-facebook js-social-popup" target="_blank"><span class="icon-facebook"></span>Facebook</a>
+			<a href="https://twitter.com/intent/tweet?text='.$post_title.'&url='.urlencode($post_url).'&via=ShotofJoy&related=Shotofjoy" class="btn btn-small btn-twitter js-social-popup" target="_blank"><span class="icon-twitter"></span>Twitter</a>
 			<a href="#pinterest" class="btn btn-small btn-pinterest" target="_blank"><span class="icon-pinterest"></span>Pinterest</a>
+			
+			
 			<a href="mailto:info@shotofjoy.nl" class="btn btn-small btn-email" target="_blank"><span class="icon-mail"></span>Email</a>
+		
+		
+		
 		</div>
 		
 		<div class="subscribe-now">
 			<h1>Wordt nu abonnee en ontvang de eerste maand gratis</h1>
-			<a href="#" class="btn btn-large btn-subscribe">Abonneer</a>
+			<a href="http://www.shotofjoy.nl/register/" class="btn btn-large btn-subscribe">Abonneer</a>
 			<p>Dagelijks voor maar &euro; 2,99 per maand</p>
 		</div>
 	</div>
 	
 	</div></div>';
 	include('add_nav.php');
-	global $post_url;global $post_title;
-	$post_url = get_permalink(); 
-	$post_title = get_the_title();
+	
 
 get_footer(); ?>

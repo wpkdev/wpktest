@@ -16,12 +16,14 @@ $home_directory = get_site_url();
 
 
 
-
 while ( have_posts() ) : the_post();
 
 //include('incl_page.php');	
 
-$prev_post = get_previous_post();
+
+
+
+		$prev_post = get_previous_post();
 		if (!empty( $prev_post )): 
 			echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="nav-posts nav-prev icon-arrow-right">&nbsp;</a>';
 		endif; 
@@ -107,5 +109,5 @@ endwhile;
 	global $post_url;global $post_title;
 	$post_url = get_permalink(); 
 	$post_title = get_the_title();
-
-get_footer(); ?>
+	
+	get_footer(); ?>
