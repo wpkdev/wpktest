@@ -258,11 +258,15 @@ img.alignright{float: right; margin: 20px -85px 20px 20px;}
 ***** SHOP GALLERY
 *******************************/
 ul.wpk-gallery 				{ list-style: none; margin:80px 140px 80px 80px; padding:0; }
-ul.wpk-gallery li			{ color: #000; float:left; width:calc(25% - 40px); height: 280px; margin:0 20px 20px 20px; text-align: center; }
+ul.wpk-gallery li			{ color: #000; float:left; width:calc(25% - 40px); height: 280px; margin:0 20px 20px 20px; text-align: center;  }
 ul.wpk-gallery li a			{ color: #000; text-decoration: none;}
 ul.wpk-gallery li img		{ margin-top: 30px; max-width: 60%; height: auto; }
 
+ul.wpk-gallery li .img-gallery-box	{ position: relative; padding:0; margin:0; }
 
+ul.wpk-gallery li .gallery-btn					{ display: none; }	
+ul.wpk-gallery li:hover .gallery-btn				{font-family: 'Pathway Gothic One', sans-serif; font-size: 16px; text-transform: uppercase;  position: absolute; left:0; margin:0 auto; top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%); color:#FFF; display: block; width:100%; }
+ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-block; margin: 0 auto; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding:5px; }
 /*
 .gallery-3 li				{margin: 0; }
 .gallery-3 li:nth-child(3n+3) {border-right: none;}
@@ -276,7 +280,7 @@ ul.wpk-gallery li img		{ margin-top: 30px; max-width: 60%; height: auto; }
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:33.3333%;  margin:0; position: relative; }
 
-.text-pos-right .extra_content_col		{ float: right;  margin-left:20px;  margin-right:50px; }
+.text-pos-right .extra_content_col		{ float: right;  margin-left:0;  margin-right:50px; }
 
 .text-pos-right .extra_content_col .subtitle,			
 .text-pos-right .extra_content_col h2	{ text-align: left;}
@@ -301,9 +305,11 @@ ul.wpk-gallery li img		{ margin-top: 30px; max-width: 60%; height: auto; }
 .page-redirect p				{ font-family: 'Pathway Gothic One', sans-serif; font-size: 1.5em; text-transform: uppercase;}
 .page-redirect a				{ color: #F97396; text-decoration: none;}
 .page-redirect a:hover			{ text-decoration: underline;}
+.page-redirect .icon-list		{ display: none; }	
 
 .center {position: relative;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
 
+.page-redirect	img				{ width:calc(100% - 30px); padding:0 15px; max-width: 391px; }
 
 /**************************************************************
 *** VIDEO
@@ -518,7 +524,7 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 	/* GALLERY */
 	.text-pos-right .extra_content_col,
 	.extra_content_col,
-	.text-pos-right .gallery_col 						{ width:calc(100% - 150px); float:none; padding-left: 75px; padding-right: 75px; }
+	.text-pos-right .gallery_col 						{ width:calc(100% - 150px); float:none; padding-left: 75px; padding-right: 75px; margin-right:0; max-width:calc(100% - 150px); }
 	
 	.gallery_col ul.wpk-gallery li						{ width:50%; margin:0; }
 	.gallery_col ul.wpk-gallery li img					{ width:90%; height:auto; }
@@ -545,6 +551,12 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 	
 	.content-page-users					{ width:calc( 100% - 40px  ); padding:20px; margin:20px 0; }	
 	.content-page-users	h2				{ font-size:30px; margin-bottom:30px; }
+	
+	
+	/*.vert-center-title					{ position: static; top:0; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); }*/
+	
+	.footer-content						{ width:calc( 100% - 60px  );  }
+	
 }
 
 
