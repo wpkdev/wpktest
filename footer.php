@@ -230,33 +230,39 @@ var window_width = $(window).width();
 *** CALCULATE THE HEIGHT OF PAGES
 ********************************************/   	
   
-	 var counter = 1;
-	  setTimeout(function(){
-	  		$('.page-content-box').each(function(index, item) {
-	  			var window_height = $(window).height();
-				var window_width = $(window).width();
-				var page_height = $(this).height()+100;
-				var screen_height = $(window).height();
-				
-				
-				
-				if(page_height < screen_height){
-					page_height = screen_height;
-					$('.page-'+counter).height(page_height);
-					$('.page-box-'+counter).height(page_height);
-				}
-				
-				console.log('page height2: ' +page_height);
-				//$('.page-'+counter).height(page_height);
-				//$('.page-box-'+counter).height(page_height);
-				
-				//$(this).height(page_height);
-				$(this).show();
-				counter++;
-				
-			});
-	  },50);
-	 	
+	
+	function get_page_element_height(){
+	
+		 var counter = 1;
+		  setTimeout(function(){
+		  		$('.page-content-box').each(function(index, item) {
+		  			var window_height = $(window).height();
+					var window_width = $(window).width();
+					var page_height = $(this).height()+100;
+					var screen_height = $(window).height();
+					
+					console.log('screenheight:' + screen_height);
+					
+					if(page_height < screen_height){
+						page_height = screen_height;
+						$('.page-'+counter).height(page_height);
+						$('.page-box-'+counter).height(page_height);
+					}
+					
+					console.log('page height2: ' +page_height);
+					//$('.page-'+counter).height(page_height);
+					//$('.page-box-'+counter).height(page_height);
+					
+					//$(this).height(page_height);
+					$(this).show();
+					counter++;
+					
+				});
+		  },50);
+		
+	} 
+	get_page_element_height();
+		
 
     
     function position_close_btn(){
@@ -368,7 +374,9 @@ global $video_url;
 			return false;
 		});
 
-	
+	$(window).on("resize", function(){
+	    get_page_element_height();
+	});
 	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
