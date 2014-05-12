@@ -598,6 +598,18 @@ table.purchasetable td						{ width:33.3333%; }
 	.social-links a			{ margin-bottom: 20px;}
 	.social-links .btn-small{ margin-bottom: 20px; margin-right: 0;}
 	.footer-content h1		{ font-size: 24px;}
+	
+	
+	.bgheight				{ height: auto; width: 100%;}
+	.page-quote h1			{ font-size: 24px;}
+	
+	.video-play-btn			{ width: 50px;}
+	.hor-fullscreen .text-wrapper{ width: 70%;}
+	.page-wrapper			{ padding: 70px;}
+	.hor-center				{ width: auto;}
+	.extra_content_col		{ margin-left: 0;}
+	.extra-img img			{ display: none;}
+	
 
 }
 
@@ -607,11 +619,7 @@ table.purchasetable td						{ width:33.3333%; }
 
 	#soj-logo-big			{ right: 55px;}
 
-	.bgheight				{ height: auto; width: 100%;}
-	.page-quote h1			{ font-size: 24px;}
-	
-	.video-play-btn			{ width: 50px;}
-	.video{}
+
 }
 
 
