@@ -22,6 +22,18 @@
 <footer></footer>
 
 
+
+<div class="overlay"></div>
+<div id="video-modal" class="modal">
+    <p class="btn-close-modal">Sluit video <span>X</span></p>
+	<div class="responsive-container">
+		<iframe width="100%" height="" frameborder="0" class="video"></iframe> <!-- 853 x 480 -->
+	</div>
+</div>
+
+
+
+
 <?php wp_footer(); global $template_directory; ?>
 
 
@@ -234,6 +246,7 @@ var window_width = $(window).width();
 /****************************************
 ** VIDEO OVERLAY 
 ****************************************/
+/*
 	function toggle_video(){
 		var video_overlay = $('.video-overlay');
 		var video_loader = $('.video-loading');
@@ -266,12 +279,16 @@ var window_width = $(window).width();
 	}
 	toggle_video();
 	
-	
+*/	
 	$(function(){
 		// Hide welcome popup
 		$('.btn-close-welcome-popup').on('click', function(){
 			$('.welcomepopup-box').hide();
 		});
+		
+		
+		//$('.overlay').hide();
+		//$('.modal').hide();
 	});
 	
 	
@@ -300,17 +317,40 @@ var window_width = $(window).width();
  	                   			
  	theWindow.resize(resizeBg).trigger("resize");
  
- });
-	
-	
-	
-	
+ });	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-<script async  src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.js"></script>
+
+<?php 
+// Get video url
+global $video_url; 
+?>
 <script>
   $(document).ready(function(){
-     $(".text-wrapper").fitVids();
+    $(".text-wrapper").fitVids();
+    
+    
+    $('.modalLink11').modal({
+        trigger: '.modalLink',          
+        olay:'div.overlay',             
+        modals:'div.modal',             
+        animationEffect: 'fadeIn',   
+        animationSpeed: 400,          
+        moveModalSpeed: 'slow',         
+        background: '000000',           
+        opacity: 0.7,                   
+        openOnLoad: false,             
+        docClose: true,                    
+        closeByEscape: true,           
+        moveOnScroll: false,            
+        resizeWindow: true,             
+        video: '<?php echo $video_url; ?>',
+        videoClass:'video',      
+        close:'.btn-close-modal' 
+    });
+    
+    
+    
   });
 </script>
 
