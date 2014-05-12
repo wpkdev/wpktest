@@ -26,11 +26,9 @@
 	
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
 	<script src="<?php echo get_bloginfo('template_directory'); ?>/js/plugins.js"></script>
-	
-	
-<<<<<<< HEAD
-=======
 	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	
+	
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -39,7 +37,7 @@
 
   ga('create', 'UA-12257116-31', 'shotofjoy.nl');
   ga('send', 'pageview');
->>>>>>> FETCH_HEAD
+
 
 </script>
 </head>

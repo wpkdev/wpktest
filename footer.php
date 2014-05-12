@@ -248,54 +248,26 @@ var window_width = $(window).width();
 				
 			});
 	  },50);
-	 
+	 	
+
     
-/****************************************
-** VIDEO OVERLAY 
-****************************************/
-/*
-	function toggle_video(){
-		var video_overlay = $('.video-overlay');
-		var video_loader = $('.video-loading');
-		var video_src = $('.responsive-container iframe').data('src');
-		var_videoframe = $('.responsive-container iframe'); 
-		video_loader.hide();
-		video_overlay.on('click', function(){
-			
-			var new_height = $('.responsive-container iframe').width()/ 1.777777778;
-			$('.responsive-container iframe').animate({height: new_height+"px"}, 500);
-			
-			$('.video-overlay').hide();
-				
-			setTimeout(function() {
-				
-				video_pos = (($(window).height() - new_height)/2)-30;
-				$('.responsive-container iframe').attr('src', video_src);
-				$(".responsive-container iframe")[0].src += "&autoplay=1";
-				$(".responsive-container iframe").css('margin-top', video_pos+'px');
-				video_loader.hide();
-				$('.video-play-btn').hide();
-				$('.content-video').addClass('video-background');
-				$('#soj-logo-big').hide();
-				$('.main-title').hide();
-				
-				
-				$(this).hide();
-			}, 510);
-		});
-	}
-	toggle_video();
-	
-*/	
+    function position_close_btn(){
+	    var close_btn = $('.btn-close-modal');
+	    var video_width = $('.responsive-container iframe').width();
+	    close_btn.css('width', video_width + 'px');
+    }
+   
+    
+	$(window).on("resize scroll",function(){
+	    position_close_btn();
+	});
+
+
 	$(function(){
 		// Hide welcome popup
 		$('.btn-close-welcome-popup').on('click', function(){
 			$('.welcomepopup-box').hide();
 		});
-		
-		
-		//$('.overlay').hide();
-		//$('.modal').hide();
 	});
 	
 	
@@ -339,7 +311,7 @@ var window_width = $(window).width();
  	     }, 51);       			
  	//theWindow.resize(resizeBg).trigger("resize");
  
-<<<<<<< HEAD
+
  });	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
@@ -347,11 +319,17 @@ var window_width = $(window).width();
 <?php 
 // Get video url
 global $video_url; 
+
+
 ?>
 <script>
   $(document).ready(function(){
     $(".text-wrapper").fitVids();
+     position_close_btn();
     
+    $('.modalLink').on('click', function(e){
+		position_close_btn();    
+    });
     
     $('.modalLink11').modal({
         trigger: '.modalLink',          
@@ -374,7 +352,7 @@ global $video_url;
     
     
     
-=======
+
  });
 	
 	$('.mobile-popup-btn').on('click', function(){
@@ -386,11 +364,10 @@ global $video_url;
 	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
 <script>
   $(document).ready(function(){
      //$(".text-wrapper").fitVids();
->>>>>>> FETCH_HEAD
+
   });
 </script>
 

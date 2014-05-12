@@ -33,19 +33,21 @@
 		echo '</div>';
 		
 		echo '</div>'; // page-element
-		?>
-		
-		<?php
+
+
+		// Get Video ID
 		$feat_video = get_sub_field('video_id'); 
 		$feat_video_arr = $feat_video;
 		global $video_url;
 		echo '<!--  '.$feat_video_arr.'  -->';
 		
-		if (!is_numeric($feat_video_arr[0]) ){ 
+		if (!is_numeric($feat_video_arr) ){ 
 		
 			$video_url = 'http://www.youtube.com/embed/'.$feat_video_arr.'?rel=0&modestbranding=1&autohide=1';
+			
 		} else { 
 		 
 		 	$video_url = 'http://player.vimeo.com/video/'.$feat_video_arr.'?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff';	
-		} 						 
+		} 	
+							 
 ?>

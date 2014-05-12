@@ -325,7 +325,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .content-video					{ height:100%; width:100%; position: relative; top:0; left:0; z-index:1; }
 .responsive-container			{ width:100%; height:100%; text-align: center; }
 .video-background				{ background: url(img/transparant-bg.png); }
-.responsive-container iframe	{ max-width: 1200px; width:calc( 100% - 120px )  }
+.responsive-container iframe	{ max-width: 1980px; /*width:calc( 100% - 120px )*/  }
 
 .close-video				{ width: 150px; height: 40px; line-height: 40px; position: absolute; right: 20px; top: 20px; z-index: 1000; display: none;}
 .btn-close-video			{ color: #fff; text-decoration: none;}
@@ -368,6 +368,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
   padding-top: 0;
   height: 0;
   overflow: hidden;
+  width: 100%;
 }
 .responsive-container iframe {
   position: absolute;
