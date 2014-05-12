@@ -215,7 +215,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 
 .start-page	h1				{ font-family: bigcaslon; font-size:90px; text-align: center; line-height: 72px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; }
-.page-1 img					{ width: 100%; }
+/*.page-1 img					{ width: 100%; }*/
 .content,
 .content label					{ color:#FFF !important; }
 .page-content h2,
@@ -527,7 +527,9 @@ table.purchasetable td						{ width:33.3333%; }
 @media all and (max-width: 768px){
 	#soj-logo-big		{ width:150px; }
 	/*.page-content-box		{ width:calc(100% - 140px)!important; left:auto !important; padding-top:50px!important; padding-right:80px!important; padding-left:80px!important; margin:50px auto 0 auto!important; position: static!important; }*/
-
+	
+	/*.page-element			{ height: auto!important; } */
+	
 }
 
 

@@ -132,24 +132,30 @@ var window_width = $(window).width();
 /*******************************************
 *** LOAD BACKGROUND FOR DIFFERENT VIEWPORTS
 ********************************************/    
-	var counter = 1;
-	$('.bg').each(function(index, item) {
-	  	if(window_width > 1024){
-			res_img = $(this).attr('data-src');
-		}else if(window_width < 481){
-			res_img = $(this).attr('data-src-480');
-		}else if(window_width < 769){
-			res_img = $(this).attr('data-src-768');
-		}else if(window_width < 1025){
-			res_img = $(this).attr('data-src-1024');
-		}
-		
-		$(this).attr('src', res_img);
-		
-		
-		
-	  	counter++;
-	});
+	function load_bg_img(){
+	
+		var counter = 1;
+		$('.bg').each(function(index, item) {
+		  	if(window_width > 1024){
+				res_img = $(this).attr('data-src');
+			}else if(window_width < 481){
+				res_img = $(this).attr('data-src-480');
+			}else if(window_width < 769){
+				res_img = $(this).attr('data-src-768');
+			}else if(window_width < 1025){
+				res_img = $(this).attr('data-src-1024');
+			}
+			
+			$(this).attr('src', res_img);
+			
+			
+			
+		  	counter++;
+		});
+	
+	}
+	
+	load_bg_img();
   
 /*******************************************
 *** SHOW THE RIGHT NAVIGATION INDICATOR
@@ -261,6 +267,8 @@ var window_width = $(window).width();
 		  },50);
 		
 	} 
+	
+	
 	get_page_element_height();
 		
 
@@ -376,6 +384,8 @@ global $video_url;
 
 	$(window).on("resize", function(){
 	    get_page_element_height();
+	    resizeBg();
+	    load_bg_img();
 	});
 	
 </script>
