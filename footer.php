@@ -11,10 +11,11 @@
 <?php global $post_url;global $post_title; ?>
 <div class="social-media-box">
 	<ul>
-		<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($post_url); ?>" class="icon-facebook js-social-popup">&nbsp;</a></li>
-		<li><a href="https://twitter.com/intent/tweet?text=<?php echo $post_title ?>&url=<?php echo urlencode($post_url); ?>&via=ShotofJoy&related=Shotofjoy" class="icon-twitter js-social-popup">&nbsp;</a></li>
-		<li><span class="social-media-pinterest social-media-button "><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></span></li>
-		<li><a href="" class="icon-mail">&nbsp;</a></li>
+		<li class="mobile-popup"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($post_url); ?>" class="icon-facebook js-social-popup ">&nbsp;</a></li>
+		<li class="mobile-popup"><a href="https://twitter.com/intent/tweet?text=<?php echo $post_title ?>&url=<?php echo urlencode($post_url); ?>&via=ShotofJoy&related=Shotofjoy" class="icon-twitter  js-social-popup">&nbsp;</a></li>
+		<li class="mobile-popup"><span class="social-media-pinterest social-media-button  "><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></span></li>
+		<li class="mobile-popup"><a href="" class="icon-mail mobile-popup">&nbsp;</a></li>
+		<li class="mobile-popup-btn"><a href="" class="icon-export ">&nbsp;</a></li>
 	</ul>
 </div>
 <?php } ?>
@@ -232,7 +233,7 @@ var window_width = $(window).width();
 				counter++;
 				
 			});
-	  },500);
+	  },50);
 	 
     
 /****************************************
@@ -282,31 +283,50 @@ var window_width = $(window).width();
 	
 	$(window).load(function() {    
  
- 	var theWindow        = $(window),
- 	    $bg              = $(".bg"),
- 	    aspectRatio      = $bg.width() / $bg.height();
+ 
+ 
+ 
+ 	
  	    			    		
  	function resizeBg() {
+ 		counter = 1;
+ 		$('.page-element').each(function(index, item) {
  		
- 		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
- 		    $bg
- 		    	.removeClass('bgheight')
- 		    	.removeClass('bgwidth')
- 		    	.addClass('bgheight');
- 		} else {
- 		    $bg
- 		    	.removeClass('bgheight')
- 		    	.removeClass('bgwidth')
- 		    	.addClass('bgwidth');
- 		}
+ 		
+ 			var theWindow        = $(this),
+ 			$bg              =  $(".bg", this),
+ 			aspectRatio      = $bg.width() / $bg.height();
+ 			
+ 			aspectRatioWindow      = theWindow.width() / theWindow.height();
+ 			
+ 			if ( aspectRatioWindow < aspectRatio ) {
+	 		    $bg
+	 		    	.removeClass('bgheight')
+	 		    	.removeClass('bgwidth')
+	 		    	.addClass('bgheight');
+	 		} else {
+	 		    $bg
+	 		    	.removeClass('bgheight')
+	 		    	.removeClass('bgwidth')
+	 		    	.addClass('bgwidth');
+	 		}
+	 		counter++;
+ 		});
  					
  	}
- 	                   			
- 	theWindow.resize(resizeBg).trigger("resize");
+ 	     
+ 	     setTimeout(function(){
+ 	     	resizeBg();       
+ 	     }, 51);       			
+ 	//theWindow.resize(resizeBg).trigger("resize");
  
  });
 	
-	
+	$('.mobile-popup-btn').on('click', function(){
+			$( ".mobile-popup" ).toggle();
+			return false;
+		});
+
 	
 	
 </script>

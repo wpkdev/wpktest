@@ -40,6 +40,10 @@
 	
 </header>
 
+<?php
+echo '<a href="https://www.shotofjoy.nl/account/" class="nav-posts icon-list">&nbsp;</a>';
+?>
+
 <nav></nav>
 <?php
 if(!is_page()){ 
