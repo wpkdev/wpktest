@@ -11,12 +11,12 @@
 	$quote = get_sub_field('quote');
 	$color_scheme = get_sub_field('colorscheme');
 	
-	echo '<div class="page-element page-'.$counter.'">';
+	echo '<div class="page-element page-content-'.$color_scheme.' page-'.$counter.'">';
 	//echo '<img src="'.get_bloginfo('template_directory').'/img/black.gif" class=" page-bg-'.$counter.' bg stickem"   />';
 		$position_horizontal = get_sub_field('title_image_horizontal');
 		$position_vertical = get_sub_field('title_image_vertical');
 		$image_title = get_sub_field('title_image');
-		echo '<div class="page-content page-content-box page-quote start-page vert-'.$position_vertical.'-title hor-'.$position_horizontal.'-title  page-content-'.$color_scheme.' "><h1 class="main-title">';
+		echo '<div class="page-content page-content-box page-quote start-page vert-'.$position_vertical.'-title hor-'.$position_horizontal.'-title  "><h1 class="main-title">';
 			echo $quote;
 		echo '</h1>';
 		
