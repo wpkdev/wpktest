@@ -188,10 +188,11 @@ var window_width = $(window).width();
 *** CLICK ON THE NAVIAGTION INDICATOR
 ********************************************/   
 	$(".go_to_page").click(function() {
-		page = $(this).html();
+		page = $("span",this).html();
 		$('html, body').animate({
 			 scrollTop: $(".page-"+page).offset().top
 		}, 1000, "swing");
+		
 		return false;
 	});
 	
