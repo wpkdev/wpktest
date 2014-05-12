@@ -127,14 +127,14 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-fami
 ***** WELKOM POPUP
 *******************************/
 .welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.85); z-index: 1000; }
-.welcomepopup				{ width:100%; max-width: 540px; margin: 0 auto; text-align: center; position: relative;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+.welcomepopup				{ width:100%; max-width: 540px; margin: 0 auto; text-align: center; position: relative; /*top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);*/}
 .welcomepopup h1			{ font-family: 'Times New Roman', serif; font-weight: normal; color: #fff; font-size: 50px; text-align:center;}
 .welcomepopup p				{ color: #fff; text-transform: uppercase; font-family: 'Pathway Gothic One'; font-size: 24px;}
 
-.btn-close					{ width: 36px; height: 36px; line-height: 36px; text-align:center; float:right; margin-top: 15px; margin-right: 15px; font-family: 'ProxySemiBold' !important}
+.btn-close					{ width: 36px; height: 36px; line-height: 36px; text-align:center; float:right; margin-top: 15px; margin-right: 15px; font-family: 'ProxySemiBold' !important; position: absolute; right: 0;}
 
 .btn-circle					{ display: block;  text-decoration: none; z-index:300; color:#fff; background: rgba(0, 0, 0, 0.15); text-align: center; position: fixed; line-height: 36px; width: 36px; height:36px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; }
-
+.shotofjoy-logo				{ width: 100%; float: left; display: block; }
 
 /******************************
 ***** PAGE
