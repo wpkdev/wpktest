@@ -200,6 +200,14 @@ var window_width = $(window).width();
 		$(".scroll-indicator-box").css({ opacity: new_alpha });
 		
 		
+		
+		if($("#soj-logo-big").css('opacity') == 0){
+			$("#soj-logo-big").hide();
+		}else{
+			$("#soj-logo-big").show();
+		}
+		
+		
 	}
 	
 	
