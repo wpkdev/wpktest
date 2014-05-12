@@ -20,7 +20,7 @@
 	 ?>
        
 	<title>Shot of Joy</title>
-	<?php wp_head(); ?>
+	<?php //wp_head(); ?>
   	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01199" type="text/css" /> 
 	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	

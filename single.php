@@ -91,9 +91,9 @@ endwhile;
 		<div class="subtitle">Share the Joy</div>
 			
 		<div class="social-links">
-			<a href="#facebook" class="btn btn-small btn-facebook" target="_blank"><span class="icon-facebook"></span>Facebook</a>
-			<a href="#twitter" class="btn btn-small btn-twitter" target="_blank"><span class="icon-twitter"></span>Twitter</a>
-			<a href="#pinterest" class="btn btn-small btn-pinterest" target="_blank"><span class="icon-pinterest"></span>Pinterest</a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($post_url).'" class="btn btn-small btn-facebook js-social-popup" target="_blank"><span class="icon-facebook"></span>Facebook</a>
+			<a href="https://twitter.com/intent/tweet?text='.$post_title.'&url='.urlencode($post_url).'&via=ShotofJoy&related=Shotofjoy" class="btn btn-small btn-twitter js-social-popup" target="_blank"><span class="icon-twitter"></span>Twitter</a>
+			<span class="btn btn-small btn-pinterest social-media-pinterest-footer social-media-button-footer "><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /><span class="icon-pinterest"></span>Pinterest</a></span>
 			<a href="mailto:info@shotofjoy.nl" class="btn btn-small btn-email" target="_blank"><span class="icon-mail"></span>Email</a>
 		</div>
 		

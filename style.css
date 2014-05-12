@@ -108,7 +108,7 @@ MAIN SETTINGS
 body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
 #wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
 
-.page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1; overflow-x: hidden; }
+.page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1; overflow-x: hidden; overflow-y: hidden; }
 .bg-box				{ position: fixed; top:0; right:0; width:100%; height:100%; z-index:0; }
 
 .bg-shop 		{ width:100%; height:100%;  }
@@ -410,6 +410,13 @@ ul.wpk-gallery li img		{ margin-top: 30px; max-width: 60%; height: auto; }
 .social-media-button.social-media-pinterest a:before{ font-family:icomoon; speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 18px; padding-top: 16px; content: "\e607"; display: inline-block; float: left; margin: -18px 0 0 -1px;  width: 100%; height: 100%; }
 
 
+.social-media-button-footer.social-media-pinterest-footer a{ background-image: none !important; width: 140px !important; position: relative!important;}
+.social-media-button-footer.social-media-pinterest-footer a:before{ font-family:icomoon; speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 18px;  content: "\e607 "; display: inline-block; position: absolute; left:15px; top:-4px; }
+.social-media-button-footer.social-media-pinterest-footer a:after{ font-family:Pathway Gothic One;  speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: uppercase;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 20px; padding-top: 12px; content: "Pinterest"; display: inline-block; float: right; margin: -18px 0 0 -1px;  width: 75%; height: 100%; }
+
+
+
+
 .mobile-popup-btn				{ display:none; }
 
 
@@ -429,7 +436,7 @@ footer{height: 610px;}
 .btn-twitter{background: #44abf0;}
 .btn-pinterest{background: #ca2128;}
 .btn-email					{ background: #f97396; color: #fff;}
-.btn-soj					{ background: #f97396; color: #000 !important;}
+.btn-soj					{ background: #f97396; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important;}
 .btn span{position:relative; left: -15px; top:3px; display: inline-block; }
 .btn span:hover{color: #fff !important;}
 .btn .icon-facebook:hover:before,
@@ -449,7 +456,8 @@ footer{height: 610px;}
 .content-page-users	h2			{ font-family: bigcaslon; font-size:50px; text-align:center; font-weight: normal; margin-bottom: 60px; }
 .content-page-users	p			{ text-align: center; padding-bottom: 20px; }
 .content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
-.content-page-users	input		{ width:calc( 100% - 30px ); padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none;  }
+.content-page-users	input,
+.content-page-users	textarea		{ width:calc( 100% - 30px ); padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none;  }
 
 .content-page-users p.forgetmenot 		{ text-align: left; }
 .content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
@@ -470,6 +478,9 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 
 #previewvideo							{ position: absolute; right:-250px; top:0; }
 
+.content-page-users .wpcf7-form	p		{ text-align: left!important; }
+.content-page-users .wpcf7-form	input,
+.content-page-users .wpcf7-form	textarea	{ margin-top:10px; }
 
 /**************************************************************
 *** RESPONSIVE
