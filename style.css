@@ -105,7 +105,7 @@ FONTS
 /**********
 MAIN SETTINGS
 ***********/
-body, html 					{ height: 100%;  padding:0; margin:0; background:#000; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
+body, html 					{ height: 100%;  padding:0; margin:0; background:#0c0c0c; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
 #wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
 
 .page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1; overflow-x: hidden; overflow-y: hidden; }
@@ -470,7 +470,15 @@ footer{height: 610px;}
 .content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
 .content-page-users p.forgetmenot input	{ width:20px; }
 #wp-submit,
-.form-membership .button				{ border-radius: 40px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 33px; width: auto; height: 76px; line-height: 76px; background: #f97396; color: #000 !important; padding:0 20px; }
+
+#membership-wrapper legend				{ display: none; }
+#membership-wrapper p.help-block:first-child,
+#membership-wrapper fieldset p.help-block				{ display: none; }
+#membership-wrapper .form-membership fieldset p.help-block				{ display: block; }
+#membership-wrapper  .alert-success						{ display: none; }
+
+
+.form-membership .button				{ border-radius: 20px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 20px; width: auto; height: 40px; line-height: 40px; background: #f97396; color: #000 !important; padding:0 20px; }
 .form-membership legend					{ display:none; }
 fieldset								{ border:none; padding:0; margin:0; }
 .form-element							{ padding-bottom:15px; }
@@ -488,6 +496,16 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 .content-page-users .wpcf7-form	p		{ text-align: left!important; }
 .content-page-users .wpcf7-form	input,
 .content-page-users .wpcf7-form	textarea	{ margin-top:10px; }
+
+
+table.purchasetable							{ width:100%; }
+table.purchasetable td						{ width:33.3333%; }
+
+#pronamic-pay-form input					{ border-radius: 20px; margin-right: 18px; width: 140px; height: 40px; line-height: 40px; font-size: 20px; color: #fff; display: inline-block; background:#000; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; background: #f97396; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important; }
+
+.content-page-users a						{ color:#f97396; }
+
+
 
 /**************************************************************
 *** RESPONSIVE

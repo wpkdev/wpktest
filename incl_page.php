@@ -10,10 +10,10 @@
 	
 	
 	
-	$src = aq_resize( $image['url'], 1200, 100000000, true, false ); //resize & crop img
-	$src_1024 = aq_resize( $image['url'], 850, 638, true, false ); //resize & crop img
-	$src_768 = aq_resize( $image['url'], 600, 450, true, false ); //resize & crop img
-	$src_480 = aq_resize( $image['url'], 375, 281, true, false ); //resize & crop img
+	$src = aq_resize( $image['url'], 1500, 818, true, false ); //resize & crop img
+	$src_1024 = aq_resize( $image['url'], 1024, 559, true, false ); //resize & crop img
+	$src_768 = aq_resize( $image['url'], 786, 429, true, false ); //resize & crop img
+	$src_480 = aq_resize( $image['url'], 480, 480, true, false ); //resize & crop img
 	
 	echo '<div class="page-element page-'.$counter.' " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
 	
