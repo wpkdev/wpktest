@@ -179,6 +179,7 @@ a.nav-posts					{ display: block;  text-decoration: none; z-index:300; color:#ff
 a.nav-prev					{ top:15px; right:15px; }
 a.nav-next					{ top:66px; right:15px; }
 
+
 /******************************
 ***** LEFT BAR
 *******************************/
@@ -210,6 +211,8 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-right							{ margin:0; float:right;  z-index:10; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; max-width:670px; }
 */
 .hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:670px;  }
+.extra-img.hor-right-title img					{ width: 58%; }
+
 .hor-center							{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px); max-width:600px;}
 .hor-right							{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; max-width:670px; }
 
