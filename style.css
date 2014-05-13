@@ -93,7 +93,7 @@ FONTS
 	color: #ca2027;
 }
 .icon-mail:hover:before {
-	color: #f97396;
+	color: #ff7271;
 }
 
 
@@ -233,7 +233,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content h3,
 .page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:24px; line-height: 1; text-transform: uppercase }
 .page-content p					{ font-size: 19px; line-height: 32px;}
-.page-content a					{ color: #F97396;}
+.page-content a					{ color: #ff7271;}
 .page-element 					{  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
 
 .page-content-light	h2			{ border-bottom:1px solid #fff; }
@@ -313,7 +313,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .page-redirect #soj-logo-big	{ position: relative; margin: 0 auto; top: 0; right: auto;}
 .page-redirect h1				{ font-family: 'Bigcaslon', serif; font-size: 2.5em; font-weight: 100;}
 .page-redirect p				{ font-family: 'Pathway Gothic One', sans-serif; font-size: 1.5em; text-transform: uppercase;}
-.page-redirect a				{ color: #F97396; text-decoration: none;}
+.page-redirect a				{ color: #ff7271; text-decoration: none;}
 .page-redirect a:hover			{ text-decoration: underline;}
 .page-redirect .icon-list		{ display: none; }	
 
@@ -452,8 +452,8 @@ footer{height: 610px;}
 .btn-facebook{ background: #3f569a;}
 .btn-twitter{background: #44abf0;}
 .btn-pinterest{background: #ca2128;}
-.btn-email					{ background: #f97396; color: #fff;}
-.btn-soj					{ background: #f97396; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important;}
+.btn-email					{ background: #ff7271; color: #fff;}
+.btn-soj					{ background: #ff7271; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important;}
 .btn span{position:relative; left: -15px; top:3px; display: inline-block; }
 .btn span:hover{color: #fff !important;}
 .btn .icon-facebook:hover:before,
@@ -462,19 +462,19 @@ footer{height: 610px;}
 .icon-mail:hover:before {color: #fff;}
 
 
-.btn-subscribe{background: #f97396; color: #000; }
+.btn-subscribe{background: #ff7271; color: #000; }
 
 
 
 /**************************************************************
 *** USER PAGES
 ***************************************************************/
-.content-page-users				{ max-width:500px; width:100%; margin:120px auto; position: relative; }
-.content-page-users	h2			{ font-family: bigcaslon; font-size:50px; text-align:center; font-weight: normal; margin-bottom: 60px; }
+.content-page-users				{ max-width:500px; width:100%; margin:0 auto; position: relative; }
+.content-page-users	h2			{ font-family: bigcaslon; font-size:60px; text-align:center; font-weight: normal; margin-bottom: 30px; }
 .content-page-users	p			{ text-align: center; padding-bottom: 20px; }
 .content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
 .content-page-users	input,
-.content-page-users	textarea		{ width:calc( 100% - 30px ); padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none;  }
+.content-page-users	textarea		{ width:calc( 100% - 30px ); background:#333; padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none; color:#FFF; }
 
 .content-page-users p.forgetmenot 		{ text-align: left; }
 .content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
@@ -486,13 +486,13 @@ footer{height: 610px;}
 #membership-wrapper fieldset p.help-block				{ display: none; }
 #membership-wrapper .form-membership fieldset p.help-block				{ display: block; }
 #membership-wrapper  .alert-success						{ display: none; }
+#membership-wrapper p.help-block			{ text-indent: -1000000px; height:1px; overflow:hidden;}
 
-
-.form-membership .button				{ border-radius: 20px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 20px; width: auto; height: 40px; line-height: 40px; background: #f97396; color: #000 !important; padding:0 20px; }
+.form-membership .button				{ border-radius: 20px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 20px; width: auto; height: 40px; line-height: 40px; background: #ff7271; color: #000 !important; padding:0 20px; }
 .form-membership legend					{ display:none; }
 fieldset								{ border:none; padding:0; margin:0; }
 .form-element							{ padding-bottom:15px; }
-.form-element p.help-block				{ margin:20px 0 0 0; padding:20px 0 0 0; border-top:1px solid #FFF; }
+.form-element p.help-block				{ margin:20px 0 0 0; padding:0; border-top:1px solid #333; }
 
 a#login_right							{ text-align: center; display: block; width:100%; color:#FFF; }
 
@@ -507,16 +507,23 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 .content-page-users .wpcf7-form	input,
 .content-page-users .wpcf7-form	textarea	{ margin-top:10px; }
 
-
+.cls-btn									{ position: fixed; top:20px; right:20px; }
 
 table.purchasetable							{ width:100%; }
 table.purchasetable td						{ width:33.3333%; }
 
-#pronamic-pay-form input					{ border-radius: 20px; margin-right: 18px; width: 140px; height: 40px; line-height: 40px; font-size: 20px; color: #fff; display: inline-block; background:#000; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; background: #f97396; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important; }
+#pronamic-pay-form input					{ border-radius: 20px; margin-right: 18px; width: 140px; height: 40px; line-height: 40px; font-size: 20px; color: #fff; display: inline-block; background:#000; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; background: #ff7271; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important; }
 
-.content-page-users a						{ color:#f97396; }
+.content-page-users a						{ color:#ff7271; }
 
+p.payment									{ border-top:1px solid #333; padding-top:30px; text-align: left; font-size:18px; }
+td.detailscolumn							{ display: none; }
+td.pricecolumn								{ display: none; }
+tr.pricescolumn								{ display: none; }
 
+#membership-wrapper .purchasetable .buynowcolumn		{ text-align: left!important; height:100px; border-top:1px solid #333; padding-top:30px; position: relative; }
+#membership-wrapper .purchasetable .buynowcolumn img	{ position: absolute; right:0; top:30px; }
+#membership-wrapper .purchasetable .buynowcolumn div	{ margin-top:0 !important; }
 
 /**************************************************************
 *** RESPONSIVE
