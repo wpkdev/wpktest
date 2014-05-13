@@ -296,10 +296,7 @@ var window_width = $(window).width();
 		
 	
 		
-		
-		mailchimp = '<p id="mc4wp-checkbox"><label><input type="checkbox" name="_mc4wp_subscribe" value="1" checked=""> Sign me up for the newsletter!</label></p>';
-		
-		$('.form-membership fieldset').append(mailchimp);
+	
  	
  	    			    		
  	function resizeBg() {

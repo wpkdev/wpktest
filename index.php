@@ -77,7 +77,7 @@ if( have_rows('new_page') ):
 	 	endif;
 	 	
 	 	// include spotify page
-	 	if( get_row_layout() == 'map' ):
+	 	if( get_row_layout() == 'spotify' ):
 	 		include('incl_spotify.php');
 	 		include('add_nav.php');
 	 		$counter++;

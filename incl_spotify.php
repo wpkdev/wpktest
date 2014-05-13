@@ -25,7 +25,7 @@
 	// Get Large Image
 	echo '<img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg bg-page" data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  />';
 	
-	echo '<div class="page-content page-spotify page-content-box page-box-'.$counter.' vert-'.$position_vertical.' hor-'.$position_horizontal.'  '.$color_scheme.' "><div class="text-wrapper">';
+	echo '<div class=" page-spotify page-content-box page-box-'.$counter.' "><div class="text-wrapper text-wrapper-spotify vert-'.$position_vertical.' hor-'.$position_horizontal.'  '.$color_scheme.' ">';
 	
 	
 	
@@ -41,7 +41,7 @@
 	
 	
 	
-	echo get_sub_field('content');
+	echo get_sub_field('spotify_link');
 	echo '</div>';
 	echo '</div>';
 	
