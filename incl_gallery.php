@@ -28,7 +28,6 @@
 
 			echo '<div class="extra_content_col '.$color_scheme.'">';
 
-				
 				if (!empty($sub_title)){
 					echo '<div class="subtitle"><h3>'.$sub_title.'</h3></div>';
 				}
@@ -37,9 +36,13 @@
 				}
 				echo get_sub_field('extra_text');
 			echo '</div>';
+			
 			echo '<div class="gallery_col">';
 				echo get_sub_field('shop_gallery');
 			echo '</div>';
+			
+			
+
 			
 		} else {
 		

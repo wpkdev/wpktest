@@ -289,14 +289,11 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 
 .page-gallery						{ height: 100%; padding:0; }*/
 
-<<<<<<< HEAD
+
 .extra_content_col					{ /*width: 25%;*/ width: calc(25% - 50px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px 0 50px 50px; line-height: 26px; height: 100%; max-width: 305px; }
 
 .gallery_col						{ width:70%; float: right;}
-=======
-.extra_content_col					{ width:calc( 45% - 150px ); float:left;  margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
-.gallery_col						{ width:64%; float: right; }
->>>>>>> FETCH_HEAD
+
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:33.3333%;  margin:0; position: relative; }
 
