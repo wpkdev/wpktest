@@ -204,7 +204,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content-dark h3	{ border-bottom: 1px solid #000 !important;}
 .page-content-dark .subtitle_quote h3 {color: #000;}
 .page-quote h1			{ font-size: 123px !important; line-height: 127px !important;}
-.hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:600px;  }
+.hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:670px;  }
 .hor-center							{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px); max-width:600px;}
 .hor-right							{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; max-width:670px; }
 .hor-fullscreen						{ width:100%; max-width:100%; top:0px; position: relative; padding-left:0; padding-right:0;  } 
@@ -273,7 +273,7 @@ img.alignright{float: right; margin: 20px -85px 20px 20px;}
 .page-quote					{ }
 .page-quote .start-page		{ position: relative !important}
 
-.content-large-image img	{ width: 100%; height: auto;}
+.content-large-image img	{ width: 100%; height: auto; }
 
 /******************************
 ***** SHOP GALLERY
@@ -647,6 +647,8 @@ tr.pricescolumn								{ display: none; }
 
 
 @media all and (max-width: 568px) and (orientation: landscape){
+
+	.start-page							{ position: relative; float: left;}
 	.video-play-btn						{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
 }
 

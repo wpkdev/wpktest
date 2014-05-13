@@ -274,12 +274,12 @@ var window_width = $(window).width();
 		
 
     
-    
+    /*
     
 	$(window).on("resize scroll",function(){
 	    position_close_btn();
 	});
-
+	*/
 
 	$(function(){
 		// Hide welcome popup
@@ -348,7 +348,7 @@ global $video_url;
 <script>
   $(document).ready(function(){
     $(".text-wrapper").fitVids();
-     position_close_btn();
+     //position_close_btn();
     
     video = '';
     
