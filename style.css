@@ -201,6 +201,14 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-fullscreen .text-wrapper		{  margin:0 auto; position: relative; top:0px; width: 50%;  max-width:600px; }
 
 
+.page-wrapper-dark		{ background: #000; color: #fff; }
+.page-wrapper-dark .main-title{border: 0 !important;}
+.page-wrapper-dark h1	{ border-bottom: 1px solid #FFF; color: #FFF !important;}
+.page-wrapper-dark h2,
+.page-wrapper-dark h3	{ border-bottom: 1px solid #FFF !important;}
+.page-wrapper-dark .subtitle_quote h3 {color: #FFF;}
+
+
 .extra-img					{ position: absolute;  height: auto; width: calc( 100% - 200px); padding:0 100px; z-index:50; }
 .extra-img img				{ width:40%; }
 
@@ -277,7 +285,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 
 .page-gallery						{ height: 100%; padding:0; }*/
 
-.extra_content_col					{ width:calc( 45% - 150px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
+.extra_content_col					{ width:calc( 45% - 150px ); float:left;  margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
 .gallery_col						{ width:64%; float: right; }
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:33.3333%;  margin:0; position: relative; }
@@ -471,7 +479,7 @@ footer{height: 610px;}
 .content-page-users p.forgetmenot 		{ text-align: left; }
 .content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
 .content-page-users p.forgetmenot input	{ width:20px; }
-#wp-submit,
+
 
 #membership-wrapper legend				{ display: none; }
 #membership-wrapper p.help-block:first-child,

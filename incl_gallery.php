@@ -5,7 +5,7 @@
 
 	$src = $template_directory.'/img/pixel.gif';
 	
-	
+	$color_scheme = 'page-wrapper-'.get_sub_field('colorscheme');
 	
 	echo '<div class="page-element page-'.$counter.'" style="background:#FFF;">';
 	
@@ -25,7 +25,7 @@
 		
 		// Text block left
 		if($position_text == 'left'){
-			echo '<div class="extra_content_col">';
+			echo '<div class="extra_content_col '.$color_scheme.'">';
 				
 				if (!empty($sub_title)){
 					echo '<div class="subtitle"><h3>'.$sub_title.'</h3></div>';
@@ -45,7 +45,7 @@
 				echo '<div class="gallery_col ">';
 					echo get_sub_field('shop_gallery');
 				echo '</div>';
-				echo '<div class="extra_content_col ">';
+				echo '<div class="extra_content_col '.$color_scheme.'">';
 				
 					if (!empty($sub_title)){
 						echo '<div class="subtitle"><h3>'.$sub_title.'</h3></div>';
