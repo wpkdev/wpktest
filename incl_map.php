@@ -6,13 +6,13 @@
 	
 	$src = $template_directory.'/img/pixel.gif';
 	
+	$color_scheme = 'page-wrapper-'.get_sub_field('colorscheme');
 	
+	echo '<div class="page-element page-'.$counter.' '.$color_scheme.'" data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'" style="background:#FFF;">';
 	
-	echo '<div class="page-element page-'.$counter.'" data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'" style="background:#FFF;">';
+	echo '<div class="page-wrapper '.$color_scheme.'">';
 	
-	echo '<div class="page-wrapper">';
-	
-	echo '<div class="page-content2  page-map page-content-dark">';
+	echo '<div class="page-content2  page-map">';
 	
 	// Get the (Sub)title
 	$sub_title = get_sub_field('subtitle');

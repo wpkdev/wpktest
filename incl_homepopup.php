@@ -10,6 +10,6 @@
 		<!--<img src="<?php echo $template_directory; ?>/img/SOJ-logo.png" alt="Shot of Joy">-->
 		<h1>het allerbeste begin van de dag</h1>
 		<p>Dagelijks voor maar &euro; 2,99 per maand</p>
-		<p><a href="<?php echo get_site_url(); ?>/login" class="btn btn-soj btn-small">Login</a> <a href="<?php echo get_site_url();?>/register" class="btn btn-soj btn-small">Abonneer</a></p>
+		<p><a href="<?php echo get_site_url(); ?>/login" class="btn btn-soj btn-small">Login</a> <a href="<?php echo get_site_url();?>/register?action=registeruser&subscription=1" class="btn btn-soj btn-small">Abonneer</a></p>
 	</div>
 </div>

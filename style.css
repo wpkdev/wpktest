@@ -95,7 +95,7 @@ FONTS
 	color: #ca2027;
 }
 .icon-mail:hover:before {
-	color: #f97396;
+	color: #ff7271;
 }
 
 
@@ -141,10 +141,13 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#0c0c0c; font-f
 ***** PAGE
 *******************************/
 .account-page-box			{ position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.85); z-index: 1000; }
-.account-page				{ width:100%; max-width: 540px; margin: 0 auto; text-align: center; position: relative;}
-.account-page h1			{ font-family: 'Times New Roman', serif; font-weight: normal; color: #fff; font-size: 50px; text-align:center;}
-.account-page p				{ color: #fff; text-transform: uppercase; font-family: 'Pathway Gothic One'; font-size: 24px;}
 
+
+
+.account-page				{ width:100%; max-width: 600px; margin: 10% auto 0 auto; text-align: center; position: relative; }
+.account-page h1			{ font-family: 'Times New Roman', serif; font-weight: normal; color: #fff; font-size: 62px; text-align:center; line-height: 56px;}
+.account-page p				{ color: #fff; text-transform: uppercase; font-family: 'Pathway Gothic One'; font-size: 24px;}
+.account-page p.line-p		{ border-top:1px solid #333; padding:30px 0 0 0; font-family: 'Georgia', sans-serif; text-transform: none; }
 
 
 
@@ -203,6 +206,14 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-fullscreen .text-wrapper		{  margin:0 auto; position: relative; top:0px; width: 50%;  max-width:600px; }
 
 
+.page-wrapper-dark		{ background: #000; color: #fff; }
+.page-wrapper-dark .main-title{border: 0 !important;}
+.page-wrapper-dark h1	{ border-bottom: 1px solid #FFF; color: #FFF !important;}
+.page-wrapper-dark h2,
+.page-wrapper-dark h3	{ border-bottom: 1px solid #FFF !important;}
+.page-wrapper-dark .subtitle_quote h3 {color: #FFF;}
+
+
 .extra-img					{ position: absolute;  height: auto; width: calc( 100% - 200px); padding:0 100px; z-index:50; }
 .extra-img img				{ width:40%; }
 
@@ -227,7 +238,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content h3,
 .page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:24px; line-height: 1; text-transform: uppercase }
 .page-content p					{ font-size: 19px; line-height: 32px;}
-.page-content a					{ color: #F97396;}
+.page-content a					{ color: #ff7271;}
 .page-element 					{  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;background-position: center center; }
 
 .page-content-light	h2			{ border-bottom:1px solid #fff; }
@@ -278,9 +289,14 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 
 .page-gallery						{ height: 100%; padding:0; }*/
 
+<<<<<<< HEAD
 .extra_content_col					{ /*width: 25%;*/ width: calc(25% - 50px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px 0 50px 50px; line-height: 26px; height: 100%; max-width: 305px; }
 
 .gallery_col						{ width:70%; float: right;}
+=======
+.extra_content_col					{ width:calc( 45% - 150px ); float:left;  margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
+.gallery_col						{ width:64%; float: right; }
+>>>>>>> FETCH_HEAD
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:33.3333%;  margin:0; position: relative; }
 
@@ -307,7 +323,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .page-redirect #soj-logo-big	{ position: relative; margin: 0 auto; top: 0; right: auto;}
 .page-redirect h1				{ font-family: 'Bigcaslon', serif; font-size: 2.5em; font-weight: 100;}
 .page-redirect p				{ font-family: 'Pathway Gothic One', sans-serif; font-size: 1.5em; text-transform: uppercase;}
-.page-redirect a				{ color: #F97396; text-decoration: none;}
+.page-redirect a				{ color: #ff7271; text-decoration: none;}
 .page-redirect a:hover			{ text-decoration: underline;}
 .page-redirect .icon-list		{ display: none; }	
 
@@ -446,8 +462,8 @@ footer{height: 610px;}
 .btn-facebook{ background: #3f569a;}
 .btn-twitter{background: #44abf0;}
 .btn-pinterest{background: #ca2128;}
-.btn-email					{ background: #f97396; color: #fff;}
-.btn-soj					{ background: #f97396; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important;}
+.btn-email					{ background: #ff7271; color: #fff;}
+.btn-soj					{ background: #ff7271; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important;}
 .btn span{position:relative; left: -15px; top:3px; display: inline-block; }
 .btn span:hover{color: #fff !important;}
 .btn .icon-facebook:hover:before,
@@ -456,37 +472,38 @@ footer{height: 610px;}
 .icon-mail:hover:before {color: #fff;}
 
 
-.btn-subscribe{background: #f97396; color: #000; }
+.btn-subscribe{background: #ff7271; color: #000; }
 
 
 
 /**************************************************************
 *** USER PAGES
 ***************************************************************/
-.content-page-users				{ max-width:500px; width:100%; margin:120px auto; position: relative; }
-.content-page-users	h2			{ font-family: bigcaslon; font-size:50px; text-align:center; font-weight: normal; margin-bottom: 60px; }
-.content-page-users	p			{ text-align: center; padding-bottom: 20px; }
+.content-page-users				{ max-width:500px; width:100%; margin:0 auto; position: relative; }
+.content-page-users	h2			{ font-family: bigcaslon; font-size:60px; text-align:center; font-weight: normal; margin-bottom: 30px; }
+.content-page-users	p			{ text-align: left; padding-bottom: 20px; }
 .content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
 .content-page-users	input,
-.content-page-users	textarea		{ width:calc( 100% - 30px ); padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none;  }
+.content-page-users	textarea		{ width:calc( 100% - 30px ); background:#333; padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none; color:#FFF; }
 
 .content-page-users p.forgetmenot 		{ text-align: left; }
 .content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
 .content-page-users p.forgetmenot input	{ width:20px; }
-#wp-submit,
+
 
 #membership-wrapper legend				{ display: none; }
 #membership-wrapper p.help-block:first-child,
 #membership-wrapper fieldset p.help-block				{ display: none; }
 #membership-wrapper .form-membership fieldset p.help-block				{ display: block; }
 #membership-wrapper  .alert-success						{ display: none; }
+#membership-wrapper p.help-block			{ text-indent: -1000000px; height:1px; overflow:hidden;}
 
-
-.form-membership .button				{ border-radius: 20px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 20px; width: auto; height: 40px; line-height: 40px; background: #f97396; color: #000 !important; padding:0 20px; }
+.form-membership .button,
+#wp-submit								{ border-radius: 40px; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase;  font-size: 33px; width: auto; height: 76px; line-height: 76px; background: #ff7271; color: #000 !important; padding:0 20px; }
 .form-membership legend					{ display:none; }
 fieldset								{ border:none; padding:0; margin:0; }
 .form-element							{ padding-bottom:15px; }
-.form-element p.help-block				{ margin:20px 0 0 0; padding:20px 0 0 0; border-top:1px solid #FFF; }
+.form-element p.help-block				{ margin:20px 0 0 0; padding:0; border-top:1px solid #333; }
 
 a#login_right							{ text-align: center; display: block; width:100%; color:#FFF; }
 
@@ -501,14 +518,25 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 .content-page-users .wpcf7-form	input,
 .content-page-users .wpcf7-form	textarea	{ margin-top:10px; }
 
-
+.cls-btn									{ position: fixed; top:20px; right:20px; }
 
 table.purchasetable							{ width:100%; }
 table.purchasetable td						{ width:33.3333%; }
 
-#pronamic-pay-form input					{ border-radius: 20px; margin-right: 18px; width: 140px; height: 40px; line-height: 40px; font-size: 20px; color: #fff; display: inline-block; background:#000; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; background: #f97396; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important; }
+#pronamic-pay-form input					{ border-radius: 20px; margin-right: 18px; width: 140px; height: 40px; line-height: 40px; font-size: 20px; color: #fff; display: inline-block; background:#000; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; background: #ff7271; color: #000 !important; padding:0 20px!important; display: inline-block; width:auto!important; }
 
-.content-page-users a						{ color:#f97396; }
+.content-page-users a						{ color:#ff7271; }
+
+p.payment									{ border-top:1px solid #333; padding-top:30px; text-align: left; font-size:18px; }
+td.detailscolumn							{ display: none; }
+td.pricecolumn								{ display: none; }
+tr.pricescolumn								{ display: none; }
+
+#membership-wrapper .purchasetable .buynowcolumn		{ text-align: left!important; height:100px; border-top:1px solid #333; padding-top:30px; position: relative; }
+#membership-wrapper .purchasetable .buynowcolumn img	{ position: absolute; right:0; top:30px; }
+#membership-wrapper .purchasetable .buynowcolumn div	{ margin-top:0 !important; }
+
+#loginform label							{ font-size:18px; }
 
 
 
