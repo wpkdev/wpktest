@@ -21,6 +21,38 @@
        
 	<title>Shot of Joy</title>
 	<?php //wp_head(); ?>
+  	 <link rel="icon" href="<?php echo $template_directory; ?>/img/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="<?php echo $template_directory; ?>/img/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="http://www.shotofjoy.nl/AppIcon76x76.png"/>
+	<link rel="apple-touch-icon-precomposed" href="http://www.shotofjoy.nl/AppIcon72x72@2x.png"/>
+	<link rel="apple-touch-startup-image" href="http://www.shotofjoy.nl/AppIcon76x76.png"/>
+	<link rel="apple-touch-icon-precomposed" href="icon" />
+
+  	
+  	 <?php if (is_singular()): global $post; setup_postdata($post); ?>
+        <meta name="description" content="" />
+         <meta property="og:description" content="<?php the_excerpt_rss(); ?>" />
+        <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), full );
+        if ( has_post_thumbnail() ) { ?>
+            <meta property="og:image" content="<?php echo $src[0]; ?>" />
+            <link rel="image_src" href="<?php echo $src[0]; ?>" />
+        <?php } else { ?>
+            <link rel="image_src" href="<?php echo $template_directory; ?>/img/SOJ-logo-zw.png" />
+            <meta property="og:image" content="<?php echo $template_directory; ?>/img/SOJ-logo-zw.png" />
+        <?php } ?>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<?php the_permalink() ?>" />
+        <meta property="og:title" content="<?php wp_title("", true); ?>" />
+    <?php else: ?>
+         <meta property="og:description" content="" />
+        <meta property="og:image" content="<?php echo $template_directory; ?>/img/SOJ-logo-zw.png" />
+        <link rel="image_src" href="<?php echo $template_directory; ?>/img/SOJ-logo-zw.png" />
+        <meta property="og:url" content="http://www.shotofjoy.nl" />
+        <meta property="og:title" content="ShotofJoy.nl" />
+        <meta property="og:type" content="website" />
+    <?php endif; ?>
+    <meta name="robots" content="index, follow">
+  	
   	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01199" type="text/css" /> 
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	
