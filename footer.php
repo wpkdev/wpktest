@@ -374,7 +374,7 @@ global $video_url;
         openOnLoad: false,             
         docClose: true,                    
         closeByEscape: true,           
-        moveOnScroll: false,            
+        moveOnScroll: true,            
         resizeWindow: true,             
         video: '<?php echo $video_url; ?>',
         

@@ -225,8 +225,8 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-wrapper-dark .subtitle_quote h3 {color: #FFF;}
 
 
-.extra-img					{ position: absolute;  height: auto; width: calc( 100% - 200px); padding:0 100px; z-index:50; }
-.extra-img img				{ width:40%; }
+.extra-img					{ position: absolute;  height: auto; width: 100%; padding:0 100px; z-index:50; }
+.extra-img img				{ max-width:100%; }
 
 .start-page					{ position: absolute; background:none; padding:0; z-index:500; width:100%;  padding:0; }
 .vert-top-title				{ top:100px; }
@@ -245,7 +245,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content h2,
 .page-content2 h2				{ border-bottom:1px solid #FFF; padding:0 0 36px 0; margin:0 0 30px 0; font-family: novecento_widebook, sans-serif; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
 .subtitle						{ text-align: center; clear: both; } 
-.subtitle > blockquote			{ margin: 0}
+.subtitle + blockquote			{ margin: 0}
 .page-content2 h3,
 .page-content h3,
 .page-gallery h3				{ border-bottom:1px solid #FFF; display: inline-block;  padding:0 0 10px 0; margin:0 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:24px; line-height: 1; text-transform: uppercase }
@@ -286,6 +286,9 @@ img.alignright{float: right; margin: 20px -85px 20px 20px;}
 .page-quote .start-page		{ position: relative !important}
 
 .content-large-image img	{ width: 100%; height: auto; }
+.content-large-image .extra-img {width: 100%;}
+.content-large-image .extra-img img{max-width: 100%;}
+
 
 /******************************
 ***** SHOP GALLERY
@@ -364,7 +367,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 
 .close-video				{ width: 150px; height: 40px; line-height: 40px; position: absolute; right: 20px; top: 20px; z-index: 1000; display: none;}
 .btn-close-video			{ color: #fff; text-decoration: none;}
-.btn-close-modal			{ color: #fff; text-decoration: none; text-align: right;}
+.btn-close-modal			{ color: #fff; font-family: 'Pathway Gothic One', 'sans-serif'; font-size: 20px; text-transform: uppercase; text-decoration: none; text-align: right;}
 .btn-close-modal:hover		{ cursor: pointer;}
 
 /**************************************************************
@@ -575,14 +578,14 @@ tr.pricescolumn								{ display: none; }
 	.page-quote h1							{ font-size: 57px; line-height: 46px;}
 	
 	
-	
+	.page-content h2, .page-content2 h2		{ font-size: 40px;}
 	
 	
 }
 	
 	
 	
-@media all and (max-width: 960px){
+@media all and (max-width: 1280px){
 
 
 
@@ -610,13 +613,13 @@ tr.pricescolumn								{ display: none; }
 	.extra-img									{ display: none;} 
 	
 	
-	ul.wpk-gallery li							{ height: }
+	ul.wpk-gallery li							{ height:; }
 	
 	
 }	
 	
 
-@media all and (max-width: 768px){
+@media all and (max-width: 1024px){
 	#soj-logo-big							{ width:150px; right: 60px}
 	.start-page	h1							{ font-size:26px; line-height: 26px; }
 	#soj-logo-big							{ width:100px; top:10px; }
