@@ -274,7 +274,7 @@ var window_width = $(window).width();
 					counter++;
 					
 				});
-		  },50);
+		  },100);
 		
 	} 
 	
@@ -337,7 +337,7 @@ var window_width = $(window).width();
  	     
  	     setTimeout(function(){
  	     	resizeBg();       
- 	     }, 51);       			
+ 	     }, 105);       			
  	//theWindow.resize(resizeBg).trigger("resize");
  
 
