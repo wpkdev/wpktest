@@ -10,7 +10,7 @@
 	
 	
 	
-	$src = aq_resize( $image['url'], 1500, 818, true, false ); //resize & crop img
+	$src = aq_resize( $image['url'], 1920, 1080, true, false ); //resize & crop img
 	$src_1024 = aq_resize( $image['url'], 1024, 559, true, false ); //resize & crop img
 	$src_768 = aq_resize( $image['url'], 786, 429, true, false ); //resize & crop img
 	$src_480 = aq_resize( $image['url'], 480, 480, true, false ); //resize & crop img
