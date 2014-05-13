@@ -206,12 +206,10 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content-dark .subtitle_quote h3 {color: #000;}
 .page-quote h1			{ font-size: 123px !important; line-height: 127px !important;}
 
-/*.hor-left							{ float:left;  z-index:10; position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:600px;  }
-.hor-center							{ margin:0 auto; z-index:10; position: relative; top:0px; width: calc(50% - 100px); max-width:600px;}
-.hor-right							{ margin:0; float:right;  z-index:10; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; max-width:670px; }
-*/
 .hor-left							{ float:left;  position: relative; top:0px;   width: calc(50% - 150px); padding-left:100px; max-width:670px;  }
-.extra-img.hor-right-title img					{ width: 58%; }
+.extra-img.hor-right-title img,
+.extra-img.hor-left-title img		{ width: 58%;}
+.extra-img.hor-center-title img		{ width:100%}
 
 .hor-center							{ margin:0 auto; position: relative; top:0px; width: calc(50% - 100px); max-width:600px;}
 .hor-right							{ margin:0; float:right; position: relative; top:0px; width: calc(50% - 150px); padding-right:100px; max-width:670px; }
