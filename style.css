@@ -9,6 +9,8 @@ Author URI: http://www.wayneparkerkent.com/
 /* Reset all styles */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{ display:block}audio,canvas,video{ display:inline-block; *display:inline; *zoom:1}audio:not([controls]){ display:none; height:0}[hidden]{ display:none}html{ font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}html,button,input,select,textarea{ font-family:sans-serif}body{ margin:0}a:focus{ outline:thin dotted}a:hover,a:active{ outline:0}h1{ font-size:2em; margin:0.67em 0}h2{ font-size:1.5em; margin:0.83em 0}h3{ font-size:1.17em; margin:1em 0}h4{ font-size:1em; margin:1.33em 0}h5{ font-size:0.83em; margin:1.67em 0}h6{ font-size:0.75em; margin:2.33em 0}abbr[title]{ border-bottom:1px dotted}b,strong{ font-weight:bold}blockquote{ margin:1em 40px}dfn{ font-style:italic}mark{ background:#ff0; color:#000}p,pre{ margin:1em 0}pre,code,kbd,samp{ font-family:monospace,serif; _font-family:'courier new',monospace; font-size:1em}pre{ white-space:pre; white-space:pre-wrap; word-wrap:break-word}q{ quotes:none}q:before,q:after{ content:''; content:none}small{ font-size:75%}sub,sup{ font-size:75%; line-height:0; position:relative; vertical-align:baseline}sup{ top:-0.5em}sub{ bottom:-0.25em}dl,menu,ol,ul{ margin:1em 0}dd{ margin:0 0 0 40px}menu,ol,ul{ padding:0 0 0 40px}nav ul,nav ol{ list-style:none; list-style-image:none}img{ border:0; -ms-interpolation-mode:bicubic}svg:not(:root){ overflow:hidden}figure{ margin:0}form{ margin:0}fieldset{ border:1px solid #c0c0c0; margin:0 2px; padding:0.35em 0.625em 0.75em}legend{ border:0; padding:0; white-space:normal; *margin-left:-7px}button,input,select,textarea{ font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle}button,input{ line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{ cursor:pointer; -webkit-appearance:button; *overflow:visible}button[disabled],input[disabled]{ cursor:default}input[type="checkbox"],input[type="radio"]{ box-sizing:border-box; padding:0; *height:13px; *width:13px}input[type="search"]{ -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{ -webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{ border:0; padding:0}textarea{ overflow:auto; vertical-align:top}table{ border-collapse:collapse; border-spacing:0}
 
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
 /**********
 FONTS
 ***********/
@@ -158,8 +160,8 @@ header						{ display:none; }
 ***** NAVIGATION
 *******************************/
 nav							{ width:15px; padding:27.5px;  position: fixed; bottom:0; right:0; z-index:100; }
-nav a.go_to_page			{ display: block; text-indent: -10000px;  text-decoration: none; background: rgba(0, 0, 0, 0.15);   color:#000; width: 6px; height:6px; padding:4px; margin-bottom:10px; text-align: center; line-height: 14px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
-nav a.go_to_page span		{ width:6px; height:6px; background:#FFF;  -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; display: block;  }
+nav a.go_to_page			{ display: block; text-indent: -10000px;  text-decoration: none; background: rgba(0, 0, 0, 0.15);   color:#000; width: 12px; height:12px; padding:4px; margin-bottom:10px; text-align: center; line-height: 14px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+nav a.go_to_page span		{ width:6px; height:6px; background:#FFF;  -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; display: block; position: relative;left: -1px;top: -1px; }
 	
 nav a.nav-act				{ background: rgba(0, 0, 0, 0.4); width: 12px; height:12px; padding:1px;  }
 nav a.nav-act span			{ width:12px; height:12px; background:#FFF;  -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; display: block;  }
@@ -274,23 +276,23 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .gallery-3 li:nth-child(3n+3) {border-right: none;}
 
 
-
 .page-gallery						{ height: 100%; padding:0; }*/
 
-.extra_content_col					{ width:calc( 45% - 150px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px; line-height: 26px; height: 100%; max-width: 405px; }
-.gallery_col						{ width:64%; float: right; }
+.extra_content_col					{ /*width: 25%;*/ width: calc(25% - 50px ); float:left; background:#fff; color:#000; margin-left:50px; padding:50px 0 50px 50px; line-height: 26px; height: 100%; max-width: 305px; }
+
+.gallery_col						{ width:70%; float: right;}
 .gallery_col ul.wpk-gallery			{ margin: 0 20px 0 0; }
 .gallery_col ul.wpk-gallery li		{ float:left; width:33.3333%;  margin:0; position: relative; }
 
-.text-pos-right .extra_content_col		{ float: right;  margin-left:0;  margin-right:50px; }
-
+/* Gallery text on right side */
+.text-pos-right .extra_content_col		{ float: right;  margin-left:0;  margin-right:50px; padding: 40px 25px 40px 0; }
 .text-pos-right .extra_content_col .subtitle,			
 .text-pos-right .extra_content_col h2	{ text-align: left;}
-.text-pos-right .gallery_col		{ float: left; width: calc( 54% - 50px ); padding-left:50px; }
+.text-pos-right .gallery_col		{ float: left; width: 73%; }
 
 .extra_content_col h2				{ border-bottom:1px solid #000; padding:0 0 36px 0; margin:0 0 40px 0; font-family: novecento_widebook, sans-serif; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
 .extra_content_col h3				{ border-bottom: 1px solid #000; }
-
+.extra_content_col a				{ color: #F97396; }
 .product-title				{ font-family: bigcaslon; font-size: 18px; margin-bottom: 0.5em; display: block;}
 .product-price				{ font-family: arial, sans-serif;font-size: 15px;}
 .gallery-description		{ padding-top: 10px;}
@@ -516,25 +518,55 @@ table.purchasetable td						{ width:33.3333%; }
 
 
 @media all and (max-width: 1024px){
-	#soj-logo-big		{ width:175px; }
+	#soj-logo-big							{ width:175px; }
 	.start-page	h1							{ font-size:57px; line-height: 46px; }
 	
-	.page-quote h1			{ font-size: 57px; line-height: 46px;}
+	.page-quote h1							{ font-size: 57px; line-height: 46px;}
+	
+	
+	
+	
 	
 }
 	
+	
+	
+@media all and (max-width: 960px){
+
+
+
+	#soj-logo-big								{ width: 243px;}
+	
+	
+	.page-element								{ float: left; overflow-x: hidden; overflow-y: auto;}
+	
+	
+	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
+	
+	
+	.text-pos-right .extra_content_col,
+	.text-pos-right .gallery_col,
+	.extra_content_col, .gallery_col 			{ width: 100%; float: left; max-width: 100%; padding: 0 130px;}
+	.text-pos-right	.extra_content_col,
+	.extra_content_col							{ margin-left: 0; padding: 50px 130px 0 130px;} 	
+	
+	.hor-left,
+	.hor-center									{ max-width: 100%; width: calc(100% - 75px); padding: 0 130px;}
+	.content-large-image img					{ width: auto; height:100%;}
+	
+	
+	.page-content								{ width: 100%; max-width: 100%; }
+	.extra-img									{ display: none;} 
+	
+	
+	ul.wpk-gallery li							{ height: }
+	
+	
+}	
+	
 
 @media all and (max-width: 768px){
-	#soj-logo-big		{ width:150px; }
-	/*.page-content-box		{ width:calc(100% - 140px)!important; left:auto !important; padding-top:50px!important; padding-right:80px!important; padding-left:80px!important; margin:50px auto 0 auto!important; position: static!important; }*/
-	
-	/*.page-element			{ height: auto!important; } */
-	
-}
-
-
-
-@media all and (max-width: 768px){
+	#soj-logo-big							{ width:150px; }
 	.start-page	h1							{ font-size:26px; line-height: 26px; }
 	#soj-logo-big							{ width:100px; top:10px; }
 	.page-content .subtitle_quote h3		{ padding:0 100px; font-size:20px; }
@@ -550,9 +582,15 @@ table.purchasetable td						{ width:33.3333%; }
 	
 	
 	/* GALLERY */
+	/*
 	.text-pos-right .extra_content_col,
 	.extra_content_col,
-	.text-pos-right .gallery_col 						{ width:calc(100% - 150px); float:none; padding-left: 75px; padding-right: 75px; margin-right:0; max-width:calc(100% - 150px); }
+	*/	
+	
+	/*
+	.text-pos-right .gallery_col 						{ width:calc(100% - 150px); float:left; padding-left: 75px; padding-right: 75px; margin-right:0; max-width:calc(100% - 150px); }
+	.text-pos-right .extra_content_col					{ width: 100%; float: left; display: block;}
+	*/
 	
 	.gallery_col ul.wpk-gallery li						{ width:50%; margin:0; }
 	.gallery_col ul.wpk-gallery li img					{ width:90%; height:auto; }

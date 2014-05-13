@@ -25,6 +25,7 @@
 		
 		// Text block left
 		if($position_text == 'left'){
+		
 			echo '<div class="extra_content_col">';
 				
 				if (!empty($sub_title)){
@@ -42,9 +43,7 @@
 		} else {
 		
 			echo '<div class="text-pos-right ">';
-				echo '<div class="gallery_col ">';
-					echo get_sub_field('shop_gallery');
-				echo '</div>';
+			
 				echo '<div class="extra_content_col ">';
 				
 					if (!empty($sub_title)){
@@ -54,7 +53,14 @@
 						echo '<h2>'.$page_title.'</h2>';
 					}
 					echo get_sub_field('extra_text');
+				echo '</div>'; // extra content col
+			
+				echo '<div class="gallery_col ">';
+					echo get_sub_field('shop_gallery');
 				echo '</div>';
+				
+
+				
 			echo '</div>';
 		}
 		
