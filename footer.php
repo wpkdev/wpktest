@@ -12,7 +12,7 @@
 <div class="social-media-box">
 	<ul>
 		<li class="mobile-popup"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($post_url); ?>" class="icon-facebook js-social-popup ">&nbsp;</a></li>
-		<li class="mobile-popup"><a href="https://twitter.com/intent/tweet?text=<?php echo $post_title ?>&url=<?php echo urlencode($post_url); ?>&via=ShotofJoy&related=Shotofjoy" class="icon-twitter  js-social-popup">&nbsp;</a></li>
+		<li class="mobile-popup"><a href="https://twitter.com/intent/tweet?text=<?php echo $post_title ?>&url=<?php echo urlencode($post_url); ?>&via=shotofjoynl&related=shotofjoynl" class="icon-twitter  js-social-popup">&nbsp;</a></li>
 		<li class="mobile-popup"><span class="social-media-pinterest social-media-button  "><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></span></li>
 		<li class="mobile-popup"><a href="mailto:?SUBJECT=<?php echo $post_title ?>- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: <?php echo urlencode($post_url); ?>" target="_blank" class="icon-mail mobile-popup" >&nbsp;</a></li>
 		<li class="mobile-popup-btn"><a href="" class="icon-export ">&nbsp;</a></li>
@@ -22,7 +22,16 @@
 
 
 
-<footer></footer>
+<footer>
+	<ul>
+		<li><a href="http://www.shotofjoy.nl/over-shot-of-joy/">Over Shot of Joy</a></li>
+		<li><a href="http://www.shotofjoy.nl/privacy-beleid-statement-van-shot-of-joy/">Privacy Policy</a></li>
+		<li><a href="http://www.shotofjoy.nl/algemene-voorwaarden/">Algemene voorwaarden</a></li>
+		<li><a href="http://www.shotofjoy.nl/contact/">Contact</a></li>
+		<li><a href="http://www.shotofjoy.nl/uitschrijven/">Abonnement opzeggen</a></li>
+		<li><a href="http://www.shotofjoy.nl/nieuwsbrief/">Inschrijven nieuwsbrief</a></li>
+	</ul>
+</footer>
 
 
 
