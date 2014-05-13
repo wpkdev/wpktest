@@ -19,6 +19,9 @@ while ( have_posts() ) : the_post();
 	
 	
 	echo '<div class="content content-page-users">';
+	?>
+			<a href="http://www.shotofjoy.nl"><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
+	<?php
 	echo '<img src="'.$template_directory.'/img/previewvideo.jpg" id="previewvideo"/>';
 	
 	
