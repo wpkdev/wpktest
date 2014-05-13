@@ -353,7 +353,7 @@ global $video_url;
     video = '';
     
     $('.modalLink').on('click', function(e){
-		position_close_btn(video);    
+		//position_close_btn(video);    
     });
     
     $('.modalLink11').modal({
@@ -378,7 +378,7 @@ global $video_url;
     
     
     $('.modalLink22').on('click', function(e){
-		position_close_btn(video);    
+		//position_close_btn(video);    
     });
     
     $('.modalLink111').modal({
@@ -404,11 +404,11 @@ global $video_url;
     
     
     
-       function position_close_btn(video){
-	    	var close_btn = $('.btn-close-modal');
-			var video_width = $('.responsive-container iframe').width();
-			close_btn.css('width', video_width + 'px');
-		}
+   function position_close_btn(video){
+    	var close_btn = $('.btn-close-modal');
+		var video_width = $('.responsive-container iframe').width();
+		close_btn.css('width', video_width + 'px');
+	}
 
     
 
