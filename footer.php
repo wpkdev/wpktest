@@ -274,12 +274,7 @@ var window_width = $(window).width();
 		
 
     
-    function position_close_btn(){
-	    var close_btn = $('.btn-close-modal');
-	    var video_width = $('.responsive-container iframe').width();
-	    close_btn.css('width', video_width + 'px');
-    }
-   
+    
     
 	$(window).on("resize scroll",function(){
 	    position_close_btn();
@@ -350,8 +345,10 @@ global $video_url;
     $(".text-wrapper").fitVids();
      position_close_btn();
     
+    video = '';
+    
     $('.modalLink').on('click', function(e){
-		position_close_btn();    
+		position_close_btn(video);    
     });
     
     $('.modalLink11').modal({
@@ -369,11 +366,45 @@ global $video_url;
         moveOnScroll: false,            
         resizeWindow: true,             
         video: '<?php echo $video_url; ?>',
+        
         videoClass:'video',      
         close:'.btn-close-modal' 
     });
     
     
+    $('.modalLink22').on('click', function(e){
+		position_close_btn(video);    
+    });
+    
+    $('.modalLink111').modal({
+        trigger: '.modalLink22',          
+        olay:'div.overlay',             
+        modals:'div.modal',             
+        animationEffect: 'fadeIn',   
+        animationSpeed: 400,          
+        moveModalSpeed: 'slow',         
+        background: '000000',           
+        opacity: 0.7,                   
+        openOnLoad: false,             
+        docClose: true,                    
+        closeByEscape: true,           
+        moveOnScroll: false,            
+        resizeWindow: true,             
+        video: 'http://player.vimeo.com/video/31795904?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff',
+        
+        videoClass:'video',      
+        close:'.btn-close-modal' 
+    });
+
+    
+    
+    
+       function position_close_btn(video){
+	    	var close_btn = $('.btn-close-modal');
+			var video_width = $('.responsive-container iframe').width();
+			close_btn.css('width', video_width + 'px');
+		}
+
     
 
  });
