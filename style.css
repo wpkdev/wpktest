@@ -288,7 +288,7 @@ img.alignright{float: right; margin: 20px -85px 20px 20px;}
 .page-quote					{ }
 .page-quote .start-page		{ position: relative !important}
 
-.content-large-image img	{ width: 100%; height: auto; }
+/*.content-large-image img	{ width: 100%; height: auto; }*/
 .content-large-image .extra-img {width: 100%;}
 .content-large-image .extra-img img{max-width: 100%;}
 
