@@ -42,7 +42,7 @@ while ( have_posts() ) : the_post();
 	the_content();
 	
 	if($_GET['action'] == 'subscriptionsignup'){
-		echo '<p><input type="checkbox" value="true" style="width:20px!important; ">Ik ga akkoord met de <a href="http://www.shotofjoy.nl/algemene-voorwaarden/" target="_blank">algemene voorwaarden</a>.</p>';
+		echo '<p><input type="checkbox" value="true" style="width:20px!important; ">Ik ga akkoord met de <a href="http://www.shotofjoy.nl/algemene-voorwaarden/" target="_blank">algemene voorwaarden</a> en <a href="http://www.shotofjoy.nl/privacy-beleid-statement-van-shot-of-joy/" target="_blank">privacy policy</a>.</p>';
 	}
 	
 	
