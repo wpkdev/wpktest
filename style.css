@@ -645,7 +645,7 @@ tr.pricescolumn								{ display: none; }
 	
 	
 	
-	.content-page-users					{ width:calc( 100% - 40px  ); padding:20px; margin:20px 0; }	
+	.content-page-users					{ width:calc( 100% - 40px  ); padding:20px; margin:20px auto; }	
 	.content-page-users	h2				{ font-size:30px; margin-bottom:30px; }
 	
 	
