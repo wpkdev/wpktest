@@ -401,6 +401,9 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 	*/
 
 	$(function(){
+	
+		
+		
 		// Hide welcome popup
 		$('.btn-close-welcome-popup').on('click', function(){
 			//if(e.target == this){
