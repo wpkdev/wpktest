@@ -16,14 +16,14 @@ get_header();
 
 
 while ( have_posts() ) : the_post();
-	
-	
-	echo '<div class="content content-page-users">';
-	
 	?>
 	<a href="http://www.shotofjoy.nl"><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	
 	<?php
+	
+	echo '<div class="content content-page-users">';
+	
+	
 	//echo '<h2>'.get_the_title().'</h2>';
 	
 	

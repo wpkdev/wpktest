@@ -19,10 +19,6 @@ while ( have_posts() ) : the_post();
 	
 	
 	
-	
-	
-	
-	echo '<div class="content content-page-users">';
 	?>
 			<a href="http://www.shotofjoy.nl" ><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	
@@ -30,7 +26,11 @@ while ( have_posts() ) : the_post();
 	
 	
 	<?php
+
 	
+	
+	echo '<div class="content content-page-users">';
+		
 	if(current_user_is_member()){
 		echo '
 			<h2>Welkom bij</h2>

@@ -112,7 +112,7 @@ FONTS
 MAIN SETTINGS
 ***********/
 body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
-#wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
+#wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; background:#151112; }
 
 .page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1;overflow-y: hidden; overflow-x:hidden; }
 .bg-box				{ position: fixed; top:0; right:0; width:100%; height:100%; z-index:0; }
@@ -543,7 +543,7 @@ footer ul li a:hover		{ color:#ff7271; }
 /**************************************************************
 *** USER PAGES
 ***************************************************************/
-.content-page-users				{ max-width:500px; width:100%; margin:0 auto; position: relative; margin-bottom:200px; }
+.content-page-users				{ max-width:500px; width:100%; margin:0 auto; position: relative; margin-bottom:200px; background:#151112; }
 .content-page-users	h2			{ font-family: bigcaslon; font-size:60px; text-align:center; font-weight: normal; margin-bottom: 30px; }
 .content-page-users	p			{ text-align: left; padding-bottom: 20px; }
 .content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
@@ -583,7 +583,7 @@ ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 .content-page-users .wpcf7-form	input,
 .content-page-users .wpcf7-form	textarea	{ margin-top:10px; }
 
-.cls-btn									{ position: fixed; top:20px; right:20px; }
+.cls-btn									{ position: absolute; top:20px; right:20px; }
 
 table.purchasetable							{ width:100%; }
 table.purchasetable td						{ width:33.3333%; }

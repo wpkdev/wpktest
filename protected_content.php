@@ -25,7 +25,7 @@ if(!$next_post){
 get_header(); 
 
 
-
+echo '<a href="http://www.shotofjoy.nl" ><img src="'.$template_directory.'/img/close-btn.jpg" class="cls-btn" ></a>';
 
 while ( have_posts() ) : the_post();
 	
@@ -34,7 +34,7 @@ while ( have_posts() ) : the_post();
 	//echo '<h2>'.get_the_title().'</h2>';
 	the_content();
 	
-	echo '<a href="http://www.shotofjoy.nl" ><img src="'.$template_directory.'/img/close-btn.jpg" class="cls-btn" ></a>';
+	
 	if ( !is_user_logged_in() ) {
 		echo '
 			<p><a href="http://www.shotofjoy.nl/register?action=registeruser&subscription=1" class="btn btn-soj btn-large">Start je gratis 2 weken</a></p>

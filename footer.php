@@ -81,7 +81,7 @@ var window_width = $(window).width();
 isiPhone
 if( !isiDevice && !isAndroid && !isiPhone && !isiPad ){
 
-if(window_width > 1024){
+if(window_width > 1200){
 var counter = 1;
    $('.page-element').each(function(index, item) {
    	if(counter > 1){
@@ -369,18 +369,17 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 					var page_height = $(this).height();
 					var screen_height = $(window).height();
 					
-					console.log('screenheight:' + page_height);
 					
 					if(page_height > screen_height){
 						//page_height = screen_height;
 						$('.page-'+counter).height(page_height);
 						$('.page-box-'+counter).height(page_height);
 						
-						console.log('set height ' +page_height);
+						
 
 					}
 					
-					console.log('page height2: ' +page_height);
+					
 					//$('.page-'+counter).height(page_height);
 					//$('.page-box-'+counter).height(page_height);
 					
@@ -471,9 +470,23 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 
  
  
+	setTimeout(function(){
+ 	     	  
+ 	         
+	$('.bg').each(function(index, item) {
 		
-	
+		img_width = $(this).width();
 		
+		
+		if(img_width > $(window).width()){
+			left_margin = (img_width - $(window).width()) / 2;
+			$(this).css('margin-left','-'+left_margin+'px');
+			
+			
+		}
+		
+	});
+		}, 106);
 	
  	
  	    			    		

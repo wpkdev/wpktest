@@ -28,7 +28,9 @@
 		
 		<a href="#" class="btn-close-welcome-popup">Of lees de shot van vandaag gratis...</a>
 		
-		
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
 	</div>
 	
 	
