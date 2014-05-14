@@ -175,7 +175,7 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 ***** HEADER
 *******************************/
 header						{ display:none; }
-#soj-logo-big				{ position: fixed; top:30px; right:120px; z-index: 10; }
+#soj-logo-big				{ position: fixed; top:30px; right:50px; width: 469px; z-index: 10; }
 .icon-user					{ position: fixed; top: 15px; left:15px; }
 
 
