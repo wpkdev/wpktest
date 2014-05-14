@@ -112,5 +112,5 @@ if (!empty($logo_color) ){
 	$logo_img = 'SOJ-logo-wit';
 }
 ?>
-<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg" id="soj-logo-big"/></a>
+<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" id="soj-logo-big"/></a>
 <?php } ?>

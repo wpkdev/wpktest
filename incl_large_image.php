@@ -41,7 +41,7 @@
 		}
 		
 		if(strlen($extra_image['url'])> 1){
-			echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'" class=" lrg-img-over "></div>';
+			echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'" class=" lrg-img-over "  nopin="nopin"></div>';
 		}
 		
 		

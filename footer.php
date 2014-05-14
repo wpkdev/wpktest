@@ -198,6 +198,12 @@ $('#loginform label').each(function(index, item) {
 });
 
 
+if($('#login_right').html()  == 'Heeft u al een account?'){
+	$('#login_right').html('Heb je al een account?');
+}
+
+
+
 
 
  $("#pronamic-pay-form input[type=submit]").attr('value','Lidmaatschap starten');
