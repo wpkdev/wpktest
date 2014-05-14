@@ -33,7 +33,7 @@ while ( have_posts() ) : the_post();
 	
 	if(current_user_is_member()){
 		echo '
-			<h2>Welkom bij Shot of Joy</h2>
+			<h2>Welkom bij</h2>
 			<center><a href="http://www.shotofjoy.nl"><img src="'.$template_directory.'/img/SOJ-logo-wit.svg" style="width:80%; max-width:200px; "/></a></center>
 			<h2>Heel veel plezier met je abonnement!</h2>
 			<center><a href="http://www.shotofjoy.nl/" class="btn btn-soj btn-large">Naar de homepage</a></center>
