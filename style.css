@@ -201,6 +201,8 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content			{ background:#151112; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; }
 
 /* Page Content Light = Witte tekstkleur tegen een zwarte achtergrond */
+.start-page.page-content-light h1{text-shadow:1px 1px 5px #000000;}
+
 .page-content-light		{ background:#151112; color:#fff; }  
 .page-content-light .main-title	{ color: #fff;	}
 
@@ -247,7 +249,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-right-title			{ text-align:right;   }
 
 
-.start-page	h1				{ font-family: bigcaslon; font-size:90px; text-align: center; line-height: 72px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; }
+.start-page	h1				{ font-family: bigcaslon; font-size:94px; text-align: center; line-height: 76px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; }
 /*.page-1 img					{ width: 100%; }*/
 .content,
 .content label					{ color:#FFF !important; }
@@ -338,11 +340,11 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .extra_content_col h2				{ border-bottom:1px solid #000; padding:0 0 36px 0; margin:0 0 40px 0; font-family: novecento_widebook, sans-serif; text-align: center; font-weight: normal; font-size:50px; line-height: 45px; }
 .extra_content_col h3				{ border-bottom: 1px solid #000; }
 .extra_content_col a				{ color: #F97396; }
-.product-title						{ font-family: 'Georgia', sans-serif; font-size: 18px; margin-bottom: 0.5em; display: block;}
+.product-title						{ font-family: 'Georgia', sans-serif; font-size: 16px; font-weight: bold; margin-bottom: 0; display: block;}
 .product-info1,
-.product-info2						{ display: block;}
+.product-info2						{ line-height: 1.5; display: block;}
 .product-price						{ font-family: arial, sans-serif;font-size: 15px;}
-.gallery-description				{ padding-top: 10px;}
+.gallery-description				{ padding-top: 0;}
 
 .btn-shop-it						{ position: absolute; z-index: 1000; display: none;}
 
