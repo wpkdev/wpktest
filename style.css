@@ -599,7 +599,7 @@ tr.pricescolumn								{ display: none; }
 	#soj-logo-big								{ width: 243px;}
 	
 	
-	.page-element								{ float: left; overflow-x: hidden; overflow-y: hidden;}
+	.page-element								{ /*float: left;*/ overflow-x: hidden; overflow-y: hidden;}
 	
 	
 	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
@@ -724,6 +724,9 @@ tr.pricescolumn								{ display: none; }
 	
 	.content-large-image img{ /*width: 100%; height: auto;*/ height: 100%; width: 100%;}
 	
+	.page-spotify			{ width: 300px; margin: 30px auto; padding: 0;}
+	.text-wrapper-spotify	{ background: transparent; margin: 0; padding: 0 !important;}
+	
 	.text-pos-right .extra_content_col, 
 	.extra_content_col 		{margin-left: 0;padding: 65px 55px 30px 65px;}
 	
@@ -733,7 +736,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.hor-right,
 	.hor-left,
-	.hor-center				{  padding: 0 65px;}
+	.hor-center				{  padding: 0 65px 30px 65px;}
 	
 	.btn-large	{ width: 100%; }
 	
