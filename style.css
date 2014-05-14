@@ -722,7 +722,7 @@ tr.pricescolumn								{ display: none; }
 	.footer-content						{ width: 100%; padding: 30px 50px;  }
 	
 	
-	#previewvideo						{ width:100px!important; height:100px!important; position: static; margin:20px auto 0 auto; display:block; }
+	#previewvideo						{ display:none; }
 	 
 	 
 	 .start-page	h1					{ letter-spacing: 0!important; }
@@ -752,7 +752,13 @@ tr.pricescolumn								{ display: none; }
 	.welcomepopup			{ padding:0 15px; }
 	.welcomepopup h1		{ line-height: 30px;  }
 	
-	.shotofjoy-logo			{ display:none; }
+	.shotofjoy-logo			{ margin-top:30px; }
+	.shotofjoy-logo	img		{ width:125px; }
+	
+	#soj-logo-big {
+width: 125px;
+}
+	
 	
 	.start-page	h1			{ margin: 0 50px;}
 
@@ -779,6 +785,8 @@ tr.pricescolumn								{ display: none; }
 	.extra_content_col		{ margin-left: 0;}
 	.extra-img				{ padding: 0 50px;}
 	
+	
+	.welcomepopup p.line-p		{ font-size:16px; }
 	
 	.extra-img img			{ width:120%;}	
 	

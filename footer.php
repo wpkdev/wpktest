@@ -15,6 +15,8 @@
 		<li class="mobile-popup"><a href="https://twitter.com/intent/tweet?text=<?php echo $post_title ?>&url=<?php echo urlencode($post_url); ?>&via=shotofjoynl&related=shotofjoynl" class="icon-twitter  js-social-popup">&nbsp;</a></li>
 		<li class="mobile-popup"><span class="social-media-pinterest social-media-button  "><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></span></li>
 		<li class="mobile-popup"><a href="mailto:?SUBJECT=<?php echo $post_title ?>- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: <?php echo urlencode($post_url); ?>" target="_blank" class="icon-mail mobile-popup" >&nbsp;</a></li>
+		<li class="mobile-popup"><a href="mailto:?SUBJECT=<?php echo $post_title ?>- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: <?php echo urlencode($post_url); ?>" target="_blank" class="icon-mail mobile-popup" >&nbsp;</a></li>
+		
 		<li class="mobile-popup-btn"><a href="" class="icon-export ">&nbsp;</a></li>
 	</ul>
 </div>
@@ -499,7 +501,16 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
  	resizeBg();*/
  	
 
- 
+  window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0: window.location.reload(); 
+                break; 
+                case 90: window.location.reload(); 
+                break; 
+                case -90: window.location.reload(); 
+                break; } 
+    };
 
 	
 </script>
