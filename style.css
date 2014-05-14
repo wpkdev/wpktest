@@ -132,12 +132,18 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 
 
 
+/******************************
+***** Detect mobile
+*******************************/
+.rotate-box			{ position: fixed; top:0; left:0; width:100%; height:120%; background: #151112; z-index: 100000000; overflow:auto; display: none; }
+
+
 
 /******************************
 ***** WELKOM POPUP
 *******************************/
 .welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:120%; background: #151112; z-index: 1000; overflow:auto; }
-.welcomepopup				{ width:100%; max-width: 540px; margin: 0 auto; text-align: center; position: relative; /*top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);*/}
+.welcomepopup				{ width:100%; max-width: 540px; overflow:auto; margin: 0 auto; text-align: center; position: relative; /*top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);*/}
 .welcomepopup h1			{ font-family: 'Bigcaslon', serif; font-weight: normal; color: #fff; font-size: 62px; text-align:center; line-height: 56px;}
 
 .welcomepopup p				{ color: #fff; text-transform: uppercase; font-family: 'Pathway Gothic One'; font-size: 24px;}

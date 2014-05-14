@@ -87,11 +87,15 @@
 	
 </header>
 
+<div class="rotate-box">hallo</div>
+
+
 <?php
 	if ( is_user_logged_in() ) {
 		echo '<a href="http://www.shotofjoy.nl/account-overzicht/" class="nav-posts icon-user">&nbsp;</a>';
 	}
 ?>
+
 
 <nav></nav>
 <?php
