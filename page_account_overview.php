@@ -35,8 +35,9 @@ while ( have_posts() ) : the_post();
       echo 'Voornaam: ' . $current_user->user_firstname . "<br/>";
       echo 'Achternaam: ' . $current_user->user_lastname . "<br/>";
 	  
-	  echo '<p><a href="http://www.shotofjoy.nl/account" class="btn btn-soj btn-small">Account aanpassen</a> &nbsp; '; 
-	  echo '<a href="http://www.shotofjoy.nl/logout" class="btn btn-soj btn-small">Uitloggen</a></p>';
+	  echo '<p><a href="http://www.shotofjoy.nl/account" class="btn btn-soj btn-small">Account aanpassen</a><br/> '; 
+	  echo '<a href="http://www.shotofjoy.nl/uitschrijven/" class="btn btn-soj btn-small">Abonnement opzeggen</a><br/>';
+	  echo '<a href="http://www.shotofjoy.nl/logout" class="btn btn-soj btn-small">Uitloggen</a><br/></p>';
 	  
 	  
     

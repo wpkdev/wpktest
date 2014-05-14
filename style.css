@@ -32,11 +32,11 @@ FONTS
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon2.eot?-af1wmt');
-	src:url('fonts/icomoon2.eot?#iefix-af1wmt') format('embedded-opentype'),
-		url('fonts/icomoon2.woff?-af1wmt') format('woff'),
-		url('fonts/icomoon2.ttf?-af1wmt') format('truetype'),
-		url('fonts/icomoon2.svg?-af1wmt#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-af1wmt');
+	src:url('fonts/icomoon.eot?#iefix-af1wmt') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-af1wmt') format('woff'),
+		url('fonts/icomoon.ttf?-af1wmt') format('truetype'),
+		url('fonts/icomoon.svg?-af1wmt#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -488,15 +488,17 @@ footer ul li a:hover		{ color:#ff7271; }
 
 .footer-content{color: #fff; text-align: center; padding: 30px; width: 100%;}
 .footer-content  h1{color: #fff; font-family: bigcaslon, serif; font-size: 36px; font-weight: 100; margin-bottom: 45px;}
-.footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 40px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 24px;line-height: 24px;text-transform: uppercase;}
+.footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 0px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 24px;line-height: 24px;text-transform: uppercase;}
+.footer-content h2		{ font-family: bigcaslon; font-size:40px; margin-bottom:35px;  }
+
 .footer-content p{font-family: 'Pathway Gothic One', 'sans-serif'; font-size: 22px; text-transform: uppercase;}
 
 
 .social-links, .subscribe-now{text-align:center;}	
-.social-links{margin-bottom: 155px;}
+.social-links{margin-bottom: 75px;}
 .btn{color: #fff; display: inline-block; background:#000; font-family: 'Pathway Gothic One', sans-serif;font-weight: normal; text-align:center; text-decoration: none; text-transform: uppercase; }
 .btn-small{border-radius: 20px; margin-right: 18px; width: 140px; height: 40px; line-height: 40px; font-size: 20px;}
-.btn-large{border-radius: 40px; font-size: 33px; width: 277px; height: 76px; line-height: 76px;}
+.btn-large{border-radius: 40px; font-size: 23px; width: auto; height: 55px; line-height: 55px;  width: auto; padding:0 20px;}
 .btn-facebook{ background: #3f569a;}
 .btn-twitter{background: #44abf0;}
 .btn-pinterest{background: #ca2128;}
@@ -512,6 +514,8 @@ footer ul li a:hover		{ color:#ff7271; }
 
 .btn-subscribe{background: #ff7271; color: #000; }
 
+
+.subscribe-now						{ padding:40px; border:2px solid #4d4d4d; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; max-width: 600px; width:100%; margin:0 auto; }
 
 
 /**************************************************************

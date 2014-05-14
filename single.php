@@ -95,6 +95,8 @@ endwhile;
 	
 	<div class="footer-content text-wrapper">
 		<div class="subtitle">Share the Joy</div>
+		
+		<h2>Deel dit shot via:</h2>	
 			
 		<div class="social-links">
 			<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($post_url).'" class="btn btn-small btn-facebook js-social-popup" target="_blank"><span class="icon-facebook"></span>Facebook</a>
@@ -105,7 +107,8 @@ endwhile;
 		
 		if ( !is_user_logged_in() ) {
 		echo '<div class="subscribe-now">
-			<h1>Wordt nu abonnee en ontvang de eerste maand gratis</h1>
+			<div><img src="'.$template_directory.'/img/SOJ-logo-wit.svg" width="200" /></div>
+			<h1>Wordt nu abonnee en ontvang de eerste twee weken gratis</h1>
 			<a href="http://www.shotofjoy.nl/register/" class="btn btn-large btn-subscribe">Abonneer</a>
 			<p>Dagelijks voor maar &euro; 2,99 per maand</p>
 		</div>';

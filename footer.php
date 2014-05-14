@@ -79,7 +79,7 @@ if(window_width > 1024){
 var counter = 1;
    $('.page-element').each(function(index, item) {
    	if(counter > 1){
- 	  	//$('.page-bg-'+counter).hide();
+ 	  	$('.page-bg-'+counter).hide();
  	  	
    	}
    	
@@ -530,7 +530,7 @@ global $video_url;
         closeByEscape: true,           
         moveOnScroll: false,            
         resizeWindow: true,             
-        video: 'http://player.vimeo.com/video/31795904?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff',
+        video: 'http://player.vimeo.com/video/31795904?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff&autoplay=true',
         
         videoClass:'video',      
         close:'.btn-close-modal' 

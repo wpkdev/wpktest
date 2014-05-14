@@ -37,7 +37,7 @@
 		echo '</div>';
 		
 		if($src[0]){
-			echo '<div class="content-large-image"><img src="'.$template_directory.'/img/pixel.gif" class=" page-bg-'.$counter.' bg " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  /></div>';
+			echo '<div class="content-large-image"><img src="'.$template_directory.'/img/pixel.gif"  nopin="nopin" class=" page-bg-'.$counter.' bg " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'"  /></div>';
 		}
 		
 		if(strlen($extra_image['url'])> 1){
