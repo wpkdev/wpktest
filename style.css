@@ -486,8 +486,8 @@ footer ul li a:hover		{ color:#ff7271; }
 
 
 .scroll-indicator-box		{ position: fixed; bottom:0; left:0; height: 50px;  z-index:50; text-align: center; width: 100%; }
-.scroll-indicator			{ background: rgba(0, 0, 0, 0.5);  color:#FFF; font-family: 'Pathway Gothic One', 'sans-serif'; text-align:center; margin:0 auto; width:130px; height: 65px; padding:10px 0 5px 0; -moz-border-radius-topleft: 100px; -moz-border-radius-topright:100px; -webkit-border-top-left-radius:100px; -webkit-border-top-right-radius:100px; border-top-left-radius:100px; border-top-right-radius:100px; }
-
+.scroll-indicator			{ background: rgba(0, 0, 0, 0.5);  color:#FFF; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; margin:0 auto; width:36px; height: 36px; padding:10px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;  }
+.scroll-indicator 	.icon-arrow-down	{width: 36px; height: 36px; left: -57px;}
 .social-media-box			{ position: fixed; bottom:20px; left:20px; z-index:100; width:50px;}
 .social-media-box ul		{ margin:0; padding:0; list-style: none; }
 .social-media-box ul li		{ margin:15px 0 0 0; padding:0; background: rgba(0, 0, 0, 0.15); text-align: center;  line-height: 36px; width: 36px; height:36px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px;}

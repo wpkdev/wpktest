@@ -4,7 +4,6 @@
 <?php if(!is_page()){ ?>
 <div class="scroll-indicator-box">
 	<div class="scroll-indicator">
-		scroll
 		<div class="icon-arrow-down">&nbsp;</div>
 	</div>
 </div>
