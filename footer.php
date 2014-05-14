@@ -183,8 +183,28 @@ $('.control-label').each(function(index, item) {
 
 
 
+ $("#pronamic-pay-form input[type=submit]").attr('value','Lidmaatschap starten');
+ $("#pronamic-pay-form input[type=submit]").attr("disabled", "disabled");
+ $("#pronamic-pay-form input[type=submit]").css("background", "#cccccc");
 
 
+$('#pronamic-pay-form img').hide();
+$('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/betaalmethode.jpg" /></p>');
+  
+   $('#payment_checker').click(function(e){
+   		if($(this).is(':checked')){
+	   		$("#pronamic-pay-form input[type=submit]").removeAttr("disabled");
+	   		$("#pronamic-pay-form input[type=submit]").css("background", "#ff7271");    
+   		}else{
+	   		 $("#pronamic-pay-form input[type=submit]").attr("disabled", "disabled");
+	   		 $("#pronamic-pay-form input[type=submit]").css("background", "#cccccc");
+   		}
+   });
+  
+  
+  
+   
+  
   
 /*******************************************
 *** SOCIAL MEDIA POPUP
