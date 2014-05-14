@@ -38,5 +38,13 @@ while ( have_posts() ) : the_post();
 	
 endwhile;
 
+
+?>
+
+<script>
+	$('.icon-list').hide();
+</script>
+
+<?php
 get_footer(); ?>
 
