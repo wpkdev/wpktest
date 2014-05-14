@@ -726,6 +726,10 @@ tr.pricescolumn								{ display: none; }
 	 
 }
 
+@media all and (max-width: 665px){
+	.start-page h1						{ font-size: 26px; line-height: 26px; margin: 0 50px; }	
+	.video-play-btn						{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
+}
 
 @media all and (max-width: 568px) and (orientation: landscape){
 
