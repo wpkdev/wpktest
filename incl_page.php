@@ -15,7 +15,7 @@
 	$src_768 = aq_resize( $image['url'], 786, 429, true, false ); //resize & crop img
 	$src_480 = aq_resize( $image['url'], 480, 480, true, false ); //resize & crop img
 	
-	echo '<div class="page-element page-'.$counter.' " data-src="'.$src[0].'" data-src-1024="'.$src_1024[0].'" data-src-768="'.$src_768[0].'" data-src-480="'.$src_480[0].'">';
+	echo '<div class="page-element  page-element-longread page-'.$counter.' " >';
 	
 	
 	

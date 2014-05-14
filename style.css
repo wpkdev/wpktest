@@ -622,6 +622,8 @@ tr.pricescolumn								{ display: none; }
 	
 	.page-element								{ /*float: left;*/ overflow-x: hidden; overflow-y: hidden;}
 	
+	.page-element-longread						{ height:auto!important; }
+	
 	
 	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
 	
@@ -648,7 +650,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.page-content								{ /*width: 100%;*/ max-width: 100%; }
 	.text-wrapper-spotify						{ width: auto !important; background: transparent; text-align: center;}
-	.extra-img									{ top: 50px;}
+	/*.extra-img									{ top: 50px;}*/
 	
 	ul.wpk-gallery li							{ height:; }
 	
@@ -672,7 +674,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.bg-page								{ margin-bottom: -5px;}
 	.subtitle								{ padding-top: 20px}
-	.extra-img								{ top: 50px;}
+	/*.extra-img								{ top: 50px;}*/
 	
 	/* GALLERY */
 	
