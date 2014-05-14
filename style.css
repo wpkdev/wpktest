@@ -615,7 +615,11 @@ tr.pricescolumn								{ display: none; }
 	
 	
 }
-	
+
+@media all and (max-width: 1280px){
+	.start-page h1							{ font-size: 70px;}
+	.start-page.vert-bottom-title			{ }
+}	
 	
 	
 @media all and (max-width: 1200px){
@@ -638,7 +642,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.page-element-quote	.bg											{ position: absolute; }
 	
-	
+	.start-page h1								{ font-size: 75px;}
 	.text-pos-right .extra_content_col,
 	.text-pos-right .gallery_col,
 	.extra_content_col, .gallery_col 			{ width: 100%; float: left; max-width: 100%; padding: 0 130px;}
