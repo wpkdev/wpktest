@@ -616,7 +616,7 @@ tr.pricescolumn								{ display: none; }
 	
 }
 
-@media all and (max-width: 1300px){
+@media all and (max-width: 1350px){
 	.start-page h1							{ font-size: 70px;}
 	.start-page.vert-bottom-title			{ }
 }	
@@ -626,7 +626,7 @@ tr.pricescolumn								{ display: none; }
 
 
 
-	#soj-logo-big								{ width: 243px;}
+	#soj-logo-big								{ /*width: 243px;*/ width: 30%}
 	
 	
 	.page-element								{ /*float: left;*/ overflow-x: hidden; overflow-y: hidden;}
