@@ -610,18 +610,6 @@ tr.pricescolumn								{ display: none; }
 ***************************************************************/
 
 
-@media all and (max-width: 1024px){
-	#soj-logo-big							{ width:175px; }
-	.start-page	h1							{ font-size:57px; line-height: 46px; }
-	
-	.page-quote h1							{ font-size: 57px; line-height: 46px;}
-	
-	
-	.page-content h2, .page-content2 h2		{ font-size: 40px;}
-	
-	
-}
-
 @media all and (max-width: 1350px){
 	.start-page h1							{ font-size: 70px;}
 	.start-page.vert-bottom-title			{ }
@@ -678,6 +666,14 @@ tr.pricescolumn								{ display: none; }
 
 @media all and (max-width: 1024px){
 	#soj-logo-big							{ right: 60px;}
+	
+	#soj-logo-big							{ width:175px; }
+	.start-page	h1							{ font-size:57px; line-height: 46px; }
+	
+	.page-quote h1							{ font-size: 57px; line-height: 46px;}
+	
+	
+	.page-content h2, .page-content2 h2		{ font-size: 40px;}
 	
 	/*
 	.start-page	h1							{ font-size:26px; line-height: 26px; }
