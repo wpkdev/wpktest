@@ -256,7 +256,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .hor-right-title			{ text-align:right;   }
 
 
-.start-page	h1				{ font-family: bigcaslon; font-size:94px; text-align: center; line-height: 76px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; letter-spacing: -4px;}
+.start-page	h1				{ font-family: bigcaslon; font-size:105px; text-align: center; line-height: 77px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; letter-spacing: -4px;}
 /*.page-1 img					{ width: 100%; }*/
 .content,
 .content label					{ color:#FFF !important; }
@@ -279,7 +279,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 
 
 .page-content blockquote, 
-.page-content blockquote p		{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:54px; line-height: 45px;  }
+.page-content blockquote p		{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:54px; line-height: 45px; text-indent: -4px; }
 .page-content ol,
 .page-content ul				{ font-size: 19px;}
 .page-wrapper					{ padding:100px; } 
