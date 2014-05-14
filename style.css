@@ -615,7 +615,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.hor-left,
 	.hor-right,
-	.hor-center									{ float: none; max-width: 100%; width: calc(100% - 150px); padding: 0 130px; }
+	.hor-center									{ float: none; max-width: 100%; /*width: calc(100% - 150px);*/ width: 100%; padding: 0 130px; }
 	.content-large-image img.lrg-img-over 					{ width: 100%; height:auto;}
 	
 
@@ -726,7 +726,14 @@ tr.pricescolumn								{ display: none; }
 	.page-content			{ width: 100%;}
 	.hor-center				{ width: auto;}
 	.extra_content_col		{ margin-left: 0;}
+	.extra-img				{ padding: 0 50px;}
+	
+	
 	.extra-img img			{ width:120%;}	
+	
+	.extra-img.hor-right-title img, 
+	.extra-img.hor-left-title img { width:100%;}
+	
 	
 	.content-large-image img{ /*width: 100%; height: auto;*/ height: 100%; width: 100%;}
 	
