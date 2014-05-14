@@ -86,7 +86,9 @@
 </header>
 
 <?php
-echo '<a href="https://www.shotofjoy.nl/account/" class="nav-posts icon-list">&nbsp;</a>';
+	if ( is_user_logged_in() ) {
+		echo '<a href="http://www.shotofjoy.nl/account-overzicht/" class="nav-posts icon-user">&nbsp;</a>';
+	}
 ?>
 
 <nav></nav>

@@ -32,11 +32,11 @@ FONTS
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-af1wmt');
-	src:url('fonts/icomoon.eot?#iefix-af1wmt') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-af1wmt') format('woff'),
-		url('fonts/icomoon.ttf?-af1wmt') format('truetype'),
-		url('fonts/icomoon.svg?-af1wmt#icomoon') format('svg');
+	src:url('fonts/icomoon2.eot?-af1wmt');
+	src:url('fonts/icomoon2.eot?#iefix-af1wmt') format('embedded-opentype'),
+		url('fonts/icomoon2.woff?-af1wmt') format('woff'),
+		url('fonts/icomoon2.ttf?-af1wmt') format('truetype'),
+		url('fonts/icomoon2.svg?-af1wmt#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -61,6 +61,11 @@ FONTS
 .icon-list:before {
 	content: "\e601"; font-size:18px; width:36px; text-align: center; display: block;
 }
+
+.icon-user:before {
+	content: "\e609"; font-size:18px; width:36px; text-align: center; display: block;
+}
+
 .icon-arrow-left:before {
 	content: "\e602"; font-size:24px; width:36px; text-align: center; display: block;
 }
@@ -164,7 +169,7 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 *******************************/
 header						{ display:none; }
 #soj-logo-big				{ position: fixed; top:30px; right:120px; z-index: 10; }
-.icon-list					{ position: fixed; top: 15px; left:15px; }
+.icon-user					{ position: fixed; top: 15px; left:15px; }
 
 
 /******************************
