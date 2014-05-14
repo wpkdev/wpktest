@@ -136,7 +136,7 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 /******************************
 ***** WELKOM POPUP
 *******************************/
-.welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:100%; background: #151112; z-index: 1000; }
+.welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:120%; background: #151112; z-index: 1000; overflow:scroll; }
 .welcomepopup				{ width:100%; max-width: 540px; margin: 0 auto; text-align: center; position: relative; /*top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);*/}
 .welcomepopup h1			{ font-family: 'Times New Roman', serif; font-weight: normal; color: #fff; font-size: 62px; text-align:center; line-height: 56px;}
 
@@ -144,7 +144,7 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 .welcomepopup p.line-p		{ border-top:1px solid #333; padding:30px 0 0 0; font-family: 'Georgia', sans-serif; text-transform: none; }
 
 .welcomepopup a				{ color:#FFF; }
-#ff7271
+
 
 .btn-close					{ width: 36px; height: 36px; line-height: 36px; text-align:center; float:right; margin-top: 15px; margin-right: 15px; font-family: 'ProxySemiBold' !important; position: absolute; right: 0;}
 .btn-circle					{ display: block;  text-decoration: none; z-index:300; color:#fff; background: rgba(0, 0, 0, 0.15); text-align: center; position: fixed; line-height: 36px; width: 36px; height:36px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; }
@@ -708,7 +708,7 @@ tr.pricescolumn								{ display: none; }
 	.footer-content						{ width: 100%; padding: 30px 50px;  }
 	
 	
-	#previewvideo						{ width:100px!important; height:100px!important; }
+	#previewvideo						{ width:100px!important; height:100px!important; position: static; margin:0 auto; }
 	 
 }
 

@@ -406,7 +406,11 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 			//if(e.target == this){
 				$('.welcomepopup-box').hide();
 			//}
+			
+			
 		});
+		
+				
 	});
 	
 	
