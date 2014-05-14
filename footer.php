@@ -560,7 +560,7 @@ global $video_url;
 	});
 	
 </script>
-<script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+<script async type="text/javascript" data-pin-hover="false" src="//assets.pinterest.com/js/pinit.js"></script>
 <script>
   $(document).ready(function(){
      //$(".text-wrapper").fitVids();
