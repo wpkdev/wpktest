@@ -117,7 +117,7 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 .start-page			{ padding:0px !important; } 
 
 /*.bg 				{ position: absolute; top:0; left:0; z-index: 1;  }*/
-.bg 				{ position: fixed; top: 0; left: 0; }
+.bg 				{ position: fixed; top: 0; left: 0;  }
 .bg-video			{ position: absolute!important; }
 
 
@@ -614,7 +614,7 @@ tr.pricescolumn								{ display: none; }
 	.hor-left,
 	.hor-right,
 	.hor-center									{ float: none; max-width: 100%; width: calc(100% - 75px); padding: 0 130px;}
-	.content-large-image img					{ width: 100%; height:auto;}
+	.content-large-image img.lrg-img-over 					{ width: 100%; height:auto;}
 	
 
 	

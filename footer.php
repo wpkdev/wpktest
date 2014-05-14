@@ -375,7 +375,36 @@ $('.control-label').each(function(index, item) {
 	
 	
 	
-	
+	function resizeBg() {
+ 		counter = 1;
+ 		$('.page-element').each(function(index, item) {
+ 		
+ 		
+ 			var theWindow        = $(window),
+ 			$bg              =  $(".bg", this),
+ 			aspectRatio      = $bg.width() / $bg.height();
+ 			
+ 			aspectRatioWindow      = theWindow.width() / theWindow.height();
+ 			
+ 			if ( aspectRatioWindow < aspectRatio ) {
+	 		    $bg
+	 		    	.removeClass('bgheight')
+	 		    	.removeClass('bgwidth')
+	 		    	.addClass('bgheight');
+	 		} else {
+	 		    $bg
+	 		    	.removeClass('bgheight')
+	 		    	.removeClass('bgwidth')
+	 		    	.addClass('bgwidth');
+	 		}
+	 		counter++;
+ 		});
+ 					
+ 	}
+ 	     
+ 	     setTimeout(function(){
+ 	     	resizeBg();       
+ 	     }, 105);       			
 	
 	
 	
@@ -391,7 +420,7 @@ $('.control-label').each(function(index, item) {
  	    			    		
  	
  
- 	var theWindow        = $(window),
+ 	/*var theWindow        = $(window),
  	    $bg              = $(".bg"),
  	    aspectRatio      = $bg.width() / $bg.height();
  	    			    		
@@ -415,7 +444,7 @@ $('.control-label').each(function(index, item) {
  	                   			
  	theWindow.resize(resizeBg).trigger("resize");
  	
- 	resizeBg();
+ 	resizeBg();*/
  	
 
  
