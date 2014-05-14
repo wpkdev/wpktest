@@ -71,8 +71,8 @@ var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
 var window_width = $(window).width();
   
-
-if( !isiDevice && !isAndroid ){
+isiPhone
+if( !isiDevice && !isAndroid && !isiPhone && !isiPad ){
 
 if(window_width > 1024){
 var counter = 1;
@@ -282,7 +282,7 @@ var counter = 1;
 		$(window).scroll(function() {
 			active_nav();
 			logo_position();
-			if( !isiDevice && !isAndroid) {
+			if( !isiDevice && !isAndroid && !isiPhone && !isiPad ) {
 				if(window_width > 1024){
 					scroll_page();
 				}
@@ -365,7 +365,7 @@ var counter = 1;
 	
 	
 	
-	$(window).load(function() {    
+
  
  
 		
@@ -374,13 +374,15 @@ var counter = 1;
 	
  	
  	    			    		
- 	$(window).load(function() {    
+ 	
  
  	var theWindow        = $(window),
  	    $bg              = $(".bg"),
  	    aspectRatio      = $bg.width() / $bg.height();
  	    			    		
  	function resizeBg() {
+ 		
+ 		
  		
  		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
  		    $bg
@@ -397,11 +399,13 @@ var counter = 1;
  	}
  	                   			
  	theWindow.resize(resizeBg).trigger("resize");
- 
- });
+ 	
+ 	resizeBg();
+ 	
+
  
 
- });	
+	
 </script>
 <script async type="text/javascript" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
