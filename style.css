@@ -623,7 +623,9 @@ tr.pricescolumn								{ display: none; }
 	.page-element								{ /*float: left;*/ overflow-x: hidden; overflow-y: hidden;}
 	
 	.page-element-longread,
-	.page-element-longread-box						{ height:auto!important; }
+	.page-element-longread-box						{ height:auto!important; padding-bottom:50px; }
+	
+	
 	
 	
 	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
@@ -712,6 +714,10 @@ tr.pricescolumn								{ display: none; }
 	
 	
 	#previewvideo						{ width:100px!important; height:100px!important; position: static; margin:20px auto 0 auto; display:block; }
+	 
+	 
+	 .start-page	h1					{ letter-spacing: 0!important; }
+	 
 	 
 }
 
