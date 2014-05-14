@@ -560,6 +560,15 @@ global $video_url;
 	    load_bg_img();
 	});
 	
+	
+	if ( $( ".tml-user-links" ).length ) {
+		document.location="http://www.shotofjoy.nl";
+	}
+	
+	
+	
+	
+	
 </script>
 <script async type="text/javascript" data-pin-hover="false" src="//assets.pinterest.com/js/pinit.js"></script>
 <script>

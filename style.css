@@ -168,6 +168,8 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 
 .account-line .btn			{ margin-bottom:0!important; }
 
+.tml-user-links				{ display:none; }
+.tml-user-avatar			{ display:none; }
 
 /******************************
 ***** HEADER
