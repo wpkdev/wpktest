@@ -1,4 +1,7 @@
 <div class="welcomepopup-box">
+	<?php
+	echo '<a href="#video-modal" class="modalLink22"><img src="'.$template_directory.'/img/previewvideo.jpg" data-pin-no-hover="true" id="previewvideo"/></a>';
+	?>
 	<a href="#" class="btn btn-circle btn-close btn-close-welcome-popup">X</a>
 	<div class="welcomepopup center">	
 		<div class="shotofjoy-logo">
@@ -6,11 +9,7 @@
 		</div>
 	
 			
-	<?php
-	echo '<a href="#video-modal" class="modalLink22"><img src="'.$template_directory.'/img/previewvideo.jpg" id="previewvideo"/></a>';
-	
-	
-	?>
+
 	
 	<div class="welcomepopup">
 		<!--<a href="#" class="btn btn-circle btn-close btn-close-welcome-popup">X</a>	-->
