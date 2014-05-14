@@ -410,7 +410,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 
 	$(function(){
 	
-		$('.start-page h1').fitText(1.2, { minFontSize: '20px', maxFontSize: '105px' });
+		$('.start-page h1').fitText(0.8, { minFontSize: '70px', maxFontSize: '105px' });
 		
 		// Hide welcome popup
 		$('.btn-close-welcome-popup').on('click', function(){
