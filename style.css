@@ -386,7 +386,6 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 /**************************************************************
 *** FOOTER
 ***************************************************************/
-
 footer						{ text-align: center; position: relative; z-index:51; }
 footer ul 					{ list-style: none; margin:0; padding:0 40px; }
 footer ul li				{ display: inline-block; line-height:40px;  width:auto; font-family: 'Pathway Gothic One', sans-serif;  text-transform: uppercase;  }
@@ -579,7 +578,17 @@ tr.pricescolumn								{ display: none; }
 ***************************************************************/
 
 
-
+@media all and (max-width: 1024px){
+	#soj-logo-big							{ width:175px; }
+	.start-page	h1							{ font-size:57px; line-height: 46px; }
+	
+	.page-quote h1							{ font-size: 57px; line-height: 46px;}
+	
+	
+	.page-content h2, .page-content2 h2		{ font-size: 40px;}
+	
+	
+}
 	
 	
 	
@@ -592,35 +601,26 @@ tr.pricescolumn								{ display: none; }
 	
 	.page-element								{ float: left; overflow-x: hidden; overflow-y: hidden;}
 	
-	.bg											{ width: 100%; height: auto;}
-	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 0;}
+	
+	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
 	
 	
 	.text-pos-right .extra_content_col,
 	.text-pos-right .gallery_col,
-	.extra_content_col, .gallery_col 			{ float: none; width: 100%; max-width: 670px; margin: 0 auto; padding: 0;}
+	.extra_content_col, .gallery_col 			{ width: 100%; float: left; max-width: 100%; padding: 0 130px;}
 	.text-pos-right	.extra_content_col,
-	.extra_content_col							{ float: none; margin-left: 0; margin: 0 auto; padding: 0 ;} 	
-	
-	
-	
+	.extra_content_col							{ margin-left: 0; padding: 0 130px 0 130px;} 	
 	
 	.hor-left,
 	.hor-center									{ max-width: 100%; width: calc(100% - 75px); padding: 0 130px;}
-	.content-large-image img					{ width: 100%; height:auto;}
+	.content-large-image img					{ width: auto; height:100%;}
 	
 	
-	.page-content								{ width: 100%; max-width: 100%; padding: 20px 50px 0 50px;}
-	.page-gallery								{ padding-top: 20px;}
-	.text-wrapper								{ max-width: 670px; margin: 0 auto;}
-	
-	.extra-img									{ top: 200px;}
+	.page-content								{ width: 100%; max-width: 100%; }
+	/*.extra-img									{ display: none;} */
 	
 	
 	ul.wpk-gallery li							{ height:; }
-	
-	
-	.footer-content 							{ padding: 30px 0;}
 	
 	
 }	
@@ -671,23 +671,7 @@ tr.pricescolumn								{ display: none; }
 	
 	/*.vert-center-title					{ position: static; top:0; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); }*/
 	
-	.footer-content						{ width: 100%; padding: 30px 0;  }
-	
-}
-
-
-
-
-
-@media all and (max-width: 960px){
-	#soj-logo-big							{ width:175px; }
-	.start-page	h1							{ font-size:57px; line-height: 46px; }
-	
-	.page-quote h1							{ font-size: 57px; line-height: 46px;}
-	
-	
-	.page-content h2, .page-content2 h2		{ font-size: 40px;}
-	
+	.footer-content						{ width: 100%; padding: 30px 50px;  }
 	
 }
 

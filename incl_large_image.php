@@ -14,7 +14,7 @@
 	$quote = get_sub_field('quote');
 	$color_scheme = get_sub_field('colorscheme');
 	
-	echo '<div class="page-element page-content-'.$color_scheme.' page-'.$counter.'">';
+	echo '<div class="page-element page-element-quote page-content-'.$color_scheme.' page-'.$counter.'">';
 	//echo '<img src="'.get_bloginfo('template_directory').'/img/black.gif" class=" page-bg-'.$counter.' bg stickem"   />';
 		$position_horizontal = get_sub_field('title_image_horizontal');
 		$position_vertical = get_sub_field('title_image_vertical');
@@ -34,7 +34,7 @@
 		}
 		
 		if(strlen($extra_image['url'])> 1){
-			echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'" class=" "></div>';
+			echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'" class=" lrg-img-over "></div>';
 		}
 		
 		
