@@ -622,7 +622,8 @@ tr.pricescolumn								{ display: none; }
 	
 	.page-element								{ /*float: left;*/ overflow-x: hidden; overflow-y: hidden;}
 	
-	.page-element-longread						{ height:auto!important; }
+	.page-element-longread,
+	.page-element-longread-box						{ height:auto!important; }
 	
 	
 	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
