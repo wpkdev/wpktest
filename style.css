@@ -604,6 +604,9 @@ tr.pricescolumn								{ display: none; }
 	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
 	
 	
+	.page-element-quote	.bg											{ position: absolute; }
+	
+	
 	.text-pos-right .extra_content_col,
 	.text-pos-right .gallery_col,
 	.extra_content_col, .gallery_col 			{ width: 100%; float: left; max-width: 100%; padding: 0 130px;}

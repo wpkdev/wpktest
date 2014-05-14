@@ -318,7 +318,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 			active_nav();
 			logo_position();
 			if( !isiDevice && !isAndroid && !isiPhone && !isiPad ) {
-				if(window_width > 1024){
+				if(window_width > 1280){
 					scroll_page();
 				}
 			}
