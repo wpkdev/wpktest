@@ -117,7 +117,10 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 .start-page			{ padding:0px !important; } 
 
 /*.bg 				{ position: absolute; top:0; left:0; z-index: 1;  }*/
-.bg { position: fixed; top: 0; left: 0; }
+.bg 				{ position: fixed; top: 0; left: 0; }
+.bg-video			{ position: absolute!important; }
+
+
 .bgwidth 			{ width: 100%; }
 .bgheight 			{ height: 100%; }
 
@@ -381,7 +384,7 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 /**************************************************************
 *** FOOTER
 ***************************************************************/
-footer						{ text-align: center; }
+footer						{ text-align: center; position: relative; z-index:51; }
 footer ul 					{ list-style: none; margin:0; padding:0 40px; }
 footer ul li				{ display: inline-block; line-height:40px;  width:auto; font-family: 'Pathway Gothic One', sans-serif;  text-transform: uppercase;  }
 footer ul li a				{ text-decoration: none; color:#666; font-size: 26px; padding:0 10px;  }
