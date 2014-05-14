@@ -408,7 +408,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 
 	$(function(){
 	
-		$('.start-page h1').fitText(1.2, { minFontSize: '20px', maxFontSize: '105px' });
+		
 		
 		// Hide welcome popup
 		$('.btn-close-welcome-popup').on('click', function(){
@@ -425,9 +425,10 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 	
 	
 	if(window.innerHeight > window.innerWidth){
-    	$('.rotate-box').show();
-    	alert('ss');
-	}
+    	if(window.innerWidth < 768){
+    		$('.rotate-box').show();
+    	}
+    }
 	
 	
 	function resizeBg() {
