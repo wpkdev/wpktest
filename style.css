@@ -497,6 +497,7 @@ footer ul li a:hover		{ color:#ff7271; }
 .social-media-button.social-media-pinterest a:before{ font-family:icomoon; speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 18px; padding-top: 16px; content: "\e607"; display: inline-block; float: left; margin: -18px 0 0 -1px;  width: 100%; height: 100%; }
 
 
+
 .social-media-button-footer.social-media-pinterest-footer a{ background-image: none !important; width: 140px !important; position: relative!important;}
 .social-media-button-footer.social-media-pinterest-footer a:before{ font-family:icomoon; speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 18px;  content: "\e607 "; display: inline-block; position: absolute; left:15px; top:-4px; }
 .social-media-button-footer.social-media-pinterest-footer a:after{ font-family:Pathway Gothic One;  speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: uppercase;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: normal !important; color: #fff;  font-size: 20px; padding-top: 12px; content: "Pinterest"; display: inline-block; float: right; margin: -18px 0 0 -1px;  width: 75%; height: 100%; }
