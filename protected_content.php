@@ -37,9 +37,12 @@ while ( have_posts() ) : the_post();
 	
 	
 	if ( !is_user_logged_in() ) {
-		echo '<p><a href="http://www.shotofjoy.nl/register?action=registeruser&subscription=1" class="btn btn-soj btn-large">Start je gratis 2 weken</a></p><p>of</p><p><a href="http://www.shotofjoy.nl/login" class="btn btn-soj btn-large">Inloggen</a> </p>';
+		echo '
+			<p><a href="http://www.shotofjoy.nl/register?action=registeruser&subscription=1" class="btn btn-soj btn-large">Start je gratis 2 weken</a></p>
+			<p>of</p>
+			<p><a href="http://www.shotofjoy.nl/login" class="btn btn-soj btn-large">Inloggen</a> </p>';
 	}else{
-		echo '<p><a href="http://www.shotofjoy.nl/register?action=subscriptionsignup&subscription=1" class="btn btn-soj btn-large">Start je gratis 2 weken</a></p><p>of</p><p><a href="http://www.shotofjoy.nl/login" class="btn btn-soj btn-large">Inloggen</a> </p>';
+		echo '<p><a href="http://www.shotofjoy.nl/register?action=subscriptionsignup&subscription=1" class="btn btn-soj btn-large">Start je gratis 2 weken</a></p>';
 	}
 	
 	

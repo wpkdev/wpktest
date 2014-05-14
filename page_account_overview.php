@@ -29,15 +29,24 @@ while ( have_posts() ) : the_post();
 	
 	global $current_user;
       get_currentuserinfo();
-
-      echo 'Username: ' . $current_user->user_login . "<br/>";
-      echo 'E-mailadres: ' . $current_user->user_email . "<br/>";
-      echo 'Voornaam: ' . $current_user->user_firstname . "<br/>";
-      echo 'Achternaam: ' . $current_user->user_lastname . "<br/>";
 	  
-	  echo '<p><a href="http://www.shotofjoy.nl/account" class="btn btn-soj btn-small">Account aanpassen</a><br/> '; 
-	  echo '<a href="http://www.shotofjoy.nl/uitschrijven/" class="btn btn-soj btn-small">Abonnement opzeggen</a><br/>';
-	  echo '<a href="http://www.shotofjoy.nl/logout" class="btn btn-soj btn-small">Uitloggen</a><br/></p>';
+	  echo '
+	  	<div class="account-line account-line-center" >Jouw gegevens</div>
+	  	<div class="account-line"> <span>E-mailadres:</span> ' . $current_user->user_login .'</div>
+	  	<div class="account-line"> <span>Voornaam:</span> ' . $current_user->user_firstname .'</div>
+	  	<div class="account-line"> <span>Achternaam:</span> ' . $current_user->user_lastname .'</div>
+	  	<div class="account-line account-line-center"><a href="'.wp_logout_url().'" class="btn btn-soj btn-small">Uitloggen</a></div>
+	  	<div class="account-line account-line-center">Account wijzigen</div>
+	  	<div class="account-line account-line-center"><a href="http://www.shotofjoy.nl/account" class="btn btn-soj btn-small">Gegevens aanpassen</a></div>
+	  	<div class="account-line account-line-center"><a href="http://www.shotofjoy.nl/uitschrijven/" class="btn btn-soj btn-small">Abonnement opzeggen</a></div>
+	  	<div class="account-line">&nbsp;</div>
+	  
+	  ';
+	  
+	
+      
+	  
+	 
 	  
 	  
     

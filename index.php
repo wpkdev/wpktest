@@ -109,16 +109,24 @@ endwhile;
 			<a href="mailto:?SUBJECT='.$post_title.'- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: '.urlencode($post_url).'" class="btn btn-small btn-email" target="_blank"><span class="icon-mail"></span>Email</a>
 		</div>';
 		
-		if ( !is_user_logged_in() ) {
+		if(!current_user_is_member()){
 		echo '<div class="subscribe-now">
 			<div><img src="'.$template_directory.'/img/SOJ-logo-wit.svg" width="200" /></div>
-			<h1>Wordt nu abonnee en ontvang de eerste twee weken gratis</h1>
-			<a href="http://www.shotofjoy.nl/register/" class="btn btn-large btn-subscribe">Abonneer</a>
-			<p>Dagelijks voor maar &euro; 2,99 per maand</p>
+			<h1>Word nu abonnee en ontvang de eerste twee weken gratis</h1>
+			';
+		
+		if(is_user_logged_in()){
+			echo '<a href="http://www.shotofjoy.nl/register/?action=subscriptionsignup&subscription=1" class="btn btn-large btn-subscribe">Abonneer</a>';
+		}else{
+			echo '<a href="http://www.shotofjoy.nl/register/?action=registeruser&subscription=1" class="btn btn-large btn-subscribe">Abonneer</a>';
+		}
+		
+		echo '<p>Dagelijks voor maar &euro; 2,99 per maand</p>
 		</div>';
 		}
 		echo '
 	</div>
+
 	
 	</div></div>';
 	//include('add_nav.php');

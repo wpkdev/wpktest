@@ -9,7 +9,7 @@
 		</div>
 		
 		<div class="subscribe-now">
-			<h1>Wordt nu abonnee en ontvang de eerste maand gratis</h1>
+			<h1>Word nu abonnee en ontvang de eerste twee weken gratis</h1>
 			<a href="#" class="btn btn-large btn-subscribe">Abonneer</a>
 			<p>Dagelijks voor maar &euro; 2,99 per maand</p>
 		</div>
