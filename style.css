@@ -710,7 +710,7 @@ tr.pricescolumn								{ display: none; }
 	.footer-content						{ width: 100%; padding: 30px 50px;  }
 	
 	
-	#previewvideo						{ width:100px!important; height:100px!important; position: static; margin:0 auto; }
+	#previewvideo						{ width:100px!important; height:100px!important; position: static; margin:0 auto; display:block; }
 	 
 }
 
