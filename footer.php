@@ -189,6 +189,16 @@ $('.control-label').each(function(index, item) {
 	}
 });
 
+$('#loginform label').each(function(index, item) {
+	html = $(this).html();
+	
+	if(html == 'Gebruikersnaam'){
+		$(this).html('E-mailadres');
+	}
+	
+});
+
+
 
 
  $("#pronamic-pay-form input[type=submit]").attr('value','Lidmaatschap starten');
@@ -394,7 +404,9 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 	$(function(){
 		// Hide welcome popup
 		$('.btn-close-welcome-popup').on('click', function(){
-			$('.welcomepopup-box').hide();
+			//if(e.target == this){
+				$('.welcomepopup-box').hide();
+			//}
 		});
 	});
 	
