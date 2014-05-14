@@ -61,58 +61,6 @@
 
 
 <script>
-/*******************************************
-*** GLOBAL VARIABLES
-********************************************/
- 
-var isiPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
-var isiPad = /ipad/i.test(navigator.userAgent.toLowerCase());
-var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
-var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
-var window_width = $(window).width();
-  
-
-if( !isiDevice && !isAndroid ){
-
-if(window_width > 1024){
-var counter = 1;
-   $('.page-element').each(function(index, item) {
-   	if(counter > 1){
- 	  	$('.page-bg-'+counter).hide();
- 	  	
-   	}
-   	
-   
-   	counter++;
-   });
-  } 
-   }
-   	var act_page = 1;
-   	  	function scroll_page(){
- 		var counter = 1;
- 		var top_pos = [];
- 
- 		$('.page-element').each(function(index, item) {
- 			
- 			top_pos[counter] = $(".page-"+counter).offset().top - $(window).scrollTop();
- 			if(top_pos[counter] > 0){
- 				
- 				
- 				
- 				
- 				
- 				$(".page-bg-"+counter).css('top', top_pos[counter] );
- 				$(".page-bg-"+counter).show();
- 			}else{
- 				$(".page-bg-"+counter).css('top', 0 );
- 			}
- 			
- 			counter++;
- 			
- 		});
-
-}
-
   
   /*************************************************************
   **** POSITION TEXTAREA
@@ -169,7 +117,16 @@ var counter = 1;
   });
   */
 
-
+/*******************************************
+*** GLOBAL VARIABLES
+********************************************/
+ 
+var isiPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
+var isiPad = /ipad/i.test(navigator.userAgent.toLowerCase());
+var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+var window_width = $(window).width();
+  
   
 /*******************************************
 *** SOCIAL MEDIA POPUP
@@ -282,23 +239,12 @@ var counter = 1;
 		$(window).scroll(function() {
 			active_nav();
 			logo_position();
-			if( !isiDevice && !isAndroid) {
-				if(window_width > 1024){
-					scroll_page();
-				}
-			}
 		});
 	}
 	
 /*******************************************
 *** CALCULATE THE HEIGHT OF PAGES
 ********************************************/   	
-  
-  $('.page-element').each(function(index, item) {
-  	$(this).height($(window).height());
-  });
-  
-  
   
 	
 	function get_page_element_height(){
@@ -311,15 +257,12 @@ var counter = 1;
 					var page_height = $(this).height()+100;
 					var screen_height = $(window).height();
 					
-					console.log('screenheight:' + page_height);
+					console.log('screenheight:' + screen_height);
 					
-					if(page_height > screen_height){
-						//page_height = screen_height;
+					if(page_height < screen_height){
+						page_height = screen_height;
 						$('.page-'+counter).height(page_height);
 						$('.page-box-'+counter).height(page_height);
-						
-						console.log('set height ' +page_height);
-
 					}
 					
 					console.log('page height2: ' +page_height);
@@ -331,8 +274,7 @@ var counter = 1;
 					counter++;
 					
 				});
-				
-						  },100);
+		  },100);
 		
 	} 
 	
@@ -357,14 +299,6 @@ var counter = 1;
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	$(window).load(function() {    
  
  
@@ -374,31 +308,37 @@ var counter = 1;
 	
  	
  	    			    		
- 	$(window).load(function() {    
- 
- 	var theWindow        = $(window),
- 	    $bg              = $(".bg"),
- 	    aspectRatio      = $bg.width() / $bg.height();
- 	    			    		
  	function resizeBg() {
+ 		counter = 1;
+ 		$('.page-element').each(function(index, item) {
  		
- 		if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
- 		    $bg
- 		    	.removeClass('bgheight')
- 		    	.removeClass('bgwidth')
- 		    	.addClass('bgheight');
- 		} else {
- 		    $bg
- 		    	.removeClass('bgheight')
- 		    	.removeClass('bgwidth')
- 		    	.addClass('bgwidth');
- 		}
+ 		
+ 			var theWindow        = $(this),
+ 			$bg              =  $(".bg", this),
+ 			aspectRatio      = $bg.width() / $bg.height();
+ 			
+ 			aspectRatioWindow      = theWindow.width() / theWindow.height();
+ 			
+ 			if ( aspectRatioWindow < aspectRatio ) {
+	 		    $bg
+	 		    	.removeClass('bgheight')
+	 		    	.removeClass('bgwidth')
+	 		    	.addClass('bgheight');
+	 		} else {
+	 		    $bg
+	 		    	.removeClass('bgheight')
+	 		    	.removeClass('bgwidth')
+	 		    	.addClass('bgwidth');
+	 		}
+	 		counter++;
+ 		});
  					
  	}
- 	                   			
- 	theWindow.resize(resizeBg).trigger("resize");
- 
- });
+ 	     
+ 	     setTimeout(function(){
+ 	     	resizeBg();       
+ 	     }, 105);       			
+ 	//theWindow.resize(resizeBg).trigger("resize");
  
 
  });	

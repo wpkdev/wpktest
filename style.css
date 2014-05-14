@@ -110,13 +110,14 @@ MAIN SETTINGS
 body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
 #wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; }
 
-.page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1; overflow-x: hidden; overflow-y: hidden; }
+.page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1;overflow-y: hidden; }
 .bg-box				{ position: fixed; top:0; right:0; width:100%; height:100%; z-index:0; }
 
 .bg-shop 		{ width:100%; height:100%;  }
 .start-page			{ padding:0px !important; } 
 
-.bg 				{ position: absolute; top:0; left:0; z-index: 1;  }
+/*.bg 				{ position: absolute; top:0; left:0; z-index: 1;  }*/
+.bg { position: fixed; top: 0; left: 0; }
 .bgwidth 			{ width: 100%; }
 .bgheight 			{ height: 100%; }
 
@@ -190,10 +191,10 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 *******************************/
 .main-title				{ border: none;}
 .page-content-box		{  display: none; }
-.page-content			{ background:#000; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; }
+.page-content			{ background:#151112; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; }
 
 /* Page Content Light = Witte tekstkleur tegen een zwarte achtergrond */
-.page-content-light		{ background:#000; color:#fff; }  
+.page-content-light		{ background:#151112; color:#fff; }  
 .page-content-light .main-title	{ color: #fff;	}
 
 
@@ -473,7 +474,7 @@ footer ul li a:hover		{ color:#ff7271; }
 .mobile-popup-btn				{ display:none; }
 
 
-footer{height: 610px;}
+
 .footer-content{color: #fff; text-align: center; padding: 30px; width: 100%;}
 .footer-content  h1{color: #fff; font-family: bigcaslon, serif; font-size: 36px; font-weight: 100; margin-bottom: 45px;}
 .footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 40px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 24px;line-height: 24px;text-transform: uppercase;}
@@ -593,7 +594,7 @@ tr.pricescolumn								{ display: none; }
 	#soj-logo-big								{ width: 243px;}
 	
 	
-	.page-element								{ float: left; overflow-x: hidden; overflow-y: auto;}
+	.page-element								{ float: left; overflow-x: hidden; overflow-y: hidden;}
 	
 	
 	.bg-page 									{ position: static;width: 100%!important;height: auto!important;margin-bottom: 20px;}
@@ -611,7 +612,7 @@ tr.pricescolumn								{ display: none; }
 	
 	
 	.page-content								{ width: 100%; max-width: 100%; }
-	.extra-img									{ display: none;} 
+	/*.extra-img									{ display: none;} */
 	
 	
 	ul.wpk-gallery li							{ height:; }
@@ -702,7 +703,7 @@ tr.pricescolumn								{ display: none; }
 	.page-wrapper			{ padding: 70px;}
 	.hor-center				{ width: auto;}
 	.extra_content_col		{ margin-left: 0;}
-	.extra-img img			{ display: none;}	
+	.extra-img img			{ width:120%;}	
 	
 	.content-large-image img{ /*width: 100%; height: auto;*/ height: 100%; width: auto;}
 	
