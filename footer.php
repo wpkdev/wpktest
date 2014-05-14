@@ -66,7 +66,6 @@
 
 if ( $( ".tml-user-links" ).length ) {
 	document.location="http://www.shotofjoy.nl";
-	return false;
 }
 
 /*******************************************
@@ -192,7 +191,7 @@ $('.control-label').each(function(index, item) {
 $('#loginform label').each(function(index, item) {
 	html = $(this).html();
 	
-	if(html == 'Gebruikersnaam'){
+	if(html == 'Kies een gebruikersnaam'){
 		$(this).html('E-mailadres');
 	}
 	
@@ -549,14 +548,14 @@ global $video_url;
         closeByEscape: true,           
         moveOnScroll: false,            
         resizeWindow: true,             
-        video: 'http://player.vimeo.com/video/31795904?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff&autoplay=true',
+        video: 'http://player.vimeo.com/video/95103229?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff&autoplay=true',
         
         videoClass:'video',      
         close:'.btn-close-modal' 
     });
 
     
-    
+   
     
    function position_close_btn(video){
     	var close_btn = $('.btn-close-modal');

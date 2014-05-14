@@ -566,7 +566,7 @@ ul.tml-action-links 					{ list-style: none; margin:0; padding:0; }
 ul.tml-action-links li					{ width:100%; text-align: center; }
 ul.tml-action-links li a				{ color:#FFF; text-decoration: underline; }
 
-#previewvideo							{ position: absolute; left:100px; top:50px; }
+#previewvideo							{ position: absolute; left:100px; top:50px; z-index: 100; }
 
 .content-page-users .wpcf7-form	p		{ text-align: left!important; }
 .content-page-users .wpcf7-form	input,
@@ -707,6 +707,9 @@ tr.pricescolumn								{ display: none; }
 	
 	.footer-content						{ width: 100%; padding: 30px 50px;  }
 	
+	
+	#previewvideo						{ width:100px!important; height:100px!important; }
+	 
 }
 
 
