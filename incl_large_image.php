@@ -20,7 +20,14 @@
 		$position_vertical = get_sub_field('title_image_vertical');
 		$image_title = get_sub_field('title_image');
 		echo '<div class="page-content page-content-box page-quote start-page vert-'.$position_vertical.'-title hor-'.$position_horizontal.'-title  "><h1 class="main-title">';
+		if (!empty($quote)){
+		
+			echo '&ldquo;';
 			echo $quote;
+			echo '&rdquo;';	
+			
+		}
+
 		echo '</h1>';
 		
 		$sub_title = get_sub_field('subtitle');
