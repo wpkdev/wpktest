@@ -360,7 +360,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 		  		$('.page-content-box').each(function(index, item) {
 		  			var window_height = $(window).height();
 					var window_width = $(window).width();
-					var page_height = $(this).height()+100;
+					var page_height = $(this).height();
 					var screen_height = $(window).height();
 					
 					console.log('screenheight:' + page_height);

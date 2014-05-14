@@ -172,6 +172,10 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 .tml-user-links				{ display:none; }
 .tml-user-avatar			{ display:none; }
 
+
+
+.page-element-longread			{ height:auto!important; }
+
 /******************************
 ***** HEADER
 *******************************/
@@ -623,7 +627,7 @@ tr.pricescolumn								{ display: none; }
 	.page-element								{ /*float: left;*/ overflow-x: hidden; overflow-y: hidden;}
 	
 	.page-element-longread,
-	.page-element-longread-box						{ height:auto!important; padding-bottom:50px; }
+	.page-element-longread-box						{ height:auto!important; padding-bottom:50px; background:#151112; }
 	
 	
 	

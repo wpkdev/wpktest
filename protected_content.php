@@ -29,7 +29,6 @@ get_header();
 
 while ( have_posts() ) : the_post();
 	
-	echo wp_get_referer();
 	
 	echo '<div class="content account-page " style="position:static;">';
 	//echo '<h2>'.get_the_title().'</h2>';
