@@ -340,7 +340,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 			active_nav();
 			logo_position();
 			if( !isiDevice && !isAndroid && !isiPhone && !isiPad ) {
-				if(window_width > 1280){
+				if(window_width > 1200){
 					scroll_page();
 				}
 			}
@@ -412,6 +412,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 		$('.btn-close-welcome-popup').on('click', function(){
 			//if(e.target == this){
 				$('.welcomepopup-box').hide();
+				$(document).scrollTop( $("#page-top"));
 			//}
 			
 			
@@ -475,8 +476,6 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 	$('.bg').each(function(index, item) {
 		
 		img_width = $(this).width();
-		
-		
 		if(img_width > $(window).width()){
 			left_margin = (img_width - $(window).width()) / 2;
 			$(this).css('margin-left','-'+left_margin+'px');
@@ -614,9 +613,10 @@ global $video_url;
 		});
 
 	$(window).on("resize", function(){
-	    get_page_element_height();
-	    resizeBg();
-	    load_bg_img();
+	   // get_page_element_height();
+	   // resizeBg();
+	  //  load_bg_img();
+	  window.location.reload(); 
 	});
 	
 	
