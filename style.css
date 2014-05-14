@@ -136,13 +136,13 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 ***** Detect mobile
 *******************************/
 .rotate-box			{ position: fixed; top:0; left:0; width:100%; height:120%; background: #151112; z-index: 100000000; overflow:auto; display: none; }
-
+.rotate-box img		{ width:100%; height:auto; }
 
 
 /******************************
 ***** WELKOM POPUP
 *******************************/
-.welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:120%; background: #151112; z-index: 1000; overflow:auto; }
+.welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:100%; background: #151112; z-index: 1000; overflow:auto; }
 .welcomepopup				{ width:100%; max-width: 540px; overflow:auto; margin: 0 auto; text-align: center; position: relative; /*top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);*/}
 .welcomepopup h1			{ font-family: 'Bigcaslon', serif; font-weight: normal; color: #fff; font-size: 62px; text-align:center; line-height: 56px;}
 
@@ -683,7 +683,7 @@ tr.pricescolumn								{ display: none; }
 
 	
 	.welcomepopup							{ position: static; top:0; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); }
-	.welcomepopup img						{ width:175px; height: auto; }
+	.welcomepopup img						{ width:75px; height: auto; }
 	.welcomepopup h1 						{ font-size:30px; }
 	
 	.bg-page								{ margin-bottom: -5px;}

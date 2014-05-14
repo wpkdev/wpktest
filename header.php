@@ -83,11 +83,16 @@
 
 <header>
 	
-	
+
 	
 </header>
 
-<div class="rotate-box">hallo</div>
+<div class="rotate-box">
+	
+	<img src="<?php echo $template_directory; ?>/img/DRAAI-SCHERM.png" />
+	
+	
+</div>
 
 
 <?php
