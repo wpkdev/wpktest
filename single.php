@@ -100,19 +100,20 @@ endwhile;
 			<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($post_url).'" class="btn btn-small btn-facebook js-social-popup" target="_blank"><span class="icon-facebook"></span>Facebook</a>
 			<a href="https://twitter.com/intent/tweet?text='.$post_title.'&url='.urlencode($post_url).'&via=shotofjoynl&related=shotofjoynl" class="btn btn-small btn-twitter js-social-popup" target="_blank"><span class="icon-twitter"></span>Twitter</a>
 			<span class="btn btn-small btn-pinterest social-media-pinterest-footer social-media-button-footer "><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /><span class="icon-pinterest"></span>Pinterest</a></span>
-			<a href="mailto:?SUBJECT='.$post_title. '- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: '.urlencode($post_url).'" class="btn btn-small btn-email" target="_blank"><span class="icon-mail"></span>Email</a>
-		</div>
-
+			<a href="mailto:?SUBJECT='.$post_title.'- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: '.urlencode($post_url).'" class="btn btn-small btn-email" target="_blank"><span class="icon-mail"></span>Email</a>
+		</div>';
 		
-		<div class="subscribe-now">
+		if ( !is_user_logged_in() ) {
+		echo '<div class="subscribe-now">
 			<h1>Wordt nu abonnee en ontvang de eerste maand gratis</h1>
 			<a href="http://www.shotofjoy.nl/register/" class="btn btn-large btn-subscribe">Abonneer</a>
 			<p>Dagelijks voor maar &euro; 2,99 per maand</p>
-		</div>
+		</div>';
+		}
+		echo '
 	</div>
 	
-	</div></div>';
-	include('add_nav.php');
+	</div></div>';	include('add_nav.php');
 	global $post_url;global $post_title;
 	$post_url = get_permalink(); 
 	$post_title = get_the_title();

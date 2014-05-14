@@ -19,7 +19,7 @@
 		
 		<h1>het allerbeste begin van de dag</h1>
 		<p class="line-p">Dagelijks voor maar &euro; 2,99 per maand</p>
-		<p><a href="<?php echo get_site_url(); ?>/login" class="btn btn-soj btn-large">Inloggen</a> &nbsp; <a href="<?php echo get_site_url();?>/register?action=registeruser&subscription=1" class="btn btn-soj btn-large">Abonneren</a></p>
+		<p><a href="<?php echo get_site_url(); ?>/login" class="btn btn-soj btn-large">Inloggen</a> &nbsp; <a href="<?php echo get_site_url();?>/register?action=registeruser&subscription=1" class="btn btn-soj btn-large">Start je gratis maand</a></p>
 	</div>
 	
 	

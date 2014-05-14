@@ -78,7 +78,7 @@ if(window_width > 1024){
 var counter = 1;
    $('.page-element').each(function(index, item) {
    	if(counter > 1){
- 	  	$('.page-bg-'+counter).hide();
+ 	  	//$('.page-bg-'+counter).hide();
  	  	
    	}
    	
@@ -168,6 +168,21 @@ var counter = 1;
   	
   });
   */
+
+
+$('.control-label').each(function(index, item) {
+	html = $(this).html();
+	
+	if(html == 'Kies een gebruikersnaam'){
+		$(this).html('E-mailadres');
+	}
+	if(html == 'E-mailadres'){
+		$(this).html('Herhaal e-mailadres');
+	}
+});
+
+
+
 
 
   
