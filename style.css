@@ -207,6 +207,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .main-title				{ border: none; letter-spacing: -4px;}
 .page-content-box		{  display: none; }
 .page-content			{ background:#151112; color:#FFF; padding:50px; position: relative; z-index:10;   line-height: 26px; font-weight: 100; display: none; margin:0; z-index: 1000}
+.page-content iframe 	{ min-height: 300px;}
 
 /* Page Content Light = Witte tekstkleur tegen een zwarte achtergrond */
 .start-page.page-content-light h1{text-shadow:0px 0px 8px #333;}
