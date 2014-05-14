@@ -136,7 +136,7 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 /******************************
 ***** WELKOM POPUP
 *******************************/
-.welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.85); z-index: 1000; }
+.welcomepopup-box			{ position: fixed; top:0; left:0; width:100%; height:100%; background: #151112; z-index: 1000; }
 .welcomepopup				{ width:100%; max-width: 540px; margin: 0 auto; text-align: center; position: relative; /*top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);*/}
 .welcomepopup h1			{ font-family: 'Times New Roman', serif; font-weight: normal; color: #fff; font-size: 62px; text-align:center; line-height: 56px;}
 

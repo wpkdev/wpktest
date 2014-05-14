@@ -62,6 +62,13 @@
 
 
 <script>
+
+
+if ( $( ".tml-user-links" ).length ) {
+	document.location="http://www.shotofjoy.nl";
+	return false;
+}
+
 /*******************************************
 *** GLOBAL VARIABLES
 ********************************************/
@@ -499,7 +506,7 @@ global $video_url;
         animationSpeed: 400,          
         moveModalSpeed: 'slow',         
         background: '000000',           
-        opacity: 0.7,                   
+        opacity: 1,                   
         openOnLoad: false,             
         docClose: true,                    
         closeByEscape: true,           
@@ -524,7 +531,7 @@ global $video_url;
         animationSpeed: 400,          
         moveModalSpeed: 'slow',         
         background: '000000',           
-        opacity: 0.7,                   
+        opacity: 1,                   
         openOnLoad: false,             
         docClose: true,                    
         closeByEscape: true,           
@@ -561,9 +568,7 @@ global $video_url;
 	});
 	
 	
-	if ( $( ".tml-user-links" ).length ) {
-		document.location="http://www.shotofjoy.nl";
-	}
+	
 	
 	
 	
