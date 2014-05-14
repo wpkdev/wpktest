@@ -118,7 +118,7 @@ endwhile;
 	</div>
 	
 	</div></div>';
-	include('add_nav.php');
+	//include('add_nav.php');
 	
 
 get_footer(); ?>

@@ -18,7 +18,7 @@ get_header();
 while ( have_posts() ) : the_post();
 	
 	
-	echo '<div class="content account-page ">';
+	echo '<div class="content account-page " style="position:static;">';
 		?>
 			<a href="http://www.shotofjoy.nl"><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	<?php

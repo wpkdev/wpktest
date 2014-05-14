@@ -113,7 +113,7 @@ endwhile;
 		echo '
 	</div>
 	
-	</div></div>';	include('add_nav.php');
+	</div></div>';	//include('add_nav.php');
 	global $post_url;global $post_title;
 	$post_url = get_permalink(); 
 	$post_title = get_the_title();

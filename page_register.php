@@ -47,10 +47,10 @@ while ( have_posts() ) : the_post();
 	the_content();
 	
 	if($_GET['action'] == 'subscriptionsignup'){
-		echo '<p><input type="checkbox" value="true" style="width:20px!important; " id="payment_checker">Ik ben 18 jaar of ouder en ga akkoord met de 
+		echo '<p class="payment"><input type="checkbox" value="true" style="width:20px!important; " id="payment_checker">Ik ben 18 jaar of ouder en ga akkoord met de 
 		bovenvermelde <a href="http://www.shotofjoy.nl/algemene-voorwaarden/" target="_blank">algemene voorwaarden</a> en <a href="http://www.shotofjoy.nl/privacy-beleid-statement-van-shot-of-joy/" target="_blank">privacy policy</a>.</p>
 		
-		<p class="extra-info-abonnement">Je Shot of Joy-lidmaatschap, dat begint met een gratis aanbieding van twee weken, gaat in wanneer je op Lidmaatschap Starten klikt. 
+		<p class="extra-info-abonnement payment">Je Shot of Joy-lidmaatschap, dat begint met een gratis aanbieding van twee weken, gaat in wanneer je op Lidmaatschap Starten klikt. 
 		Je kunt in de eerste twee weken altijd opzeggen en hoeft dan niets te betalen. Ga hiervoor naar Mijn account en klik op Lidmaatschap Opzeggen. 
 		We verrichten geen terugbetaling of creditering voor gedeeltelijke maanden. 
 		Door op Lidmaatschap Starten te klikken geef je ons toestemming om je maandelijkse Shot of Joy-lidmaatschap (momenteel &euro; 2,99) automatisch voort te zetten. 
