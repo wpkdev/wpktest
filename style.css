@@ -328,7 +328,7 @@ ul.wpk-gallery li .img-gallery-box	{ position: relative; padding:0; margin:0; }
 
 ul.wpk-gallery li .gallery-btn					{ display: none; }	
 ul.wpk-gallery li:hover .gallery-btn				{font-family: 'Pathway Gothic One', sans-serif; font-size: 16px; text-transform: uppercase;  position: absolute; left:0; margin:0 auto; top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%); color:#FFF; display: block; width:100%; }
-ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-block; margin: 0 auto; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding:5px; }
+ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-block; margin: 0 auto; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; width: 137px; height: 40px; line-height: 40px; font-size: 20px; text-align: center; }
 /*
 .gallery-3 li				{margin: 0; }
 .gallery-3 li:nth-child(3n+3) {border-right: none;}
