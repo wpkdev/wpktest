@@ -740,7 +740,7 @@ tr.pricescolumn								{ display: none; }
 
 @media all and (max-width: 568px) and (orientation: landscape){
 
-	.start-page							{ position: relative; float: left;}
+	.start-page							{ position: absolute; bottom: 60px;}
 	.video-play-btn						{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
 }
 
