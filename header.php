@@ -75,7 +75,7 @@
 
 </script>
 </head>
-<body id="page-top">
+<body id="page-top" <?php if (is_page()) { ?>class="page"<?php } ?>>
 
 
 

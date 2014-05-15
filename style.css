@@ -115,12 +115,12 @@ FONTS
 MAIN SETTINGS
 ***********/
 body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-family: 'Georgia', sans-serif;-webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
-#wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; background:#151112; }
+#wrapper					{ padding:0; margin:0 0 0 0; overflow-x: hidden; background:#151112;}
 
 .page-element		{ width:100%; height:100%;  position: relative; padding:0; margin:0; z-index:1;overflow-y: hidden; overflow-x:hidden; }
 .bg-box				{ position: fixed; top:0; right:0; width:100%; height:100%; z-index:0; }
 
-.bg-shop 		{ width:100%; height:100%;  }
+.bg-shop 			{ width:100%; height:100%;  }
 .start-page			{ padding:0px !important; } 
 
 /*.bg 				{ position: absolute; top:0; left:0; z-index: 1;  }*/
@@ -134,7 +134,16 @@ body, html 					{ height: 100%;  padding:0; margin:0; background:#151112; font-f
 .clearer			{ clear:both; }
 
 
-
+/* Sticky footer */
+.page #wrapper{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+}
+.page footer, .push {
+	height: 40px; 
+}
 /******************************
 ***** Detect mobile
 *******************************/
@@ -665,6 +674,10 @@ tr.pricescolumn								{ display: none; }
 	
 	.vert-center-title {position: relative;/*top: 0;*/ -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%);transform: translateY(-50%);}
 	
+	/* Sticky footer */
+	.page #wrapper{min-height: 100%;height: auto !important;height: 100%;margin: 0 auto -80px;}
+	.page footer, .push {height: 80px; }
+	
 }	
 
 
@@ -752,6 +765,14 @@ tr.pricescolumn								{ display: none; }
 	.welcomepopup .shotofjoy-logo			{ padding-top: 10px}
 	.welcomepopup img						{ width:75px; height: auto; }
 
+}
+
+@media all and (max-width: 550px){
+
+	/* Sticky footer */
+	.page #wrapper{min-height: 100%;height: auto !important;height: 100%;margin: 0 auto -160px;}
+	.page footer, .push {height: 160px; }
+	
 }
 
 

@@ -1,8 +1,5 @@
 <?php get_header(); 
 
-
-
-
 while ( have_posts() ) : the_post();
 	echo '<div class="content content-page">';
 	echo '<h2>'.get_the_title().'</h2>';
@@ -11,4 +8,5 @@ while ( have_posts() ) : the_post();
 	
 endwhile;
 
+echo '<div class="push"></div>';
 get_footer(); ?>
