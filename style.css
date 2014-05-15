@@ -670,7 +670,7 @@ tr.pricescolumn								{ display: none; }
 }	
 
 @media all and (max-width: 1024px){
-	#soj-logo-big							{ right: 60px;}
+	#soj-logo-big							{ right: 60px; width: 100px!important; }
 	
 	#soj-logo-big							{ width:250px; }
 	.start-page	h1							{ font-size:57px; line-height: 46px; }
