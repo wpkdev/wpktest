@@ -13,15 +13,15 @@
 	
 			<h1>Het allerbeste begin van de dag</h1>
 			<p class="line-p">Dagelijks voor maar &euro;2,99 per maand</p>
-			<p><a href="<?php echo get_site_url();?>/register?action=registeruser&subscription=1" class="btn btn-soj btn-large">Start je gratis twee weken</a> &nbsp; 
+			<p><a href="<?php echo get_site_url();?>/register?action=registeruser&subscription=1" class="btn btn-soj btn-large" onclick="_gaq.push(['_trackEvent', 'Aanmelden', 'Start je abonnement', 'Homepage popup']);">Start je gratis twee weken</a> &nbsp; 
 			
 			<?php if(!is_user_logged_in()){ ?>
 			
-			<a href="<?php echo get_site_url(); ?>/login" class="btn btn-soj btn-large">Log in</a> </p>
+			<a href="<?php echo get_site_url(); ?>/login" class="btn btn-soj btn-large" onclick="_gaq.push(['_trackEvent', 'Aanmelden', 'Start je abonnement', 'Login']);">Log in</a> </p>
 			<?php } ?>
 			
 			
-			<a href="#" class="btn-close-welcome-popup">Of lees de shot van vandaag gratis...</a>
+			<a href="#" class="btn-close-welcome-popup" >Of lees de shot van vandaag gratis...</a>
 			
 			<div>&nbsp;</div>
 			<div>&nbsp;</div>
