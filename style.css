@@ -662,6 +662,7 @@ tr.pricescolumn								{ display: none; }
 	ul.wpk-gallery li							{ height:; }
 	
 	.vert-center-title {position: relative;/*top: 0;*/ -webkit-transform: translateY(0%); -ms-transform: translateY(0%);transform: translateY(0%);}
+	
 }	
 
 
