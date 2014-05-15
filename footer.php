@@ -476,21 +476,22 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 
  
  
-	/*setTimeout(function(){
+	setTimeout(function(){
  	     	  
  	         
 	$('.bg').each(function(index, item) {
-		
-		img_width = $(this).width();
-		if(img_width > $(window).width()){
-			left_margin = (img_width - $(window).width()) / 2;
-			$(this).css('margin-left','-'+left_margin+'px');
-			
-			
+		if($(window).width() < 1200){
+			img_width = $(this).width();
+			if(img_width > $(window).width()){
+				left_margin = (img_width - $(window).width()) / 2;
+				$(this).css('margin-left','-'+left_margin+'px');
+				
+				
+			}
 		}
 		
 	});
-		}, 106);*/
+		}, 106);
 	
  	
  	    			    		

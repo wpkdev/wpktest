@@ -661,7 +661,13 @@ tr.pricescolumn								{ display: none; }
 	
 	ul.wpk-gallery li							{ height:; }
 	
-	
+	.vert-center-title {
+position: relative;
+top: 0; 
+-webkit-transform: translateY(0%); 
+-ms-transform: translateY(0%);
+transform: translateY(0%);
+}
 }	
 	
 
@@ -684,8 +690,7 @@ tr.pricescolumn								{ display: none; }
 
 	
 	.welcomepopup							{ position: static; top:0; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); }
-	.welcomepopup img						{ width:75px; height: auto; }
-	.welcomepopup h1 						{ font-size:30px; }
+		.welcomepopup h1 						{ font-size:30px; }
 	
 	.bg-page								{ margin-bottom: -5px;}
 	.subtitle								{ padding-top: 20px}
@@ -735,7 +740,10 @@ tr.pricescolumn								{ display: none; }
 
 @media all and (max-width: 665px){
 	.start-page h1							{ font-size: 26px; line-height: 26px; margin: 0 50px; }	
-	.video-play-btn							{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
+	.video-play-btn			{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
+	
+	.welcomepopup img						{ width:75px; height: auto; }
+
 }
 
 @media all and (max-width: 568px) and (orientation: landscape){
@@ -749,7 +757,8 @@ tr.pricescolumn								{ display: none; }
 		
 
 	.start-page								{ position: absolute; bottom: 60px;}
-	.video-play-btn							{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
+	.video-play-btn			{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
+	
 }
 
 
@@ -789,7 +798,6 @@ width: 125px;
 	
 	blockquote 				{ margin: 30px 0;}
 	
-	.video-play-btn			{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
 	.hor-fullscreen .text-wrapper{ width: 70%;}
 	.page-wrapper			{ padding: 70px;}
 	.page-content			{ width: 100%;}
