@@ -616,7 +616,7 @@ global $video_url;
 	   // get_page_element_height();
 	   // resizeBg();
 	  //  load_bg_img();
-	  window.location.reload(); 
+	  //window.location.reload(); 
 	});
 	
 	
