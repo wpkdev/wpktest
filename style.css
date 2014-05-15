@@ -742,6 +742,7 @@ tr.pricescolumn								{ display: none; }
 
 
 	.welcomepopup .shotofjoy-logo img		{ width: 55px;}
+	.welcomepopup p							{ margin: 10px 0;}
 	.welcomepopup h1,
 	.welcomepopup p.line-p					{ margin: 5px 0; padding:10px 0 !important;}
 	.welcomepopup .btn-soj					{ margin-bottom: 10px !important;}		
