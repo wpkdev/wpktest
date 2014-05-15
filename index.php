@@ -100,7 +100,7 @@ endwhile;
 	<div class="footer-content text-wrapper">
 		<div class="subtitle">Share the Joy</div>
 			
-		<h2>Deel dit shot via:</h2>	
+		<h2 class="share-this-shot">Deel dit shot via</h2>	
 			
 		<div class="social-links">
 			<a href="https://www.facebook.com/sharer/sharer.php?u='.urlencode($post_url).'" class="btn btn-small btn-facebook js-social-popup" target="_blank"><span class="icon-facebook"></span>Facebook</a>

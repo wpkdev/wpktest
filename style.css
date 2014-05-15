@@ -512,7 +512,7 @@ footer ul li a:hover		{ color:#ff7271; }
 .footer-content{color: #fff; text-align: center; padding: 30px; width: 100%;}
 .footer-content  h1{color: #fff; font-family: bigcaslon, serif; font-size: 36px; font-weight: 100; margin-bottom: 45px;}
 .footer-content .subtitle{border-bottom: 1px solid #FFF; color: #fff; display: inline-block;padding: 0 0 10px 0;margin: 0 auto 0px auto;font-family: 'Pathway Gothic One', 'sans-serif';text-align: center;font-weight: normal;font-size: 24px;line-height: 24px;text-transform: uppercase;}
-.footer-content h2		{ font-family: bigcaslon; font-size:40px; margin-bottom:35px;  }
+.footer-content h2		{ font-family: bigcaslon; font-size:40px; font-weight: normal; margin-bottom:35px;  }
 
 .footer-content p{font-family: 'Pathway Gothic One', 'sans-serif'; font-size: 22px; text-transform: uppercase;}
 
@@ -545,8 +545,8 @@ footer ul li a:hover		{ color:#ff7271; }
 *** USER PAGES
 ***************************************************************/
 .content-page-users				{ max-width:500px; width:100%; margin:0 auto; position: relative; margin-bottom:200px; background:#151112; }
-.content-page-users	h2			{ font-family: bigcaslon; font-size:60px; text-align:center; font-weight: normal; margin-bottom: 30px; }
-.content-page-users	p			{ text-align: left; padding-bottom: 20px; }
+.content-page-users	h2			{ font-family: bigcaslon; font-size:60px; line-height: 48px; text-align:center; font-weight: normal; margin-bottom: 30px; }
+.content-page-users	p			{ font-size: 19px; text-align: left; line-height: 32px; padding-bottom: 20px; }
 .content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
 .content-page-users	input,
 .content-page-users	textarea		{ width:calc( 100% - 30px ); background:#333; padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none; color:#FFF; }
@@ -554,7 +554,6 @@ footer ul li a:hover		{ color:#ff7271; }
 .content-page-users p.forgetmenot 		{ text-align: left; }
 .content-page-users p.forgetmenot label	{ display: inline!important; text-align: left!important; }
 .content-page-users p.forgetmenot input	{ width:20px; }
-
 
 #membership-wrapper legend				{ display: none; }
 #membership-wrapper p.help-block:first-child,
@@ -717,7 +716,7 @@ tr.pricescolumn								{ display: none; }
 	
 	
 	.content-page-users					{ width:calc( 100% - 40px  ); padding:20px; margin:20px auto; }	
-	.content-page-users	h2				{ font-size:30px; margin-bottom:30px; }
+	.content-page-users	h2				{ font-size:40px; line-height: 36px; margin-bottom:30px; }
 	
 	
 	/*.vert-center-title					{ position: static; top:0; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); }*/
