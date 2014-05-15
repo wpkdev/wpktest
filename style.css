@@ -547,6 +547,7 @@ footer ul li a:hover		{ color:#ff7271; }
 .content-page-users				{ max-width:500px; width:100%; margin:0 auto; position: relative; margin-bottom:200px; background:#151112; }
 .content-page-users	h2			{ font-family: bigcaslon; font-size:60px; line-height: 48px; text-align:center; font-weight: normal; margin-bottom: 30px; }
 .content-page-users	p			{ font-size: 19px; text-align: left; line-height: 32px; padding-bottom: 20px; }
+.content-page-users	a			{ color: #FF7271;}
 .content-page-users	label		{ display: block; text-align: left; margin-bottom:15px; }
 .content-page-users	input,
 .content-page-users	textarea		{ width:calc( 100% - 30px ); background:#333; padding:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border:none; color:#FFF; }

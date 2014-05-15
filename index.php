@@ -91,6 +91,7 @@ endif;
 break;
 endwhile;
 
+
 	$src = $template_directory.'/img/pixel.gif';
 	global $post_url;global $post_title;
 	$post_url = get_permalink(); 
