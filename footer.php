@@ -182,6 +182,9 @@ $('.control-label').each(function(index, item) {
 	if(html == 'Kies een gebruikersnaam'){
 		$(this).html('E-mailadres');
 	}
+	if(html == 'Gebruikersnaam'){
+		$(this).html('E-mailadres');
+	}
 	if(html == 'E-mailadres'){
 		$(this).html('Herhaal e-mailadres');
 	}
@@ -191,6 +194,9 @@ $('#loginform label').each(function(index, item) {
 	html = $(this).html();
 	
 	if(html == 'Kies een gebruikersnaam'){
+		$(this).html('E-mailadres');
+	}
+	if(html == 'Gebruikersnaam'){
 		$(this).html('E-mailadres');
 	}
 	
@@ -470,7 +476,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 
  
  
-	setTimeout(function(){
+	/*setTimeout(function(){
  	     	  
  	         
 	$('.bg').each(function(index, item) {
@@ -484,7 +490,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 		}
 		
 	});
-		}, 106);
+		}, 106);*/
 	
  	
  	    			    		
