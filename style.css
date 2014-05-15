@@ -669,7 +669,11 @@ top: 0;
 transform: translateY(0%);
 }
 }	
-	
+
+
+@media all and (max-width: 1024px) and (orientation: landscape) {
+	.welcomepopup-box .center-popup			{ position: relative;}
+}	
 
 @media all and (max-width: 1024px){
 	#soj-logo-big							{ right: 60px;}
