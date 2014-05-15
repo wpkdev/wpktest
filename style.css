@@ -740,8 +740,15 @@ tr.pricescolumn								{ display: none; }
 
 @media all and (max-width: 568px) and (orientation: landscape){
 
-	.start-page							{ position: absolute; bottom: 60px;}
-	.video-play-btn						{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
+
+	.welcomepopup .shotofjoy-logo img						{ width: 50px;}
+	.welcomepopup h1,
+	.welcomepopup p.line-p					{ margin: 5px 0;}
+	.welcomepopup p.line-p .btn-soj			{ margin-bottom: 10px;}		
+		
+
+	.start-page								{ position: absolute; bottom: 60px;}
+	.video-play-btn							{ width: 100px; height: 100px; background-size: 100px; margin-left: -50px;}
 }
 
 
