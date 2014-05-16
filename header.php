@@ -55,7 +55,9 @@
     <?php endif; ?>
     <meta name="robots" content="index, follow">
   	
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01213" type="text/css" /> 
+
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01214" type="text/css" /> 
+
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
