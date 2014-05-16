@@ -795,7 +795,7 @@ tr.pricescolumn								{ display: none; }
 	.video-play-btn							{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
 	
 	ul.wpk-gallery							{ height: auto;}
-	ul.wpk-gallery li						{ width: calc(45% - 40px); height: auto;}
+	ul.wpk-gallery li						{ width: calc(100% - 40px); height: auto;}
 	
 }
 
@@ -871,7 +871,7 @@ tr.pricescolumn								{ display: none; }
 	.welcomepopup h1		{ }
 	
 	ul.wpk-gallery							{ height: auto;}
-	ul.wpk-gallery li						{ width: calc(45% - 40px); height: auto;}
+	ul.wpk-gallery li						{ width: calc(100% - 40px); height: auto;}
 	
 
 }
