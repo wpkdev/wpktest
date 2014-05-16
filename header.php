@@ -29,7 +29,7 @@
 	<link rel="apple-touch-icon-precomposed" href="icon" />
 
   	
-  	 <?php if (is_singular()): global $post; setup_postdata($post); ?>
+  	 <?php if (is_home()): global $post; setup_postdata($post); ?>
         <meta name="description" content="" />
          <meta property="og:description" content="<?php the_excerpt_rss(); ?>" />
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), full );
@@ -41,7 +41,7 @@
             <meta property="og:image" content="<?php echo $template_directory; ?>/img/SOJ-logo-zw.png" />
         <?php } ?>
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="<?php the_permalink() ?>" />
+        <meta property="og:url" content="http://www.shotofjoy.nl" />
         <meta property="og:title" content="<?php wp_title("", true); ?>" />
     <?php else: ?>
          <meta property="og:description" content="" />
