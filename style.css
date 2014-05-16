@@ -277,7 +277,7 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .vert-bottom-title			{ bottom:90px; }
 .hor-left-title				{ text-align:left; }
 .hor-center-title			{ text-align:center; }
-.hor-right-title			{ text-align:right;   }
+.hor-right-title			{ text-align:right; width:100%;   }
 
 
 .start-page	h1				{ font-family: bigcaslon; font-size:105px; text-align: center; line-height: 77px; color:#FFF;margin:0 100px; font-weight: normal; padding:0; letter-spacing: -4px;}
