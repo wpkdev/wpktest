@@ -869,6 +869,8 @@ tr.pricescolumn								{ display: none; }
 	
 	.welcomepopup h1		{ }
 	
+	ul.wpk-gallery li						{ width: calc(100% - 40px)}
+	
 
 }
 
