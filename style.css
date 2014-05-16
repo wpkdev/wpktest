@@ -746,17 +746,18 @@ tr.pricescolumn								{ display: none; }
 	
 	#previewvideo						{ display:none; }
 	 
-	 
 	 .start-page	h1					{ letter-spacing: 0!important; }
 	 
-	 
 }
-
 
 @media all and (max-width: 1280px) and ( orientation: portrait){
 	.welcomepopup .shotofjoy-logo				{  padding-top: 30px;}
 }
 
+@media all and (max-width: 720px){
+	ul.wpk-gallery							{ height: auto; margin: 0 auto;}
+	ul.wpk-gallery li						{ width: calc(49% - 40px); height: auto;}
+}
 
 @media all and (max-width: 665px){
 	.start-page h1							{ font-size: 26px; line-height: 26px; margin: 0 50px; }	
