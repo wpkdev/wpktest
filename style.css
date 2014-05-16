@@ -794,6 +794,8 @@ tr.pricescolumn								{ display: none; }
 	.start-page								{ position: absolute; bottom: 60px;}
 	.video-play-btn							{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
 	
+	ul.wpk-gallery li						{ width: 50%;}
+	
 }
 
 
