@@ -385,6 +385,12 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .page-spotify-box .vert-center-title		{ position: absolute!important; }				
 
 
+/******************************
+***** PAGE MAP
+*******************************/
+
+.page-map							{ margin-top: -50px;}
+
 
 /******************************
 ***** PAGE REDIRECT
