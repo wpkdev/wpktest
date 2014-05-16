@@ -730,8 +730,8 @@ tr.pricescolumn								{ display: none; }
 	
 	
 	/* SOCIAL */
-	.mobile-popup-btn				{ display:block; }
-	.mobile-popup					{ display:none; }
+	.mobile-popup-btn					{ display:block; }
+	.mobile-popup						{ display:none; }
 	
 	.content-page-users					{ width:calc( 100% - 40px  ); padding:20px; margin:20px auto; }	
 	.content-page-users	h2				{ font-size:40px; line-height: 36px; margin-bottom:30px; }
@@ -744,14 +744,18 @@ tr.pricescolumn								{ display: none; }
 	
 	#previewvideo						{ display:none; }
 	 
-	 .start-page	h1					{ letter-spacing: 0!important; }
+	.start-page	h1						{ letter-spacing: 0!important; }
+
 	 
 }
 
 @media all and (max-width: 1280px) and ( orientation: portrait){
 	.welcomepopup .shotofjoy-logo				{  padding-top: 30px;}
 }
-
+@media all and (max-width: 768px){
+	ul.wpk-gallery						{ height: auto; margin: 0 50px;}
+	ul.wpk-gallery li					{ width: calc(49% - 40px); height: 280px; margin: 0 20px 20px 20px;} 
+}
 @media all and (max-width: 720px){
 	ul.wpk-gallery							{ height: auto; margin: 0 50px;}
 	ul.wpk-gallery li						{ width: calc(49% - 40px); height: 280px;}
