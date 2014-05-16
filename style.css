@@ -379,6 +379,13 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 
 .btn-shop-it						{ position: absolute; z-index: 1000; display: none;}
 
+
+
+.page-spotify-box .hor-right-title			{ width:100%!important; }	
+.page-spotify-box .vert-center-title		{ position: absolute!important; }				
+
+
+
 /******************************
 ***** PAGE REDIRECT
 *******************************/

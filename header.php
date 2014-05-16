@@ -19,7 +19,9 @@
 		$home_directory = get_site_url();
 	 ?>
        
-	<title>Shot of Joy</title>
+       <?php global $post; setup_postdata($post); ?>
+       
+	<title><?php echo get_the_title(); ?></title>
 	<?php //wp_head(); ?>
   	 <link rel="icon" href="<?php echo $template_directory; ?>/img/favicon.ico" type="image/x-icon" /> 
     <link rel="shortcut icon" href="<?php echo $template_directory; ?>/img/favicon.ico" type="image/x-icon" />
@@ -29,7 +31,7 @@
 	<link rel="apple-touch-icon-precomposed" href="icon" />
 
   	
-  	 <?php if (is_home()): global $post; setup_postdata($post); ?>
+  	 <?php if (is_home()):  ?>
         <meta name="description" content="" />
          <meta property="og:description" content="<?php the_excerpt_rss(); ?>" />
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), full );
@@ -53,7 +55,7 @@
     <?php endif; ?>
     <meta name="robots" content="index, follow">
   	
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01210" type="text/css" /> 
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01213" type="text/css" /> 
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
