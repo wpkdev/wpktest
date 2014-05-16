@@ -21,7 +21,7 @@ $shop_clean_url = explode( '/', $shop_url );
 		$('body').addClass('page-redirect');
 		$('#wrapper').addClass('center');
 		
-		setTimeout("top.location.href = '<?php echo $shop_url;?>/'",2000);
+		setTimeout("top.location.href = '<?php echo $shop_url;?>'",2000);
 	</script>
 
 </div><!-- wrapper -->
