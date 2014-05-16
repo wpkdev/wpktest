@@ -56,7 +56,7 @@
     <meta name="robots" content="index, follow">
   	
 
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01216" type="text/css" /> 
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01217" type="text/css" /> 
 
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	
