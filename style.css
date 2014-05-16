@@ -733,8 +733,6 @@ tr.pricescolumn								{ display: none; }
 	.mobile-popup-btn				{ display:block; }
 	.mobile-popup					{ display:none; }
 	
-	
-	
 	.content-page-users					{ width:calc( 100% - 40px  ); padding:20px; margin:20px auto; }	
 	.content-page-users	h2				{ font-size:40px; line-height: 36px; margin-bottom:30px; }
 	
@@ -755,7 +753,7 @@ tr.pricescolumn								{ display: none; }
 }
 
 @media all and (max-width: 720px){
-	ul.wpk-gallery							{ height: auto; margin: 0 auto;}
+	ul.wpk-gallery							{ height: auto; margin: 0 50px;}
 	ul.wpk-gallery li						{ width: calc(49% - 40px); height: 280px;}
 }
 
@@ -872,7 +870,7 @@ tr.pricescolumn								{ display: none; }
 	.welcomepopup h1		{ }
 	
 	ul.wpk-gallery							{ height: auto; margin: 0 auto;}
-	ul.wpk-gallery li						{ width: calc(100% - 40px); min-height: 310px;}
+	ul.wpk-gallery li						{ width: calc(100% - 40px); min-height: 350px; padding: 0 50px;}
 	
 
 }
