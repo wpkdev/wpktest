@@ -819,9 +819,7 @@ tr.pricescolumn								{ display: none; }
 }
 
 
-@media screen and (min-width: 321px){
-    /* */
-}
+
 
 @media screen and (max-width: 480px) and (orientation: portrait){
 	.page-map-box, 
@@ -848,6 +846,8 @@ tr.pricescolumn								{ display: none; }
 	.social-links 			{ margin-bottom: 40px;}
 	.social-links a			{ margin-bottom: 20px;}
 	.social-links .btn-small{ margin-bottom: 20px; margin-right: 0;}
+	
+	.social-media-button-footer.social-media-pinterest-footer a{ height: 40px !important; line-height: 50px !important; }
 	.footer-content h1		{ font-size: 24px;}
 	
 	

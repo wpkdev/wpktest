@@ -57,7 +57,7 @@
   	
 
 
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01228" type="text/css" /> 
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01229" type="text/css" /> 
 
 
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
