@@ -823,6 +823,10 @@ tr.pricescolumn								{ display: none; }
     /* */
 }
 
+@media screen and (max-width: 480px) and (orientation: portrait){
+
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (min-width : 320px) and (max-width : 480px) {
 
