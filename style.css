@@ -855,8 +855,8 @@ tr.pricescolumn								{ display: none; }
 	
 	blockquote 				{ margin: 30px 0;}
 	
-	.hor-fullscreen .text-wrapper{ width: 70%;}
-	.page-wrapper			{ padding: 70px;}
+	.hor-fullscreen .text-wrapper{ width: 100%; padding: 20px 35px 20px 30px}
+	.page-wrapper			{ padding: 30px;}
 	.page-content			{ width: 100%;}
 	.hor-center				{ width: auto;}
 	.extra_content_col		{ margin-left: 0;}
@@ -877,22 +877,33 @@ tr.pricescolumn								{ display: none; }
 	.text-wrapper-spotify	{ background: transparent; margin: 0; padding: 0 !important;}
 	
 	.text-pos-right .extra_content_col, 
-	.extra_content_col 		{margin-left: 0;padding: 65px 55px 30px 65px;}
+	.extra_content_col 		{margin-left: 0;padding: 65px 55px 30px 30px;}
 	
-	.gallery_col			{ padding: 0;}
+	.gallery_col			{ padding: 0 !important;}
 	.gallery_col ul.wpk-gallery li	{ width: 100%; padding: 0;}
 	ul.wpk-gallery li img	{ max-width: 70%;}
 	
 	.hor-right,
 	.hor-left,
-	.hor-center				{  padding: 0 65px 30px 65px;}
+	.hor-center				{  padding: 0 45px 30px 30px;}
 	
 	.btn-large	{ width: 100%; }
 	
 	.welcomepopup h1		{ }
 	
 	ul.wpk-gallery							{ height: auto; margin: 0 auto;}
-	ul.wpk-gallery li						{ width: calc(100% - 40px); min-height: 350px; padding: 0 50px;}
+	ul.wpk-gallery li						{ width: calc(100% - 40px); min-height: 320px; padding: 0 50px;}
+	
+	
+	.video-play-btn			{ width: 50px; height: 50px; background-size: 50px; margin-left: -25px;}
+	.img.alignleft			{ margin: 20px 20px 20px -30px}
+	.extra-img				{ margin: 0 45px 10px 30px}
+	.vert-bottom-title		{ bottom: 59px;}
+	
+	nav,
+	.social-media-box		{ display: none;}
+	
+	.footer-content			{ padding: 30px;}
 	
 
 }
