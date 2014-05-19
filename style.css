@@ -8,6 +8,7 @@ Author URI: http://www.wayneparkerkent.com/
 
 
 
+
 /* Reset all styles */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{ display:block}audio,canvas,video{ display:inline-block; *display:inline; *zoom:1}audio:not([controls]){ display:none; height:0}[hidden]{ display:none}html{ font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}html,button,input,select,textarea{ font-family:sans-serif}body{ margin:0}a:focus{ outline:thin dotted}a:hover,a:active{ outline:0}h1{ font-size:2em; margin:0.67em 0}h2{ font-size:1.5em; margin:0.83em 0}h3{ font-size:1.17em; margin:1em 0}h4{ font-size:1em; margin:1.33em 0}h5{ font-size:0.83em; margin:1.67em 0}h6{ font-size:0.75em; margin:2.33em 0}abbr[title]{ border-bottom:1px dotted}b,strong{ font-weight:bold}blockquote{ margin:1em 40px}dfn{ font-style:italic}mark{ background:#ff0; color:#000}p,pre{ margin:1em 0}pre,code,kbd,samp{ font-family:monospace,serif; _font-family:'courier new',monospace; font-size:1em}pre{ white-space:pre; white-space:pre-wrap; word-wrap:break-word}q{ quotes:none}q:before,q:after{ content:''; content:none}small{ font-size:75%}sub,sup{ font-size:75%; line-height:0; position:relative; vertical-align:baseline}sup{ top:-0.5em}sub{ bottom:-0.25em}dl,menu,ol,ul{ margin:1em 0}dd{ margin:0 0 0 40px}menu,ol,ul{ padding:0 0 0 40px}nav ul,nav ol{ list-style:none; list-style-image:none}img{ border:0; -ms-interpolation-mode:bicubic}svg:not(:root){ overflow:hidden}figure{ margin:0}form{ margin:0}fieldset{ border:1px solid #c0c0c0; margin:0 2px; padding:0.35em 0.625em 0.75em}legend{ border:0; padding:0; white-space:normal; *margin-left:-7px}button,input,select,textarea{ font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle}button,input{ line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{ cursor:pointer; -webkit-appearance:button; *overflow:visible}button[disabled],input[disabled]{ cursor:default}input[type="checkbox"],input[type="radio"]{ box-sizing:border-box; padding:0; *height:13px; *width:13px}input[type="search"]{ -webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{ -webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{ border:0; padding:0}textarea{ overflow:auto; vertical-align:top}table{ border-collapse:collapse; border-spacing:0}
 
@@ -385,6 +386,13 @@ ul.wpk-gallery li:hover .gallery-btn span			{  background:#000; display: inline-
 .page-spotify-box .vert-center-title		{ position: absolute!important; }				
 
 
+/******************************
+***** PAGE MAP
+*******************************/
+
+/*
+.page-map							{ margin-top: -50px;}
+*/
 
 /******************************
 ***** PAGE REDIRECT
@@ -796,14 +804,12 @@ tr.pricescolumn								{ display: none; }
     
 @media all and (max-width: 568px) and (orientation: landscape){
 
-
 	.welcomepopup .shotofjoy-logo img		{ width: 55px;}
 	.welcomepopup p							{ margin: 10px 0;}
 	.welcomepopup h1,
 	.welcomepopup p.line-p					{ margin: 5px 0; padding:10px 0 !important;}
 	.welcomepopup .btn-soj					{ margin-bottom: 10px !important;}		
 		
-
 	.start-page								{ position: absolute; bottom: 60px;}
 	.video-play-btn							{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
 	
@@ -828,9 +834,7 @@ tr.pricescolumn								{ display: none; }
 	
 	#soj-logo-big 			{ width: 125px;}
 	
-
-	
-	.start-page	h1			{ margin: 0 50px;}
+	.icon-user				{ left: 10px;}
 
 
 	.start-page	h1			{ font-size: 26px; line-height: 26px; margin: 0 50px;}
@@ -847,12 +851,12 @@ tr.pricescolumn								{ display: none; }
 	
 	blockquote 				{ margin: 30px 0;}
 	
-	.hor-fullscreen .text-wrapper{ width: 70%;}
-	.page-wrapper			{ padding: 70px;}
+	.hor-fullscreen .text-wrapper{ width: 100%; padding: 20px 35px 20px 30px}
+	.page-wrapper			{ padding: 30px;}
 	.page-content			{ width: 100%;}
 	.hor-center				{ width: auto;}
 	.extra_content_col		{ margin-left: 0;}
-	.extra-img				{ padding: 0 50px;}
+	.extra-img				{ padding: 0; width: 80%; margin: 0 auto !important;}
 	
 	
 	.welcomepopup p.line-p		{ font-size:16px; }
@@ -869,22 +873,36 @@ tr.pricescolumn								{ display: none; }
 	.text-wrapper-spotify	{ background: transparent; margin: 0; padding: 0 !important;}
 	
 	.text-pos-right .extra_content_col, 
-	.extra_content_col 		{margin-left: 0;padding: 65px 55px 30px 65px;}
+	.extra_content_col 		{margin-left: 0;padding: 65px 30px 30px 30px;}
 	
-	.gallery_col			{ padding: 0;}
+	.gallery_col			{ padding: 0 !important;}
 	.gallery_col ul.wpk-gallery li	{ width: 100%; padding: 0;}
 	ul.wpk-gallery li img	{ max-width: 70%;}
 	
 	.hor-right,
 	.hor-left,
-	.hor-center				{  padding: 0 65px 30px 65px;}
+	.hor-center				{  padding: 0 30px 30px 30px;}
 	
 	.btn-large	{ width: 100%; }
 	
 	.welcomepopup h1		{ }
 	
 	ul.wpk-gallery							{ height: auto; margin: 0 auto;}
-	ul.wpk-gallery li						{ width: calc(100% - 40px); min-height: 350px; padding: 0 50px;}
+	ul.wpk-gallery li						{ width: calc(100% - 40px); min-height: 320px; padding: 0 50px;}
+	
+	
+	.video-play-btn			{ width: 50px; height: 50px; background-size: 50px; margin-left: -25px;}
+	img.alignleft			{ margin: 20px 20px 20px -30px}
+	.extra-img				{ margin: 0 45px 10px 30px}
+	.vert-bottom-title		{ bottom: 59px;}
+	
+	a.nav-prev,
+	a.nav-next				{ right: 10px;}
+	
+	nav,
+	.social-media-box		{ display: none;}
+	
+	.footer-content			{ padding: 30px;}
 	
 
 }
