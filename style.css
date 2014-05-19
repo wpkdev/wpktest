@@ -856,7 +856,7 @@ tr.pricescolumn								{ display: none; }
 	.page-content			{ width: 100%;}
 	.hor-center				{ width: auto;}
 	.extra_content_col		{ margin-left: 0;}
-	.extra-img				{ padding: 0 50px;}
+	.extra-img				{ padding: 0; width: 80%; margin: 0 auto !important;}
 	
 	
 	.welcomepopup p.line-p		{ font-size:16px; }
@@ -873,7 +873,7 @@ tr.pricescolumn								{ display: none; }
 	.text-wrapper-spotify	{ background: transparent; margin: 0; padding: 0 !important;}
 	
 	.text-pos-right .extra_content_col, 
-	.extra_content_col 		{margin-left: 0;padding: 65px 55px 30px 30px;}
+	.extra_content_col 		{margin-left: 0;padding: 65px 30px 30px 30px;}
 	
 	.gallery_col			{ padding: 0 !important;}
 	.gallery_col ul.wpk-gallery li	{ width: 100%; padding: 0;}
@@ -881,7 +881,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.hor-right,
 	.hor-left,
-	.hor-center				{  padding: 0 45px 30px 30px;}
+	.hor-center				{  padding: 0 30px 30px 30px;}
 	
 	.btn-large	{ width: 100%; }
 	
@@ -892,7 +892,7 @@ tr.pricescolumn								{ display: none; }
 	
 	
 	.video-play-btn			{ width: 50px; height: 50px; background-size: 50px; margin-left: -25px;}
-	.img.alignleft			{ margin: 20px 20px 20px -30px}
+	img.alignleft			{ margin: 20px 20px 20px -30px}
 	.extra-img				{ margin: 0 45px 10px 30px}
 	.vert-bottom-title		{ bottom: 59px;}
 	
