@@ -804,14 +804,12 @@ tr.pricescolumn								{ display: none; }
     
 @media all and (max-width: 568px) and (orientation: landscape){
 
-
 	.welcomepopup .shotofjoy-logo img		{ width: 55px;}
 	.welcomepopup p							{ margin: 10px 0;}
 	.welcomepopup h1,
 	.welcomepopup p.line-p					{ margin: 5px 0; padding:10px 0 !important;}
 	.welcomepopup .btn-soj					{ margin-bottom: 10px !important;}		
 		
-
 	.start-page								{ position: absolute; bottom: 60px;}
 	.video-play-btn							{ width: 60px; height:60px; background-size: 75px; margin-left: -37px;  background: url(img/PLAYKNOP_MOBILE.svg) no-repeat center center; background-size: 60px 60px;}
 	
@@ -836,9 +834,7 @@ tr.pricescolumn								{ display: none; }
 	
 	#soj-logo-big 			{ width: 125px;}
 	
-
-	
-	.start-page	h1			{ margin: 0 50px;}
+	.icon-user				{ left: 10px;}
 
 
 	.start-page	h1			{ font-size: 26px; line-height: 26px; margin: 0 50px;}
@@ -899,6 +895,9 @@ tr.pricescolumn								{ display: none; }
 	.img.alignleft			{ margin: 20px 20px 20px -30px}
 	.extra-img				{ margin: 0 45px 10px 30px}
 	.vert-bottom-title		{ bottom: 59px;}
+	
+	a.nav-prev,
+	a.nav-next				{ right: 10px;}
 	
 	nav,
 	.social-media-box		{ display: none;}

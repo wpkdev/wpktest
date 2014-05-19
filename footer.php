@@ -431,7 +431,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
 	
 	
 	
-	
+	/*
 	if(window.innerHeight > window.innerWidth){
     	if(window.innerWidth < 560){
     		$('.rotate-box').show();
@@ -439,7 +439,7 @@ $('#pronamic-pay-form').prepend('<p style="float:right;margin-top:-13px;"><img s
     }else{
 	    $('.rotate-box').hide();
     }
-	
+	*/
 	
 	function resizeBg() {
  		counter = 1;
