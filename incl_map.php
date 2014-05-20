@@ -8,7 +8,7 @@
 	
 	$color_scheme = 'page-wrapper-'.get_sub_field('colorscheme');
 	
-	echo '<div class="page-element page-'.$counter.' '.$color_scheme.'" data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'" style="background:#FFF;">';
+	echo '<div class="page-element page-map-box page-'.$counter.' '.$color_scheme.'" data-src="'.$src.'" data-src-1024="'.$src.'" data-src-768="'.$src.'" data-src-480="'.$src.'" style="background:#FFF;">';
 	
 	echo '<div class="page-wrapper '.$color_scheme.'">';
 	
