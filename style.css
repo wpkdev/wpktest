@@ -345,7 +345,7 @@ z-index: 1000;
 top: 20px;
 left: 0 auto;
 left: 50%;
-margin-left: -132px; }
+margin-left: -132px; display: none;}
 
 
 /******************************
