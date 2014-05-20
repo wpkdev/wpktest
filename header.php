@@ -95,6 +95,9 @@
 	
 </header>
 
+<div class="cta-subscribe-now">
+	<a href="http://www.shotofjoy.nl/register?action=registeruser&amp;subscription=1" class="btn btn-soj btn-large cta">Probeer nu twee weken gratis</a>
+</div>
 <div class="rotate-box">
 	
 	<img src="<?php echo $template_directory; ?>/img/DRAAI-SCHERM.png" />

@@ -335,6 +335,17 @@ img.alignright{float: right; margin: 20px -85px 20px 20px;}
 .content-large-image .extra-img {width: 100%;}
 .content-large-image .extra-img img{max-width: 100%;}
 
+/******************************
+***** SUBSCRIBE NOW
+*******************************/
+.cta-subscribe-now				{ position: fixed;
+width: 264px;
+height: 55px;
+z-index: 1000;
+top: 20px;
+left: 0 auto;
+left: 50%;
+margin-left: -132px; }
 
 
 /******************************
@@ -931,7 +942,7 @@ tr.pricescolumn								{ display: none; }
 	
 	.footer-content			{ padding: 30px;}
 	
-	
+	.cta-subscribe-now		{ display: none;}
 	
 	.abo-page-header					{ height: 250px; }
 	.abo-page-content h2				{ font-size:39px; line-height: 30px; }
