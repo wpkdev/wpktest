@@ -302,7 +302,8 @@ div.left-bar				{ background:#000; width:60px; position: fixed; height:calc(100%
 .page-content .subtitle_quote h3				{ border:none; display: inline-block;  padding:0 0 10px 0; margin:30px 0 40px 0; font-family: 'Pathway Gothic One', 'sans-serif'; text-align: center; font-weight: normal; font-size:30px; line-height: 32px; text-transform: uppercase; }
 
 
-
+blockquote,
+blockquote p,
 .page-content blockquote, 
 .page-content blockquote p		{  font-family: bigcaslon; text-align: center; font-weight: normal; font-size:54px; line-height: 45px; text-indent: -4px; }
 .page-content ol,
