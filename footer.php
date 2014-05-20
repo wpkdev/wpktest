@@ -551,6 +551,11 @@ global $video_url;
   $(document).ready(function(){
     $(".text-wrapper").fitVids();
      //position_close_btn();
+     
+     if(isiDevice){
+	     $('.gallery-btn').remove();
+	     
+     }
     
     video = '';
     
