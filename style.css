@@ -753,6 +753,8 @@ tr.pricescolumn								{ display: none; }
 	.welcomepopup h1 						{ font-size:30px; }
 	
 	.bg-page								{ margin-bottom: -5px;}
+	.extra_content_col .subtitle, 
+	.text-pos-right .extra_content_col h2	{ text-align: center !important;}
 	.subtitle								{ padding-top: 20px}
 	/*.extra-img								{ top: 50px;}*/
 	
@@ -915,7 +917,7 @@ tr.pricescolumn								{ display: none; }
 	.text-wrapper-spotify	{ background: transparent; margin: 0; padding: 0 !important;}
 	
 	.text-pos-right .extra_content_col, 
-	.extra_content_col 		{margin-left: 0;padding: 65px 30px 30px 30px;}
+	.extra_content_col 		{margin-left: 0;padding: 20px 30px 30px 30px;}
 	
 	.gallery_col			{ padding: 0 !important;}
 	.gallery_col ul.wpk-gallery li	{ width: 100%; padding: 0;}
