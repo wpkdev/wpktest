@@ -58,7 +58,7 @@
 
 
 
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01245" type="text/css" /> 
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01246" type="text/css" /> 
 
 
 

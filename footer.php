@@ -4,7 +4,7 @@
 <?php if(!is_page()){ ?>
 <div class="scroll-indicator-box">
 	<div class="scroll-indicator">
-		<div class="icon-arrow-down">&nbsp;</div>
+		<div class="arrow-down">&nbsp;</div>
 	</div>
 </div>
 <?php global $post_url;global $post_title; ?>
