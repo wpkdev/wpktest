@@ -1,36 +1,20 @@
-<?php
-/**
- * @package WordPress
- * @subpackage Default_Theme
- */
-
-
-?>
 <!doctype html>
-
-
 <html lang="nl">
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<?php 
-		//wp_head();
-		global $template_directory; $template_directory  = get_bloginfo('template_directory');
-		$home_directory = get_site_url();
-	 ?>
-       
-       <?php global $post; setup_postdata($post); ?>
-       
+<?php
+global $template_directory; $template_directory = get_bloginfo('template_directory');
+$home_directory = get_site_url();
+global $post; setup_postdata($post);
+?>
 	<title><?php echo get_the_title(); ?></title>
-	<?php //wp_head(); ?>
   	 <link rel="icon" href="<?php echo $template_directory; ?>/img/favicon.ico" type="image/x-icon" /> 
     <link rel="shortcut icon" href="<?php echo $template_directory; ?>/img/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="http://www.shotofjoy.nl/AppIcon76x76.png"/>
 	<link rel="apple-touch-icon-precomposed" href="http://www.shotofjoy.nl/AppIcon72x72@2x.png"/>
 	<link rel="apple-touch-startup-image" href="http://www.shotofjoy.nl/AppIcon76x76.png"/>
 	<link rel="apple-touch-icon-precomposed" href="icon" />
-
-  	
   	 <?php if (is_home()):  ?>
         <meta name="description" content="" />
          <meta property="og:description" content="<?php the_excerpt_rss(); ?>" />
@@ -54,21 +38,10 @@
         <meta property="og:type" content="website" />
     <?php endif; ?>
     <meta name="robots" content="index, follow">
-  	
-
-
-
   	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01261" type="text/css" /> 
-
-
-
 	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-	
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
 	<script src="<?php echo get_bloginfo('template_directory'); ?>/js/plugins.js"></script>
-	
-	
-	
 	<script>
 	
 	
@@ -85,27 +58,15 @@
 </head>
 <body id="page-top" <?php if (is_page()) { ?>class="page"<?php } ?>>
 
-
-
 <div id="wrapper" class="portrait_mode">
-
 <header>
-	
-
-	
 </header>
-
 <div class="cta-subscribe-now">
 	<a href="http://www.shotofjoy.nl/register?action=registeruser&amp;subscription=1" class="btn btn-soj btn-large cta">Probeer nu twee weken gratis</a>
 </div>
-<div class="rotate-box">
-	
+<div class="rotate-box">	
 	<img src="<?php echo $template_directory; ?>/img/DRAAI-SCHERM.png" />
-	
-	
 </div>
-
-
 <?php
 	if ( is_user_logged_in() ) {
 		echo '<a href="http://www.shotofjoy.nl/account-overzicht/" class="nav-posts icon-user">&nbsp;</a>';
