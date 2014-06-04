@@ -1,4 +1,30 @@
-<?php get_header(); 
+<?php /* Template Name: Page Preview */
+get_header(); 
+global $post; setup_postdata($post);
+
+	
+	// Show Black or white logo
+	$post_id = get_the_id();
+	$logo_color = get_field('logo_color', $post_id);
+	if (!empty($logo_color) ){
+		if ($logo_color == 'Black'){
+			$logo_img = 'SOJ-logo-zwart';
+		} else {
+			$logo_img = 'SOJ-logo-wit';
+		}
+	} else {
+		$logo_img = 'SOJ-logo-wit';
+	}
+?>
+<header>
+	<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" class="header-logo"/></a>
+</header>
+<?php
+
+
+
+$args = array( 'p' => $_GET["id"] );
+$wp_query = new wp_query($args);
 
 $counter = 1;
 $home_directory = get_site_url();
@@ -47,10 +73,10 @@ while ( have_posts() ) : the_post();
 break;
 endwhile;
 
-global $post_url;global $post_title; global $post_id;
+global $post_url;global $post_title;
 $post_url = get_permalink(); 
 $post_title = get_the_title();
-$post_id = $post->ID;
+
 
 /* NAVIGATION */
 $prev_post = get_previous_post();

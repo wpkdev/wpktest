@@ -1,4 +1,4 @@
-	<?php /*
+<?php /*
     Template Name: Welcome
 */
 
@@ -19,17 +19,11 @@ while ( have_posts() ) : the_post();
 	
 	
 	
-	?>
-			<a href="http://www.shotofjoy.nl" ><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	
-	
-	
-	
-	<?php
 
 	
 	
-	echo '<div class="content content-page-users">';
+	echo '<div class="acount-pages">';
 		
 	if(current_user_is_member()){
 		echo '

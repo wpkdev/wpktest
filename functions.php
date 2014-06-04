@@ -1,6 +1,4 @@
 <?php
-
-
 global $advertorialID;
 global $stickyAdvertorialID;
 global $noRssId;

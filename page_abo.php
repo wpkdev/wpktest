@@ -1,6 +1,4 @@
-	<?php /*
-    Template Name: Abo
-*/
+<?php /* Template Name: Abo */
 
 
 
@@ -38,9 +36,54 @@ get_header();
 
 <script>
 	$( document ).ready(function() {
-		$('.icon-user').hide();
+		//$('.icon-user').hide();
 		$('footer').hide();
 	});
+	
+	
+	//LOAD VIDEO IN PAGE
+	$(document).ready(function(){
+		$('.modalLink').modal({
+			trigger:'.modalLink22',
+			olay:'div.overlay',
+			modals:'div.modal',
+			animationEffect: 'fadeIn',
+			animationSpeed: 400,
+			moveModalSpeed: 'slow',
+			background: '000',
+			opacity: 0.95,
+			openOnLoad: false,
+			docClose: true,
+			closeByEscape: true,
+			moveOnScroll: true,
+			resizeWindow: true,
+			video:'http://player.vimeo.com/video/95103229?title=0&byline=0&portrait=0&wmode=transparent&color=ffffff&autoplay=true',
+			close:'.closeBtn'
+		});
+	});
+	
+	$('.modalLink22').click(function(e){
+			
+		 setTimeout(function(){
+			 var iframe = $('.responsive-container iframe')[0];
+			 var player = $f(iframe);
+			 $('.overlay').fadeIn();
+			  player.addEvent('ready', function() {
+				 player.api('play');
+				 player.addEvent('finish', function(){
+					 $('#video-modal,.overlay').fadeOut();
+					 
+				 });
+			});
+			 
+			 
+		},402);
+		
+	});
+
+
+	
+	
 </script>
 
 

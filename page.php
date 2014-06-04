@@ -8,5 +8,5 @@ while ( have_posts() ) : the_post();
 	
 endwhile;
 
-echo '<div class="push"></div>';
+
 get_footer(); ?>

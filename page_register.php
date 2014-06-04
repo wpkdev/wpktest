@@ -1,4 +1,4 @@
-	<?php /*
+<?php /*
     Template Name: Register
 */
 
@@ -16,12 +16,9 @@ get_header();
 
 
 while ( have_posts() ) : the_post();
-	?>
-	<a href="http://www.shotofjoy.nl"><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	
-	<?php
 	
-	echo '<div class="content content-page-users">';
+	echo '<div class="acount-pages">';
 	
 	
 	//echo '<h2>'.get_the_title().'</h2>';
