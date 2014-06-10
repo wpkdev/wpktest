@@ -51,11 +51,11 @@
 <!-- ICONS -->
 <?php
 
-	if ( !is_page() && is_user_logged_in() ) {
-		echo '<a href="'.site_url().'/account-overzicht/" class="icon-nav icon-user">&nbsp;</a>';
-	}else{
-		echo '<a href="'.site_url().'/" class="icon-nav icon-house">&nbsp;</a>';
+	if ( is_user_logged_in() ) {
+		echo '<a href="'.site_url().'/account-overzicht/" class="icon-nav-header icon-user">&nbsp;</a>';
 	}
+		echo '<a href="'.site_url().'/" class="icon-nav-header icon-house">&nbsp;</a>';
+	
 
 ?>
 

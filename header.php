@@ -63,7 +63,7 @@
         <meta property="og:type" content="website" />
     <?php endif; ?>
     <meta name="robots" content="index, follow">
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01271" type="text/css" /> 
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01273" type="text/css" /> 
   	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
 	<script src="<?php echo get_bloginfo('template_directory'); ?>/js/plugins.js"></script>
@@ -79,6 +79,15 @@
 
 
 <body id="index" class="home">
+
+
+<header>
+	
+	<?php echo get_the_time('l j F', $post->ID); //Echos date in Y-m-d format.; ?>
+	
+</header>
+
+
 	<div class="pagewrapper">
 <?php 
 	if(!is_page()){ 
@@ -95,7 +104,10 @@
 		$logo_img = 'SOJ-logo-wit';
 	}
 ?>
-<header>
+
 	<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" class="header-logo"/></a>
-</header>
+
 <?php } ?>
+
+
+

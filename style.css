@@ -1,7 +1,7 @@
 @charset "utf-8";/*
-Theme Name: Shot of Joy 2.0
+Theme Name: Shot of Joy 2.1
 Theme URI: http://www.wayneparkerkent.nl/
-Version: 2.0
+Version: 3.01
 Author: Niels Hendriks
 Author URI: http://www.wayneparkerkent.com/
 */
@@ -19,10 +19,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 [class^="icon-"], [class*=" icon-"] { font-family: 'icomoon';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;/* Better Font Rendering =========== */-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
 .icon-mail:before 					{ content: "\e600"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-list:before 					{ content: "\e601"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-user:before 					{ content: "\e609"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-arrow-left:before 			{ content: "\e602"; font-size:24px; width:36px; text-align: center; display: block; }
+.icon-user:before 					{ content: "\e609"; font-size:18px; width:40px; text-align: center; display: block; }
+.icon-arrow-left:before 			{ content: "\e602"; font-family: 'icomoon' !important; font-size:24px; width:16px; text-align: center; display: block; position: absolute; top:0; left:5px; }
 .icon-arrow-down:before 			{ content: "\e603"; font-size:30px; width:130px; text-align: center; display: block; margin-top:-5px; }
-.icon-arrow-right:before 			{ content: "\e604"; font-size:24px; width:36px; text-align: center; display: block; }
+.icon-arrow-right:before 			{ content: "\e604"; font-family: 'icomoon' !important; font-size:24px; width:16px; text-align: center; display: block; position: absolute; top:0; right:15px; }
 .icon-twitter:before 				{ content: "\e605"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-facebook:before 				{ content: "\e606"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-export:before 				{ content: "\e608"; font-size:18px; width:36px; text-align: center; display: block; }
@@ -31,7 +31,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .icon-pinterest:hover:before 		{ color: #ca2027; }
 .icon-mail:hover:before 			{ color: #ff7271; }
 .icon-pinterest:before 				{ content: "\e607"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-house:before 					{ content: "\e60a"; font-size:20px; width:36px; text-align: center; display: block; }
+.icon-house:before 					{ content: "\e60a"; font-size:20px; width:40px; text-align: center; display: block; }
 
 /* BASICS */
 html							{ -webkit-font-smoothing: antialiased;  }
@@ -43,11 +43,19 @@ h1,h2,h3,h4,p					{ font-weight: normal;  }
 
 /* ICONS */
 a.icon-nav 						{ display: block;text-decoration: none;z-index: 300;color: #fff;background: rgba(0,0,0,0.15);text-align: center;position: fixed;line-height: 36px;width: 36px;height: 36px;-moz-border-radius: 25px;-webkit-border-radius: 25px; border-radius: 25px; }
-.icon-user,
-.icon-house						{ left:15px; top:15px; }
 
-a.nav-prev						{ top: 15px; right: 15px; }
-a.nav-next						{ top: 66px; right: 15px; }
+a.icon-nav-header				{ display: block;text-decoration: none;z-index: 300;color: #5e5e5e; text-align: center;position: fixed;line-height: 40px;width: 40px;height: 40px; border-right: 1px solid #5e5e5e; } 
+
+
+.icon-house						{ left:0; top:0; z-index:1001; }
+.icon-user						{ left:40px; top:0; z-index:1001; }
+
+
+
+.nav-box						{ position: fixed;  top: 0px; right: 0px; z-index: 300; }
+
+a.nav-prev						{ position: static; display: inline-block; border-right:none; border-left: 1px solid #5e5e5e; width:auto; padding:0 40px 0 15px; font-family: 'Pathway Gothic One','sans-serif'; text-transform: uppercase; }
+a.nav-next						{ position: static; display: inline-block; border-right:none; border-left: 1px solid #5e5e5e; width:auto; padding:0 15px 0 40px; font-family: 'Pathway Gothic One','sans-serif'; text-transform: uppercase; }
 
 
 /* SOCIAL MEDIA BOX */
@@ -80,7 +88,10 @@ nav a.nav-act span			{ width:10px; height:10px; background:#FFF;  -moz-border-ra
 	
 	
 /* HEADER */
-.header-logo					{ position: absolute; top:25px; right:25px; z-index: 10; } 
+header							{ width:100%; height:40px; background:#151112; position: fixed; top:0; left:0; z-index:250;  font-family: 'Pathway Gothic One','sans-serif'; text-transform: uppercase; color:#5e5e5e; text-align: center; line-height: 40px; font-size:20px; border-bottom: 1px solid #5e5e5e; }
+
+
+.header-logo					{ position: absolute; top:40px; right:25px; z-index: 10; width:350px; height:auto;  } 
 
 
 
@@ -158,7 +169,7 @@ blockquote								{ padding:25px; margin:0; }
 
 
 /* VIDEO PAGE */
-.video-play-btn 						{ width: 150px; height: 150px; background: url(img/Play-button.svg) no-repeat center center; z-index: 1000; margin:0 auto; }
+.video-play-btn 						{ width: 150px; height: 150px; background: url(img/Play-button.svg) no-repeat center center; z-index: 210; margin:0 auto; }
 .video-play-btn a 						{ width: 100%; height: 100%; display: block; }
 .responsive-container 					{ position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; overflow: hidden; width: 100%;}
 .responsive-container iframe 			{ position: absolute;top: 0;left: 0; width: 100%;height: 100%; }
@@ -175,7 +186,7 @@ a.closeBtn								 {color: #fff;font-family: 'Pathway Gothic One','sans-serif';f
 
 
 /* SPOTIFY */
-.page .spotify-box							{ background:#151112; padding:20px; margin:75px 100px; width:338px; min-height:1px; height:auto; position: absolute; z-index:10000; }
+.page .spotify-box							{ background:#151112; padding:20px; margin:75px 100px; width:338px; min-height:1px; height:auto; position: absolute; z-index:200; }
  
 /* MAP */
 .page-map								{ background: #FFF; padding:75px; height:auto!important; }
@@ -417,8 +428,11 @@ tr.pricescolumn								{ display: none; }
 	footer h2						{ font-size:40px; }	
 	.footer-promotion				{ margin:40px 20px; width:calc(100% - 40px);  }
 	
+	.icon-nav-header span			{ display: none; }
+	a.nav-prev						{ padding:0 15px 0 25px; }
+	a.nav-next						{ padding:0 15px 0 25px; }
+
 	
-			
 }
 
 @media all and (max-width: 480px){
