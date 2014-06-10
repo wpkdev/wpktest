@@ -62,6 +62,15 @@
        
         <meta property="og:type" content="website" />
     <?php endif; ?>
+    
+    
+   <?php
+   // Get Excerpt and use as description
+   $post_excerpt = $post->post_excerpt;
+   if (!empty($post_excerpt)){
+       echo '<meta name="description" content="'.$post_excerpt.'">';
+   }       
+   ?>
     <meta name="robots" content="index, follow">
   	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01273" type="text/css" /> 
   	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
