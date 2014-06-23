@@ -5,7 +5,9 @@ global $post; setup_postdata($post);
 	
 	// Show Black or white logo
 	$post_id = get_the_id();
-	$logo_color = get_field('logo_color', $post_id);
+	 
+	
+	$logo_color = get_field('logo_color', $_GET["id"]);
 	if (!empty($logo_color) ){
 		if ($logo_color == 'Black'){
 			$logo_img = 'SOJ-logo-zwart';
@@ -17,6 +19,8 @@ global $post; setup_postdata($post);
 	}
 ?>
 <header>
+	
+	<?php echo get_the_time('l j F', $_GET["id"]); //Echos date in Y-m-d format.; ?>
 	<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" class="header-logo"/></a>
 </header>
 <?php
