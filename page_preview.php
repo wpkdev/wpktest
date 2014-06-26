@@ -18,11 +18,18 @@ global $post; setup_postdata($post);
 		$logo_img = 'SOJ-logo-wit';
 	}
 ?>
-<header>
+<header style="position:absolute;background:none;border-bottom:none;">
 	
-	<?php echo get_the_time('l j F', $_GET["id"]); //Echos date in Y-m-d format.; ?>
-	<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" class="header-logo"/></a>
+		<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" class="header-logo"/></a>
 </header>
+
+
+
+<script>
+	$('header').first().html('<?php echo get_the_time('l j F', $_GET["id"]); //Echos date in Y-m-d format.; ?>');
+	
+</script>
+
 <?php
 
 
@@ -81,7 +88,13 @@ global $post_url;global $post_title;
 $post_url = get_permalink(); 
 $post_title = get_the_title();
 
+?>
 
+<script>
+$('title').html('<?php echo $post_title; ?>');
+</script>
+
+<?php
 /* NAVIGATION */
 echo '<div class="nav-box">';
 $next_post = get_next_post();
