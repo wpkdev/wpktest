@@ -22,7 +22,7 @@
 	<link rel="apple-touch-icon-precomposed" href="http://www.shotofjoy.nl/AppIcon72x72@2x.png"/>
 	<link rel="apple-touch-startup-image" href="http://www.shotofjoy.nl/AppIcon76x76.png"/>
 	<link rel="apple-touch-icon-precomposed" href="icon" />
-	<?php if (is_home()):  ?>
+	<?php if (is_home() || is_archive()  ):  ?>
 		<meta name="description" content="" />
         <meta property="og:description" content="<?php the_excerpt_rss(); ?>" />
         <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), full );
@@ -62,17 +62,8 @@
        
         <meta property="og:type" content="website" />
     <?php endif; ?>
-    
-    
-   <?php
-   // Get Excerpt and use as description
-   $post_excerpt = $post->post_excerpt;
-   if (!empty($post_excerpt)){
-       echo '<meta name="description" content="'.$post_excerpt.'">';
-   }       
-   ?>
     <meta name="robots" content="index, follow">
-  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01273" type="text/css" /> 
+  	<link rel="stylesheet" href="<?php echo $template_directory; ?>/style.css?v=1.01284" type="text/css" /> 
   	<link href='//fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
 	<script src="<?php echo get_bloginfo('template_directory'); ?>/js/plugins.js"></script>
@@ -92,14 +83,14 @@
 
 <header>
 	
-	<?php if(!is_page()){  echo get_the_time('l j F', $post->ID); } //Echos date in Y-m-d format.;  ?>
+	<?php if(!is_page() && !is_archive()){  echo get_the_time('l j F', $post->ID); } //Echos date in Y-m-d format.;  ?>
 	
 </header>
 
 
 	<div class="pagewrapper">
 <?php 
-	if(!is_page()){ 
+	if(!is_page() && !is_archive()){ 
 	// Show Black or white logo
 	$post_id = get_the_id();
 	$logo_color = get_field('logo_color', $post_id);

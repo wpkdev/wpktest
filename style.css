@@ -15,23 +15,29 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* FONTS */
 @font-face {font-family: 'ProxySemiBold';src: url('fonts/proximanova-bold-webfont.eot?') format('eot'),url('fonts/proximanova-semibold-webfont.woff') format('woff'), url('fonts/proximanova-semibold-webfont.ttf') format('truetype'),url('fonts/proximanova-semibold-webfont.svg#webfont42ha8COO') format('svg');font-weight: normal;font-style: normal;}
 @font-face {font-family: 'bigcaslon';src: url('fonts/bigcaslon.eot?') format('eot'),url('fonts/bigcaslon.woff') format('woff'), url('fonts/bigcaslon.ttf') format('truetype'),url('fonts/bigcaslon.svg#webfont42ha8COO') format('svg');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'icomoon';src:url('fonts/icomoon.eot?-af1wmt');src:url('fonts/icomoon.eot?#iefix-af1wmt') format('embedded-opentype'),url('fonts/icomoon.woff?-af1wmt') format('woff'),url('fonts/icomoon.ttf?-af1wmt') format('truetype'),url('fonts/icomoon.svg?-af1wmt#icomoon') format('svg');font-weight: normal;font-style: normal; }
+@font-face {font-family: 'icomoon';src:url('fonts/icomoon3.eot?-af1wmt');src:url('fonts/icomoon3.eot?#iefix-af1wmt') format('embedded-opentype'),url('fonts/icomoon3.woff?-af1wmt') format('woff'),url('fonts/icomoon3.ttf?-af1wmt') format('truetype'),url('fonts/icomoon.svg?-af1wmt#icomoon') format('svg');font-weight: normal;font-style: normal; }
 [class^="icon-"], [class*=" icon-"] { font-family: 'icomoon';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;/* Better Font Rendering =========== */-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
 .icon-mail:before 					{ content: "\e600"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-list:before 					{ content: "\e601"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-user:before 					{ content: "\e609"; font-size:18px; width:40px; text-align: center; display: block; }
+.icon-user:before 					{ content: "\e60b"; font-size:18px; width:40px; text-align: center; display: block; }
 .icon-arrow-left:before 			{ content: "\e602"; font-family: 'icomoon' !important; font-size:24px; width:16px; text-align: center; display: block; position: absolute; top:0; left:5px; }
 .icon-arrow-down:before 			{ content: "\e603"; font-size:30px; width:130px; text-align: center; display: block; margin-top:-5px; }
 .icon-arrow-right:before 			{ content: "\e604"; font-family: 'icomoon' !important; font-size:24px; width:16px; text-align: center; display: block; position: absolute; top:0; right:15px; }
 .icon-twitter:before 				{ content: "\e605"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-facebook:before 				{ content: "\e606"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-export:before 				{ content: "\e608"; font-size:18px; width:36px; text-align: center; display: block; }
+.icon-export:before 				{ content: "\e60c"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-facebook:hover:before 		{ color: #40569b; }
 .icon-twitter:hover:before 			{ color: #44abf1; }
 .icon-pinterest:hover:before 		{ color: #ca2027; }
 .icon-mail:hover:before 			{ color: #ff7271; }
 .icon-pinterest:before 				{ content: "\e607"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-house:before 					{ content: "\e60a"; font-size:20px; width:40px; text-align: center; display: block; }
+.icon-house:before 					{ content: "\e60d"; font-size:20px; width:40px; text-align: center; display: block; }
+.icon-heart:before 					{ content: "\e608"; }
+.icon-history:before 				{ content: "\e609"; font-size:18px; width:40px; text-align: center; display: block; }
+.icon-layout:before 				{ content: "\e60a"; font-size:18px; width:40px; text-align: center; display: block; }
+
+
+
 
 /* BASICS */
 html							{ -webkit-font-smoothing: antialiased;  }
@@ -45,11 +51,14 @@ h1,h2,h3,h4,p					{ font-weight: normal;  }
 a.icon-nav 						{ display: block;text-decoration: none;z-index: 300;color: #fff;background: rgba(0,0,0,0.15);text-align: center;position: fixed;line-height: 36px;width: 36px;height: 36px;-moz-border-radius: 25px;-webkit-border-radius: 25px; border-radius: 25px; }
 
 a.icon-nav-header				{ display: block;text-decoration: none;z-index: 300;color: #5e5e5e; text-align: center;position: fixed;line-height: 40px;width: 40px;height: 40px; border-right: 1px solid #5e5e5e; } 
+a.icon-nav-header-right			{ display: inline-block; text-decoration: none;z-index: 300;color: #5e5e5e; text-align: center;position: fixed;line-height: 40px;width: auto;height: 40px; border-left: 1px solid #5e5e5e; } 
 
 
 .icon-house						{ left:0; top:0; z-index:1001; }
 .icon-user						{ left:40px; top:0; z-index:1001; }
-
+.icon-history					{ right:112px; top:0; z-index:1001; }
+.icon-layout					{ right:0px; top:0; z-index:1001; }
+a.icon-nav-header-right span	{ position: relative; top:-41px; right:0; padding: 0 10px 0 40px;  font-size:20px; font-family: 'Pathway Gothic One','sans-serif'; text-transform: uppercase }
 
 
 .nav-box						{ position: fixed;  top: 0px; right: 0px; z-index: 300; }
@@ -344,6 +353,35 @@ tr.pricescolumn								{ display: none; }
 .scroll-indicator .arrow-down{ background: url(img/scroll.svg) no-repeat center top; width: 100%; height: 100%;}
 
 
+
+/******************************
+***** CALENDAR
+*******************************/
+.calendar-page				{  margin:40px auto 0 auto; position: relative; background:#FFF; }
+.calendar-page .header		{ background:#000; text-align: center; width:100%; overflow-x: hidden; position: relative; }
+.header-label				{ position: absolute; bottom:40px; left:0; width: 100%; text-align: center;  }
+.grid						{ width:969px; margin: 0 auto; }
+.grid ul					{ list-style: none; padding:0; margin:0; }
+.grid ul li					{ float:left; width:calc( 33.33333% - 13.3333px ); background: #000; margin:0 20px 20px 0; }
+.grid ul li.grid-3,			
+.grid ul li.grid-6			{ margin-right:0; }
+.grid ul li.week-number			{ clear:both; background:#FFF; text-transform: uppercase; width:100%; font-family: 'Pathway Gothic One','sans-serif'; color:#000; font-size:20px; text-align: center; }
+.grid ul li.week-number	hr		{ border:none; border-bottom:1px solid #d1d1d1;  }
+.grid ul li.week-number span	{ display: block; width:100px; margin-left:auto; margin-right:auto; margin-top:-36px; background: #FFF; padding:10px; }
+.grid ul li .text-box			{ background: #000; padding: 15px; min-height:130px; }
+.grid ul li a					{ color:#FFF; text-decoration: none; font-family: Georgia;  display: block; line-height: 20px; letter-spacing: -1px; }
+.grid ul li img					{ width:100%; height:auto; }
+
+.post-date						{ font-family: 'Pathway Gothic One','sans-serif'; padding:10px 0; font-size:18px; letter-spacing: 0px; }
+
+.category-box					{ background:#000; text-align: center; padding:10px 0 6px 0; }
+.grid ul li .category-box img				{ width: auto !important; height: 30px !important; }
+
+.grid-paging					{ text-align: center; padding: 10px 0 40px 0 ;  font-size:24px; font-family: 'Pathway Gothic One','sans-serif';  }
+.grid-paging a					{ text-transform: uppercase; color:#000; text-decoration: none; }	 
+.grid ul li.grid-archive a			{ margin-bottom: -5px; }
+.collage						{ margin-bottom:-8px; }
+
 /* RESPONSIVE ELEMENTS */
 @media all and (max-width: 1024px){
 	.page-content					{ background-image:none!important; height:auto!important; }
@@ -389,6 +427,11 @@ tr.pricescolumn								{ display: none; }
 	nav								{ display: none; }
 }
 
+@media all and (max-width: 969px){
+	.grid						{ width:100%; }
+}
+
+
 
 @media all and (max-width: 768px){
 	/* PAGES */
@@ -431,8 +474,18 @@ tr.pricescolumn								{ display: none; }
 	.icon-nav-header span			{ display: none; }
 	a.nav-prev						{ padding:0 15px 0 25px; }
 	a.nav-next						{ padding:0 15px 0 25px; }
-
 	
+	
+	/******************************
+	***** CALENDAR
+	*******************************/
+	.grid ul li					{ float:left; width:calc( 50% - 10px ); background: #000; margin:0 20px 20px 0; }
+	.grid ul li.grid-3,			
+	.grid ul li.grid-6			{ margin-right:20px; }
+	.grid ul li.grid-2,			
+	.grid ul li.grid-4,
+	.grid ul li.grid-6			{ margin-right:0px; }			
+	.grid ul li .text-box		{ min-height:180px; }
 }
 
 @media all and (max-width: 480px){
@@ -454,7 +507,17 @@ tr.pricescolumn								{ display: none; }
 	.abo-page-content h2				{ font-size:39px; line-height: 30px; }
 	.abo-page-content					{ width:calc( 100% - 40px); max-width:850px; padding:20px; margin:0 auto; }
 	
+	/******************************
+	***** CALENDAR
+	*******************************/
+	.grid ul li					{ float:left; width:calc( 50% - 5px ); background: #000; margin:0 10px 10px 0px; }
+	.grid ul li.grid-3			{ margin-right:10px; }
+	.grid ul li.week-number		{ margin-top:20px; }
 	
+	
+	
+	a.icon-nav-header-right span		{ display: none; }
+	.icon-history					{ right:40px;  }
 }
 
 

@@ -55,10 +55,13 @@
 		echo '<a href="'.site_url().'/account-overzicht/" class="icon-nav-header icon-user">&nbsp;</a>';
 	}
 		echo '<a href="'.site_url().'/" class="icon-nav-header icon-house">&nbsp;</a>';
-	
-
+		echo '<a href="'.site_url().'/calendar" class="icon-nav-header-right icon-history"><span>Calendar</span></a>';
+		echo '<a href="'.site_url().'/archive" class="icon-nav-header-right icon-layout"><span>Archive</span></a>';
 ?>
-
+	
+	
+	
+	
 
 <?php if(!is_page()){ ?>
 

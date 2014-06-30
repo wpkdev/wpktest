@@ -99,11 +99,11 @@ $('title').html('<?php echo $post_title; ?>');
 echo '<div class="nav-box">';
 $next_post = get_next_post();
 if (!empty( $next_post )): 
-	echo '<a href=" '.get_permalink( $next_post->ID ).' " class="icon-nav-header nav-next icon-arrow-left"><span>Eerder</span></a>';
+	//echo '<a href=" '.get_permalink( $next_post->ID ).' " class="icon-nav-header nav-next icon-arrow-left"><span>Eerder</span></a>';
 endif; 
 $prev_post = get_previous_post();
 if (!empty( $prev_post )): 
-	echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="icon-nav-header nav-prev icon-arrow-right"><span>Later</span></a>';
+	//echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="icon-nav-header nav-prev icon-arrow-right"><span>Later</span></a>';
 endif; 
 echo '</div>';
 
