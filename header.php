@@ -85,6 +85,8 @@
 	
 	<?php if(!is_page() && !is_archive()){  echo get_the_time('l j F', $post->ID); } //Echos date in Y-m-d format.;  ?>
 	
+	
+	
 </header>
 
 

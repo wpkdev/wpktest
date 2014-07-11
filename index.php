@@ -6,6 +6,8 @@ $wp_query = new wp_query($args);
 $counter = 1;
 $home_directory = get_site_url();
 
+
+
 while ( have_posts() ) : the_post();
 	if( have_rows('new_page') ):
 		while ( have_rows('new_page') ) : the_row();
