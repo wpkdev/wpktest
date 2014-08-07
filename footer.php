@@ -23,13 +23,13 @@
 			<a href="mailto:?SUBJECT=<?php echo $post_title ?>- Shotofjoy.nl&BODY=Hi..., ik wil graag dit artikel met je delen: http://www.shotofjoy.nl/preview/?id=<?php echo $post_id; ?>" target="_blank" class="btn btn-email"><span class="icon-mail"></span>Email</a>
 		</div>
 			<?php if ( !is_user_logged_in() ) { ?>
-				<div class="footer-promotion">
+				<!--<div class="footer-promotion">
 					<img src="<?php echo get_bloginfo('template_directory'); ?>/img/SOJ-logo-wit.svg" />
 					<p>Word nu abonnee en ontvang de eerste twee weken gratis.</p>
 					<a href="http://www.shotofjoy.nl/register/?action=registeruser&amp;subscription=1" class="btn">Abonneer</a> &nbsp; 
 					<a href="http://www.shotofjoy.nl/login" class="btn">Login</a>
 					<span>DAGELIJKS VOOR MAAR € 2,99 PER MAAND</span>
-				</div>
+				</div>-->
 			<?php } ?>
 		<?php } ?>
 		
