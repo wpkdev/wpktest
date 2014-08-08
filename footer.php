@@ -38,7 +38,7 @@
 			<li><a href="http://www.shotofjoy.nl/privacy-beleid-statement-van-shot-of-joy/">Privacy Policy</a></li>
 			<li><a href="http://www.shotofjoy.nl/algemene-voorwaarden/">Gebruiksvoorwaarden</a></li>
 			<li><a href="http://www.shotofjoy.nl/contact/">Contact</a></li>
-			<li><a href="http://www.shotofjoy.nl/uitschrijven/">Abonnement opzeggen</a></li>
+			<!--<li><a href="http://www.shotofjoy.nl/uitschrijven/">Abonnement opzeggen</a></li>-->
 			<li><a href="http://www.shotofjoy.nl/nieuwsbrief/">Inschrijven nieuwsbrief</a></li>
 		</ul>
 	
