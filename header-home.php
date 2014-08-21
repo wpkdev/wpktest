@@ -78,10 +78,10 @@
     </nav>
     <div id="search">
       <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-        <input type="search" class="search-field" placeholder="Zoek naar …" value="" name="s" title="Zoeken" />
-        <input type="submit" class="search-submit" value="Zoek" />
+        <input type="search" class="search-field" width="18" placeholder="Zoeken naar …" value="" name="s" title="Zoeken" />
+        <input type="submit" class="search-submit" value="Zoeken" />
       </form>
-      <button class="search-toggle"></button>
+      <div class="search-toggle icon-search"></div>
     </div>
   </header>
 

@@ -302,6 +302,8 @@ $('#payment_checker').click(function(e){
 
 $('.search-toggle').click( function() {
 	$('header.home').toggleClass("searching");
+	$(this).toggleClass("icon-search");
+	$(this).toggleClass("icon-close");
 });
 
 
