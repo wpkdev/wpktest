@@ -17,21 +17,23 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @font-face {font-family: 'bigcaslon';src: url('fonts/bigcaslon.eot?') format('eot'),url('fonts/bigcaslon.woff') format('woff'), url('fonts/bigcaslon.ttf') format('truetype'),url('fonts/bigcaslon.svg#webfont42ha8COO') format('svg');font-weight: normal;font-style: normal;}
 @font-face {font-family: 'icomoon';src:url('fonts/icomoon.eot?-af1wmt');src:url('fonts/icomoon.eot?#iefix-af1wmt') format('embedded-opentype'),url('fonts/icomoon.woff?-af1wmt') format('woff'),url('fonts/icomoon.ttf?-af1wmt') format('truetype'),url('fonts/icomoon.svg?-af1wmt#icomoon') format('svg');font-weight: normal;font-style: normal; }
 [class^="icon-"], [class*=" icon-"],
-header.home nav ul li:first-child a:before { font-family: 'icomoon';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;/* Better Font Rendering =========== */-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
+header.home nav ul li:first-child a:before,
+header.home nav:before { font-family: 'icomoon';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;/* Better Font Rendering =========== */-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
 .icon-mail:before { content: "\e601"; font-size:18px; width:36px; text-align: center; display: block; }
-.icon-list:before { content: "\e602"; font-size:18px; width:36px; text-align: center; display: block; }
+.icon-list:before,
+header.home nav:before { content: "\e602"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-user:before { content: "\e60c"; font-size:18px; width:40px; text-align: center; display: block; }
 .icon-arrow-left:before { content: "\e603"; font-family: 'icomoon' !important; font-size:24px; width:16px; text-align: center; display: block; position: absolute; top:0; left:5px; }
 .icon-arrow-down:before { content: "\e604"; font-size:30px; width:130px; text-align: center; display: block; margin-top:-5px; }
 .icon-arrow-right:before { content: "\e605"; font-family: 'icomoon' !important; font-size:24px; width:16px; text-align: center; display: block; position: absolute; top:0; right:15px; }
 .icon-twitter:before { content: "\e606"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-facebook:before { content: "\e607"; font-size:18px; width:36px; text-align: center; display: block; }
+.icon-pinterest:before { content: "\e608"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-export:before { content: "\e60d"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-facebook:hover:before { color: #40569b; }
 .icon-twitter:hover:before { color: #44abf1; }
 .icon-pinterest:hover:before { color: #ca2027; }
 .icon-mail:hover:before { color: #ff7271; }
-.icon-pinterest:before { content: "\e608"; font-size:18px; width:36px; text-align: center; display: block; }
 .icon-house:before,
 header.home nav ul li:first-child a:before { content: "\e60e"; font-size:18px; width:40px; text-align: center; display: block; }
 .icon-search:before { content: "\e600"; font-size:18px; width:40px; text-align: center; display: block; }
@@ -111,6 +113,7 @@ header.home #primary { width: 1000px; display: block; margin: 0 auto; }
 header.home .menu-home-menu-container { height: 56px; }
 
 header.home nav { position: relative; top: 0px; left: 0px; height: 56px; margin: 0; padding: 0; }
+header.home nav:before { display: none; }
 header.home nav ul { margin: 0 auto; padding: 0; height: 55px; width: 1000px; display: inline-block; position: relative; }
 header.home nav ul li { margin: 0 62px 0 0; padding: 0; float: left; height: 55px; transition: opacity .5s linear; -webkit-transition: opacity .5s linear; }
 header.home nav ul li:last-child { margin: 0 30px 0 0; }
@@ -126,7 +129,7 @@ header.home #search .search-form { position: absolute; z-index: 5; right: 35px; 
 header.home #search .search-submit { height: 31px; font-family: 'Pathway Gothic One','sans-serif'; font-size: 20px; text-transform: uppercase; }
 header.home #search .search-field,
 header.home #search .search-submit { padding: 4px 25px; display: none; position: absolute; top: 0px; right: 2px; border-radius: 0 35px 35px 0; border: none; background: #000; color: #fff; }
-header.home #search .search-field { font-family: Verdana, sans-serif; font-weight: normal; height: 23px; font-size: 14px; width: 201px; border: none; background: #e5e5e5; color: #000; border-radius: 35px; padding: 4px 81px 4px 14px; }
+header.home #search .search-field { font-family: Verdana, sans-serif; font-weight: normal; height: 23px; font-size: 14px; width: 201px; border: none; background: #e5e5e5; color: #000; border-radius: 35px; padding: 4px 96px 4px 14px; }
 header.home #search .search-toggle { color: #000 padding: 0; margin: 0; display: block; border: none; cursor: pointer; position: absolute; right: 10px; top: 16px; width: 26px; height: 21px; z-index: 10; }
 header.home #search .search-toggle:before { color: #000; margin-top: 1px }
 header.home #search .search-toggle:focus,
@@ -143,12 +146,40 @@ header.home.searching #search .search-submit { display: block; }
 /* HEADER & HOMEPAGE MOBILE */
 
 @media all and (max-width: 1000px){
+  header.home.searching nav ul li { opacity: 1; }
+  header.home.searching #search .search-field,
+  header.home.searching #search .search-submit { opacity: 0; }
+  header.home.has-menu.searching #search .search-field,
+  header.home.has-menu.searching #search .search-submit { opacity: 1; }
+
   body { min-width: 280px; }
   .home-page .logowrap { width: 100%; margin: 0; }
-  .home-page .logowrap .logo { width: 165px; height: 204px; margin: 24px auto; display: block; }
+  .home-page .logowrap .logo { width: 80px; height: 102px; margin: 24px auto; display: block; }
   header.home { position: absolute; border-bottom: none; background: none; }
-  header.home #primary { display: none; }
-  header.home nav { display: none; }
+  header.home #primary { display: block; width: 100%; margin: 0; }
+  header.home nav { display: block; position: absolute; }
+  header.home nav:before { padding: 12px 0 0 10px; color: #000; font-size: 30px; display: block; position: absolute; top: 0px; left: 0px; width: 45px; height: 45px; cursor: pointer; }
+  header.home nav ul { display: block; overflow: hidden; max-width: 0px; right: 100%; opacity: 0; transition: max-width .5s linear; transition: opacity .5s linear; }
+  header.home #search { display: block; opacity: 0; width: 0px; transition: opacity .3s linear .5s; }
+  header.home nav ul li { border-bottom: 1.5px solid #e8e8e8; text-align: left; margin: 3px; padding: 0; float: none; height: auto; transition: none; -webkit-transition: none; }
+  header.home nav ul li a { display: block; width: 100%; height: 100%; }
+  header.home nav ul li:first-child { border-bottom: none; }
+  header.home nav ul li:last-child { margin: 0; }
+  header.home #search .search-field,
+  header.home #search .search-submit { display: block;}
+  header.home #search .search-toggle { display: none;}
+
+  header.home.has-menu nav ul { padding-top: 30px; position: fixed; display: block; top: 0px; left: 0px; width: 100%; max-width: 1000px; opacity: 1; height: 100%; background: #fff;  }
+  header.home.has-menu #search { opacity: 1; min-width: 300px; width: auto; overflow: visible; display: block; position: fixed; height: 50px; top: 45px; left: 0px; right: 0px; }
+  header.home.has-menu #search .search-form { display: block; overflow: hidden; margin: 0 auto; height: 38px; width: 314px; position: absolute; left: 50%; margin-left: -157px; }
+  header.home #search .search-field { position: absolute; }
+  header.home #search .search-submit { position: absolute; }
+  header.home.has-menu nav:before { position: fixed; left: auto; height: 36px; right: 0px; z-index: 1000; padding-right: 10px; content: "\e60f"; font-size: 18px; padding-top: 16px; }
+}
+
+@media all and (min-width: 520px) and (max-width: 1000px){
+  header.home.has-menu #search .search-form { width: 514px; position: absolute; left: 50%; margin-left: -257px; }
+  header.home.has-menu #search .search-field { position: absolute; width: 400px; }
 }
 
 
@@ -298,7 +329,7 @@ ul.wpk-gallery:after { content: "."; display: block; height: 0; clear: both; vis
 
 
 /* FOOTER */
-footer { background:#151112; text-align: center; padding:50px 0; }
+footer { background:#000; text-align: center; padding:50px 0; }
 footer h3 { border-bottom: 1px solid #FFF; color:#FFF; display: inline-block;padding: 0 0 10px 0;margin: 0 0 40px 0;font-family: 'Pathway Gothic One','sans-serif';text-align: center;font-weight: normal;font-size: 24px;line-height: 1;text-transform: uppercase;}
 footer h2  { font-family: bigcaslon;text-align: center;font-weight: normal;font-size: 54px;line-height: 45px;text-indent: -4px; color:#FFF; padding:0 0 40px 0; margin:0; }
 footer .social-btn .btn { font-size:20px; color:#FFF; margin:0 10px 20px 10px; padding-right:26px; }
@@ -318,6 +349,18 @@ footer ul li a:hover { color:#FF7271; }
 .footer-promotion p { color:#fff ;  font-family: bigcaslon,serif; font-size: 36px;font-weight: 100; margin-bottom: 45px;}
 .footer-promotion span { font-family: 'Pathway Gothic One',sans-serif; text-transform: uppercase; color:#FFF; display: block; margin-top:40px;}
 
+
+/* FOOTER HOME */
+
+footer.home .social-btns { width: 320px; height: 76px; overflow: hidden; margin: 0 auto; }
+footer.home .social-link { position: relative; text-decoration: none !important; color: #000; display: block; border: none; background: #fff; border-radius: 70px; width: 70px; height: 70px; float: left; margin-right: 55px; }
+footer.home .social-link span { text-decoration: none !important; }
+footer.home .social-link span:before { padding: 19px 0 0 20px; text-indent: 0px; font-size: 30px; margin-bottom: 1000px; }
+footer.home .social-link .icon-pinterest a { display: block; opacity: 0; width: 70px; height: 70px; position: absolute; top: -50px; padding: 35px !important; }
+footer.home .social-link .icon-pinterest:before { margin-bottom: 0px; }
+footer.home .social-link:last-child { margin-right: 0px;}
+
+footer.home h3 { border-bottom: none; }
 
 /* ACCOUNT PAGES */
 .acount-pages { max-width: 500px; width: 100%; margin: 0 auto; position: relative; margin-bottom: 200px; color:#FFF; }
@@ -567,4 +610,26 @@ tr.pricescolumn { display: none; }
 
   a.icon-nav-header-right span { display: none; }
   .icon-history { right:40px; }
+}
+
+
+@-webkit-keyframes show-menu {
+  0%   { opacity: 0; display: none; }
+  5%   { opacity: 0; display: block; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes show-menu {
+  0%   { opacity: 0; display: none; }
+  5%   { opacity: 0; display: block; }
+  100% { opacity: 1; }
+}
+@-o-keyframes show-menu {
+  0%   { opacity: 0; display: none; }
+  5%   { opacity: 0; display: block; }
+  100% { opacity: 1; }
+}
+@keyframes show-menu {
+  0%   { opacity: 0; display: none; }
+  5%   { opacity: 0; display: block; }
+  100% { opacity: 1; }
 }
