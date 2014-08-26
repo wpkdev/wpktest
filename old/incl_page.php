@@ -14,8 +14,50 @@
 	$src_1024 = aq_resize( $image['url'], 1024, 559, true, false ); //resize & crop img
 	$src_768 = aq_resize( $image['url'], 786, 429, true, false ); //resize & crop img
 	$src_480 = aq_resize( $image['url'], 480, 480, true, false ); //resize & crop img
+<<<<<<< HEAD
 	
 	echo '<div class="page-element  page-element-longread page-'.$counter.' " >';
+=======
+	$sub_title = get_sub_field('subtitle');
+	$page_title = get_sub_field('title');
+	?>
+	
+	
+	<div class="page page-content page-<?php echo $counter; ?>"  style="background-image:url('<?php echo $src[0]; ?>');">
+		
+		<?php
+			if(strlen($extra_image['url'])> 1){
+				echo '<img src="'.$extra_image['url'].'" class="img-overlay vert-'.$position_vertical_extra.' pos-'.$position_horizontal_extra.' dsktp-img" nopin="nopin"  />';
+			}
+		?>
+		
+		<div class="mbl-img">
+			<img src="<?php echo $template_directory; ?>/img/pixel.gif"  class="big-image"  data-src="<?php echo $src[0]; ?>" data-src-1024="<?php echo $src_1024[0]; ?>" data-src-768="<?php echo $src_768[0]; ?>" data-src-480="<?php echo $src_480[0]; ?>">
+			<?php
+			if(strlen($extra_image['url'])> 1){
+				echo '<img src="'.$extra_image['url'].'" class="img-overlay vert-'.$position_vertical_extra.' pos-'.$position_horizontal_extra.'" nopin="nopin" />';
+			}
+			?>
+			
+		</div>
+		
+		<div class="page-content pos-<?php echo $position_horizontal; ?>">
+			<?php
+				if(strlen($sub_title)> 1){
+					echo '<div class="subtitle" ><h3>'.$sub_title.'</h3></div>';
+				}
+				if(strlen($page_title)> 1){
+					echo '<h2>'.$page_title.'</h2>';
+				}
+				echo get_sub_field('content');
+			?>
+		</div>
+	</div>
+
+	
+	<?php
+	/*echo '<div class="page-element  page-element-longread page-'.$counter.' " >';
+>>>>>>> FETCH_HEAD
 	
 	
 	
@@ -54,6 +96,10 @@
 		echo '<div class="extra-img vert-'.$position_vertical_extra.'-title hor-'.$position_horizontal_extra.'-title"><img src="'.$extra_image['url'].'"  nopin="nopin" class=" "></div>';
 	}
 
+<<<<<<< HEAD
 	echo '</div>';
+=======
+	echo '</div>';*/
+>>>>>>> FETCH_HEAD
 
 ?>

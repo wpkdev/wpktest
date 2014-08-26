@@ -55,7 +55,11 @@
 	    		
 	    		
 	    		
+<<<<<<< HEAD
 	    		$output .= '<li '.$class.'><a href="'.get_site_url().'/out?redirect='.urlencode($shop_url).' " target="_blank" class="js-gallery"><div class="img-gallery-box"><div class="gallery-btn"><span>Shop it</span></div><img src="'.$src[0].'" width="'.$src[1].'" height="'.$src[2].'"  nopin="nopin" class="js-no-lazy-loading" /></div><div class="gallery-description">
+=======
+	    		$output .= '<li '.$class.'><a href="'.get_site_url().'/out?redirect='.urlencode($shop_url).' " target="_blank" class="js-gallery"><div class="img-gallery-box"><div class="gallery-btn"><span>Shop it</span></div><img src="'.$src[0].'" width="'.$src[1].'" height="'.$src[2].'"  class="js-no-lazy-loading" /></div><div class="gallery-description">
+>>>>>>> FETCH_HEAD
 	    		<span class="product-title">'.$shop_title.'</span>
 	    		<span class="product-info1">'.$shop_info1.'</span>
 	    		<span class="product-info2">'.$shop_info2.'</span></a>';

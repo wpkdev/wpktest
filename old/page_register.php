@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 	<?php /*
+=======
+<?php /*
+>>>>>>> FETCH_HEAD
     Template Name: Register
 */
 
@@ -16,12 +20,18 @@ get_header();
 
 
 while ( have_posts() ) : the_post();
+<<<<<<< HEAD
 	?>
 	<a href="http://www.shotofjoy.nl"><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	
 	<?php
 	
 	echo '<div class="content content-page-users">';
+=======
+	
+	
+	echo '<div class="acount-pages">';
+>>>>>>> FETCH_HEAD
 	
 	
 	//echo '<h2>'.get_the_title().'</h2>';

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 	<?php /*
+=======
+<?php /*
+>>>>>>> FETCH_HEAD
     Template Name: Welcome
 */
 
@@ -19,6 +23,7 @@ while ( have_posts() ) : the_post();
 	
 	
 	
+<<<<<<< HEAD
 	?>
 			<a href="http://www.shotofjoy.nl" ><img src="<?php echo $template_directory; ?>/img/close-btn.jpg" class="cls-btn" ></a>
 	
@@ -30,6 +35,13 @@ while ( have_posts() ) : the_post();
 	
 	
 	echo '<div class="content content-page-users">';
+=======
+	
+
+	
+	
+	echo '<div class="acount-pages">';
+>>>>>>> FETCH_HEAD
 		
 	if(current_user_is_member()){
 		echo '

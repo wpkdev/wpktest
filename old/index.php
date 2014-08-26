@@ -1,43 +1,12 @@
-<?php /* Template Name: Page Preview */
-get_header(); 
-global $post; setup_postdata($post);
+<?php get_header(); 
 
-	
-	// Show Black or white logo
-	$post_id = get_the_id();
-	 
-	
-	$logo_color = get_field('logo_color', $_GET["id"]);
-	if (!empty($logo_color) ){
-		if ($logo_color == 'Black'){
-			$logo_img = 'SOJ-logo-zwart';
-		} else {
-			$logo_img = 'SOJ-logo-wit';
-		}
-	} else {
-		$logo_img = 'SOJ-logo-wit';
-	}
-?>
-<header style="position:absolute;">
-	
-		<a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo $template_directory; ?>/img/<?php echo $logo_img;?>.svg"  nopin="nopin" class="header-logo"/></a>
-</header>
-
-
-
-<script>
-	$('header').html('<?php echo get_the_time('l j F', $_GET["id"]); //Echos date in Y-m-d format.; ?>');
-</script>
-
-<?php
-
-
-
-$args = array( 'p' => $_GET["id"] );
+$args = array( 'posts_per_page' => -1 );
 $wp_query = new wp_query($args);
 
 $counter = 1;
 $home_directory = get_site_url();
+
+
 
 while ( have_posts() ) : the_post();
 	if( have_rows('new_page') ):
@@ -83,22 +52,22 @@ while ( have_posts() ) : the_post();
 break;
 endwhile;
 
-global $post_url;global $post_title;
+global $post_url;global $post_title; global $post_id;
 $post_url = get_permalink(); 
 $post_title = get_the_title();
+$post_id = $post->ID;
 
 
 /* NAVIGATION */
 echo '<div class="nav-box">';
 $next_post = get_next_post();
 if (!empty( $next_post )): 
-	echo '<a href=" '.get_permalink( $next_post->ID ).' " class="icon-nav-header nav-next icon-arrow-left"><span>Eerder</span></a>';
+	//echo '<a href=" '.get_permalink( $next_post->ID ).' " class="icon-nav-header nav-next icon-arrow-left"><span>Later</span></a>';
 endif; 
 $prev_post = get_previous_post();
 if (!empty( $prev_post )): 
-	echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="icon-nav-header nav-prev icon-arrow-right"><span>Later</span></a>';
+	//echo '<a href=" '.get_permalink( $prev_post->ID ).' " class="icon-nav-header nav-prev icon-arrow-right"><span>Eerder</span></a>';
 endif; 
 echo '</div>';
-
 
 get_footer(); ?>

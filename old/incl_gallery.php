@@ -1,6 +1,7 @@
 <?php
 	
 	//echo '<div  class=" page-bg-'.$counter.' bg  bg-shop" style="background:#FFF;">&nbsp;</div>';
+<<<<<<< HEAD
 	
 
 	$src = $template_directory.'/img/pixel.gif';
@@ -8,6 +9,70 @@
 	$color_scheme = 'page-wrapper-'.get_sub_field('colorscheme');
 	
 	echo '<div class="page-element page-'.$counter.'" style="background:#FFF;">';
+=======
+	$src = $template_directory.'/img/pixel.gif';
+	$color_scheme = 'page-wrapper-'.get_sub_field('colorscheme');
+	$page_title = get_sub_field('title');
+	$sub_title = get_sub_field('subtitle');
+	$position_text = get_sub_field('position_extra_text');
+	
+	
+	
+	
+	?>
+	
+	<div class="page page-shop page-<?php echo $counter; ?>">
+		<?php 
+			if (get_sub_field('extra_text')){
+				if($position_text == 'left'){
+					echo '
+						<div class="page-shop-text-left">
+							<div class="page-shop-text">';
+								if (!empty($sub_title)){
+									echo '<div class="subtitle dark-subtitle"><h3>'.$sub_title.'</h3></div>';
+								}
+								if(strlen($page_title)> 1){
+									echo '<h2>'.$page_title.'</h2>';
+								}
+							echo get_sub_field('extra_text').'
+							</div>
+							<div class="page-shop-gallery">
+								'.get_sub_field('shop_gallery').'
+							</div>
+						</div>
+						';
+				
+				}else{
+					echo '
+						<div class="page-shop-text-right">
+							<div class="page-shop-gallery">
+								'.get_sub_field('shop_gallery').'
+							</div>
+							<div class="page-shop-text">';
+								if (!empty($sub_title)){
+									echo '<div class="subtitle dark-subtitle"><h3>'.$sub_title.'</h3></div>';
+								}
+								if(strlen($page_title)> 1){
+									echo '<h2>'.$page_title.'</h2>';
+								}
+							echo get_sub_field('extra_text').'
+							</div>
+							
+						</div>
+						';
+				}
+			}else{
+				echo get_sub_field('shop_gallery');
+			}	
+		?>
+	
+	
+	
+	</div>
+	
+	<?php
+	/*echo '<div class="page-element page-'.$counter.'" style="background:#FFF;">';
+>>>>>>> FETCH_HEAD
 	
 	
 	
@@ -48,11 +113,15 @@
 		
 			echo '<div class="text-pos-right ">';
 
+<<<<<<< HEAD
 /*
 				echo '<div class="gallery_col ">';
 					echo get_sub_field('shop_gallery');
 				echo '</div>';
 */				
+=======
+			
+>>>>>>> FETCH_HEAD
 				
 				echo '<div class="extra_content_col '.$color_scheme.'">';
 				
@@ -83,5 +152,9 @@
 
 	
 	echo '</div>';
+<<<<<<< HEAD
 	echo '</div>';
+=======
+	echo '</div>';*/
+>>>>>>> FETCH_HEAD
 ?>

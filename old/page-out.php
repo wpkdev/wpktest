@@ -9,7 +9,11 @@ $shop_clean_url = explode( '/', $shop_url );
 
 ?>
 
+<<<<<<< HEAD
 	<div class="shop-redirect">
+=======
+	<div class="page-redirect">
+>>>>>>> FETCH_HEAD
 		<img src="<?php echo get_bloginfo('template_directory');?>/img/SOJ-logo-wit.svg" alt="Shot of Joy">
 		<div class="content">
 			<h1>Je verlaat nu shotofjoy.nl</h1>

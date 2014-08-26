@@ -25,12 +25,20 @@ if(!$next_post){
 get_header(); 
 
 
+<<<<<<< HEAD
 echo '<a href="http://www.shotofjoy.nl" ><img src="'.$template_directory.'/img/close-btn.jpg" class="cls-btn" ></a>';
+=======
+
+>>>>>>> FETCH_HEAD
 
 while ( have_posts() ) : the_post();
 	
 	
+<<<<<<< HEAD
 	echo '<div class="content account-page " style="position:static;">';
+=======
+	echo '<div class="acount-pages ">';
+>>>>>>> FETCH_HEAD
 	//echo '<h2>'.get_the_title().'</h2>';
 	the_content();
 	
@@ -56,6 +64,7 @@ while ( have_posts() ) : the_post();
 endwhile;
 
 
+<<<<<<< HEAD
 ?>
 
 <script>
@@ -63,5 +72,7 @@ endwhile;
 </script>
 
 <?php
+=======
+>>>>>>> FETCH_HEAD
 get_footer(); ?>
 
