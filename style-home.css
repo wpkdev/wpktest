@@ -172,7 +172,7 @@ header.home.searching #search .search-submit { display: block; }
   header.home.has-menu,
   header.home.has-menu #primary { height: 100%; }
   header.home.has-menu nav ul { padding-top: 30px; position: absolute; z-index: 999; display: block; top: 0px; left: 0px; width: 100%; max-width: 1000px; opacity: 1; height: 100%; min-height: 100%; background: #fff;  }
-  header.home.has-menu #search { opacity: 1; min-width: 300px; width: auto; overflow: visible; display: block; position: absolute; height: 50px; top: 45px; left: 0px; right: 0px; }
+  header.home.has-menu #search { z-index: 1001; opacity: 1; min-width: 300px; width: auto; overflow: visible; display: block; position: absolute; height: 50px; top: 45px; left: 0px; right: 0px; }
   header.home.has-menu #search .search-form { display: block; overflow: hidden; margin: 0 auto; height: 38px; width: 314px; position: absolute; left: 50%; margin-left: -157px; }
   header.home #search .search-field { position: absolute; }
   header.home #search .search-submit { position: absolute; }
