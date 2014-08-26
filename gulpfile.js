@@ -91,6 +91,8 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./build/inc'));
   gulp.src(['./src/lib/*'])
     .pipe(gulp.dest('./build/lib'));
+  gulp.src(['./src/fonts/*'])
+    .pipe(gulp.dest('./build/fonts'));
 });
 
 gulp.task('default', ['sass', 'scripts', 'jshint', 'svgs', 'images', 'copy'], function(event) {
