@@ -1,14 +1,42 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html">
 
 <dom-module id="wpk-app">
   <template>
     <style>
       :host {
         display: block;
-        
+        --app-fg-color: #222;
+        --app-bg-color: #fff;
+      }
+      #wpk-app {
+        background: var(--app-bg-color);
+        color: var(--app-fg-color);
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+
+    <h1>Hello {{prop1}}</h1>
+
+    <iron-ajax
+      auto
+      url="http://admin.framework.dev/wp-json/loop/home"
+      handle-as="json"
+      last-response="{{home}}">
+    </iron-ajax>
+    <app-indexeddb-mirror
+      key="posts"
+      data="{{home}}"
+      persisted-data="{{loop}}">
+    </app-indexeddb-mirror>
+
+    <template is="dom-repeat" items="{{loop}}" as="post">
+      <article class="grid">
+        <h3>[[post.post_title]]</h3>
+        <img src="{{post.post_meta._thumbnail_src}}" alt="{{post.post_title}}" />
+      </article>
+    </template>
+
   </template>
 
   <script>

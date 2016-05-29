@@ -7,7 +7,27 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <link rel="manifest" href="/manifest.json">
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <script>
+      window.Polymer = {lazyRegister: true, dom: 'shadow'};
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+
+    </script>
+
     <link rel="import" href="/src/wpk-app.html">
+
+    <style>
+       body {
+         margin: 0;
+         padding: 0 3vw;
+         font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+       }
+     </style>
   </head>
   <body>
     <wpk-app></wpk-app>
