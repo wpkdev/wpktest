@@ -58,8 +58,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <template is="dom-repeat" items="[[liveData]]">
       <div class="card">
-        <img src="{{item.thumbnail}}" alt="{{item.title}}" />
-        <h1>{{item.title}}</h1>
+        <img src="{{item.post_meta._thumbnail_src}}" alt="{{item.post_title}}" />
+        <h1>{{item.post_title}}</h1>
+        <p>
+          {{item.post_content}}
+        </p>
       </div>
     </template>
   </template>
