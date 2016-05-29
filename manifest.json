@@ -1,0 +1,7 @@
+{
+  "name": "shotofjoy",
+  "short_name": "shotofjoy",
+  "description": "Framework app",
+  "start_url": "/",
+  "display": "standalone"
+}

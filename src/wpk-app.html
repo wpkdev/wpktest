@@ -1,0 +1,28 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="wpk-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+        
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'wpk-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'wpk-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
