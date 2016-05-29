@@ -1,4 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html">
 
@@ -16,6 +18,13 @@
       }
     </style>
 
+    <app-location route="{{route}}"></app-location>
+    <app-route
+      route="{{route}}"
+      pattern="/:post"
+      data="{{routeData}}"
+      tail="{{subroute}}"></app-route>
+
     <h1>Hello {{prop1}}</h1>
 
     <iron-ajax
@@ -32,7 +41,7 @@
 
     <template is="dom-repeat" items="{{loop}}" as="post">
       <article class="grid">
-        <h3>[[post.post_title]]</h3>
+        <h3><a href="{{post.post_name}}">{{post.post_title}}</a></h3>
         <img src="{{post.post_meta._thumbnail_src}}" alt="{{post.post_title}}" />
       </article>
     </template>
@@ -50,6 +59,21 @@
           value: 'wpk-app',
         },
       },
+
+      observers: [
+        '_routePageChanged(routeData.post)'
+      ],
+
+      _routePageChanged: function(post) {
+        console.log('route changed', post);
+        this.post = post || 'view1';
+      },
+
+      _postChanged: function(post) {
+        console.log('post');
+        this.importHref(
+          this.resolveUrl('post.html'), null, null, true);
+      }
 
     });
   </script>
