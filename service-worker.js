@@ -1,1 +1,1 @@
-console.log('service-worker aan');
+console.log('service-worker');
